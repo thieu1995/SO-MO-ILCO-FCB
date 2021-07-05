@@ -4,2799 +4,3149 @@
         "d_s": 27588781,
         "label": 1,
         "sl_max": 4.254,
-        "cost_max": 2.346,
-        "id": "57c0090958d04d19a4d6a536658345ca"
+        "cost_max": 2.449,
+        "id": "aafb3beb30ca45258baf89e8fecba2c4",
+        "total_cost": 0
     },
     {
         "d_p": 25196562,
         "d_s": 2442854,
         "label": 0,
         "sl_max": 2.157,
-        "cost_max": 0.73,
-        "id": "fca8d91a16e84b40a8655523b9aa9fb5"
+        "cost_max": 0.819,
+        "id": "7569b3819bc24e4896ac7616d9c53125",
+        "total_cost": 0
     },
     {
         "d_p": 3933809,
         "d_s": 43620890,
         "label": 1,
         "sl_max": 2.726,
-        "cost_max": 1.935,
-        "id": "084a4414a6814b80be76b4643faa0689"
+        "cost_max": 2.153,
+        "id": "f4056235d86b417b85448dc1ece0f4b7",
+        "total_cost": 0
     },
     {
         "d_p": 22976912,
         "d_s": 42878122,
         "label": 0,
         "sl_max": 3.485,
-        "cost_max": 1.925,
-        "id": "28f6925c47844011a94e383425ecc638"
+        "cost_max": 2.47,
+        "id": "085a899692c349b5af3c1a7f47f87a38",
+        "total_cost": 0
     },
     {
         "d_p": 27921536,
         "d_s": 38399168,
         "label": 1,
         "sl_max": 2.668,
-        "cost_max": 2.421,
-        "id": "5a9038c118a741b3b1395c212791314d"
+        "cost_max": 2.623,
+        "id": "06d3c6b3ddcf44f3978c2996c23bcd9d",
+        "total_cost": 0
     },
     {
         "d_p": 21818836,
         "d_s": 43119271,
         "label": 1,
         "sl_max": 4.423,
-        "cost_max": 1.677,
-        "id": "c311b510d7f04435bd1db7dd7847ae79"
+        "cost_max": 2.357,
+        "id": "eeb3a01f6952463ab66766c108bf60c6",
+        "total_cost": 0
     },
     {
         "d_p": 34112920,
         "d_s": 37744128,
         "label": 0,
         "sl_max": 4.707,
-        "cost_max": 2.25,
-        "id": "c6f84641aaae487292fc754f0493fd16"
+        "cost_max": 2.647,
+        "id": "e6f3a4ba5d6a4ff393a00231c18d1927",
+        "total_cost": 0
     },
     {
         "d_p": 23776072,
         "d_s": 4542917,
         "label": 0,
         "sl_max": 2.051,
-        "cost_max": 0.707,
-        "id": "8a303c5b872245af9b49ada28edacb55"
+        "cost_max": 0.847,
+        "id": "d03f362578eb410cbb689c18bec682a2",
+        "total_cost": 0
     },
     {
         "d_p": 39207006,
         "d_s": 2932354,
         "label": 1,
         "sl_max": 2.284,
-        "cost_max": 0.737,
-        "id": "2f0f79cb74c84b109dba2652637cee84"
+        "cost_max": 1.089,
+        "id": "9839f63906024916b72da113d70bb341",
+        "total_cost": 0
     },
     {
         "d_p": 12745995,
         "d_s": 23556933,
         "label": 0,
         "sl_max": 2.519,
-        "cost_max": 1.142,
-        "id": "7b6d898284634d02a8446a49807b0e2a"
+        "cost_max": 1.393,
+        "id": "4699a74b79bb4e99bbefdc5bf9a6f376",
+        "total_cost": 0
     },
     {
         "d_p": 36476684,
         "d_s": 12915546,
         "label": 1,
         "sl_max": 3.504,
-        "cost_max": 1.249,
-        "id": "57db776e5f1342aabca934105e79950c"
+        "cost_max": 1.544,
+        "id": "8af9df3d74af4bf38fe7671ffc295009",
+        "total_cost": 0
     },
     {
         "d_p": 1767752,
         "d_s": 8151197,
         "label": 0,
         "sl_max": 0.696,
-        "cost_max": 0.397,
-        "id": "5b5e7da15dd2426bb1ce644a917120b1"
+        "cost_max": 0.435,
+        "id": "429384b6e3034e3cbb29274a0709d0cf",
+        "total_cost": 0
     },
     {
         "d_p": 30847266,
         "d_s": 2511969,
         "label": 1,
         "sl_max": 1.94,
-        "cost_max": 0.622,
-        "id": "e03d63742f9c4e5dab0b6a3c19a214f7"
+        "cost_max": 0.88,
+        "id": "c5a4520b441f4167a3799e1e22dad535",
+        "total_cost": 0
     },
     {
         "d_p": 33008593,
         "d_s": 2783968,
         "label": 0,
         "sl_max": 2.374,
-        "cost_max": 1.123,
-        "id": "547bd3dace564a4c9d517ef68752eb25"
+        "cost_max": 1.127,
+        "id": "d0589e2e15f14852b446539c1104f8e0",
+        "total_cost": 0
     },
     {
         "d_p": 11952096,
         "d_s": 11154696,
         "label": 0,
         "sl_max": 1.29,
-        "cost_max": 0.754,
-        "id": "d7f55f475bcd4037ba8ed868e971a37a"
+        "cost_max": 0.851,
+        "id": "a16f9ba2f4fa4b3b885abf04df532d7c",
+        "total_cost": 0
     },
     {
         "d_p": 25310862,
         "d_s": 14995652,
         "label": 0,
         "sl_max": 2.703,
-        "cost_max": 0.863,
-        "id": "29c5419b6a6b466bbd092be1f76c3d70"
+        "cost_max": 1.251,
+        "id": "0a43a0b978f84fca9494dcec0e5a32af",
+        "total_cost": 0
     },
     {
         "d_p": 39576994,
         "d_s": 47132050,
         "label": 0,
         "sl_max": 5.563,
-        "cost_max": 2.421,
-        "id": "28fafa57ff2c4386adad64ad627c8b83"
+        "cost_max": 3.095,
+        "id": "a6d99c190ed84d0eac9c1f7574102ee6",
+        "total_cost": 0
     },
     {
         "d_p": 27267366,
         "d_s": 15390376,
         "label": 0,
         "sl_max": 3.108,
-        "cost_max": 1.267,
-        "id": "b7ec0d43834547fc8bf34ef5a5441926"
+        "cost_max": 1.459,
+        "id": "ae3afadbad2b450697840ba82d680bc6",
+        "total_cost": 0
     },
     {
         "d_p": 26790017,
         "d_s": 5402995,
         "label": 0,
         "sl_max": 1.976,
-        "cost_max": 0.553,
-        "id": "f8c72219d6cf44e4bbb556d76fc708eb"
+        "cost_max": 0.865,
+        "id": "2bbdf82cecd540e591cdf9e2c9bde9ed",
+        "total_cost": 0
     },
     {
         "d_p": 17017582,
         "d_s": 987859,
         "label": 1,
         "sl_max": 1.306,
-        "cost_max": 0.53,
-        "id": "d9fe7e2601d24f609560da4babba76f1"
+        "cost_max": 0.548,
+        "id": "68a02edc7e8b48daa8fb08e8b8fbd507",
+        "total_cost": 0
     },
     {
         "d_p": 48825877,
         "d_s": 46192577,
         "label": 1,
         "sl_max": 5.638,
-        "cost_max": 3.537,
-        "id": "be947de994be432995854127b45f832c"
+        "cost_max": 3.679,
+        "id": "0520e7d1335a4e8baedbbe883254dda1",
+        "total_cost": 0
     },
     {
         "d_p": 2368168,
         "d_s": 36000041,
         "label": 0,
         "sl_max": 2.121,
-        "cost_max": 1.119,
-        "id": "140321c75ff44166ae0c690e77d0deb1"
+        "cost_max": 1.57,
+        "id": "11169a66cd6b4f85a60e6b68e6eaea08",
+        "total_cost": 0
     },
     {
         "d_p": 23449737,
         "d_s": 7692545,
         "label": 1,
         "sl_max": 1.831,
-        "cost_max": 0.897,
-        "id": "b428840815fe4bb4a9a3f80a4f69f9e2"
+        "cost_max": 1.012,
+        "id": "17b3814ebf8c4062a363690b1bee1491",
+        "total_cost": 0
     },
     {
         "d_p": 49891483,
         "d_s": 38884055,
         "label": 0,
         "sl_max": 6.016,
-        "cost_max": 2.604,
-        "id": "63b06823b5ae447791c5a6b98e5f1b10"
+        "cost_max": 3.106,
+        "id": "1363062b2d8f4201bdfa8fcba2423c91",
+        "total_cost": 0
     },
     {
         "d_p": 27508795,
         "d_s": 13678607,
         "label": 0,
         "sl_max": 1.857,
-        "cost_max": 0.915,
-        "id": "e7df335247d347e1927df48789eb9b21"
+        "cost_max": 1.271,
+        "id": "d6f4b1fd9db64a6a81118f454a67324d",
+        "total_cost": 0
     },
     {
         "d_p": 34692101,
         "d_s": 42446475,
         "label": 0,
         "sl_max": 4.424,
-        "cost_max": 1.647,
-        "id": "6686ec37c62742bc9957c4a8ada2a24f"
+        "cost_max": 2.557,
+        "id": "f5e09986952a4e709e7010317c81ef89",
+        "total_cost": 0
     },
     {
         "d_p": 32791696,
         "d_s": 27565143,
         "label": 1,
         "sl_max": 4.196,
-        "cost_max": 2.139,
-        "id": "0b13fb9e75f146f58b8b6d50211c5080"
+        "cost_max": 2.273,
+        "id": "02f79a4b682440b5b737f365cc1e96aa",
+        "total_cost": 0
     },
     {
         "d_p": 37395013,
         "d_s": 21621682,
         "label": 0,
         "sl_max": 2.861,
-        "cost_max": 2.067,
-        "id": "4666548f237646caadf46bf77b058460"
+        "cost_max": 2.149,
+        "id": "089594ba4e34442b943abc8aef914c60",
+        "total_cost": 0
     },
     {
         "d_p": 35436721,
         "d_s": 38703625,
         "label": 0,
         "sl_max": 5.044,
-        "cost_max": 1.789,
-        "id": "a98367fd7bfc4133a6582ff500d0fbb5"
+        "cost_max": 2.515,
+        "id": "89ac791207244cebb1362da6a00ee330",
+        "total_cost": 0
     },
     {
         "d_p": 41225350,
         "d_s": 19825703,
         "label": 0,
         "sl_max": 4.496,
-        "cost_max": 1.599,
-        "id": "e47470cf4bda4c478486db89994baa1e"
+        "cost_max": 1.977,
+        "id": "c79d8d4d15094feb850ba4b01220ac75",
+        "total_cost": 0
     },
     {
         "d_p": 34654098,
         "d_s": 25338823,
         "label": 1,
         "sl_max": 3.402,
-        "cost_max": 1.645,
-        "id": "c57c69e4664a48e9babc06762a51929a"
+        "cost_max": 2.042,
+        "id": "a56033795d1f4bdaa70ac35c9bdb6d34",
+        "total_cost": 0
     },
     {
         "d_p": 7452399,
         "d_s": 14758649,
         "label": 0,
         "sl_max": 1.22,
-        "cost_max": 0.851,
-        "id": "cee4c079507b4d7db55e502b098bfa86"
+        "cost_max": 0.917,
+        "id": "369405a9fed14d51af8ed8336f96fdbe",
+        "total_cost": 0
     },
     {
         "d_p": 2481958,
         "d_s": 5509630,
         "label": 1,
         "sl_max": 0.418,
-        "cost_max": 0.344,
-        "id": "b07e5305f2dd40a9b82cadb7f4515492"
+        "cost_max": 0.348,
+        "id": "19f38d4cc66f459cbf87400034847ae6",
+        "total_cost": 0
     },
     {
         "d_p": 35577431,
         "d_s": 19515551,
         "label": 1,
         "sl_max": 4.355,
-        "cost_max": 1.317,
-        "id": "6ecee752e1bc4a12a448a285a1c11134"
+        "cost_max": 1.753,
+        "id": "413144e232ac4ebc80e0230b220c445f",
+        "total_cost": 0
     },
     {
         "d_p": 28530013,
         "d_s": 45442262,
         "label": 0,
         "sl_max": 5.517,
-        "cost_max": 3.022,
-        "id": "81fb1e5fbc9040aaa9177a348e909949"
+        "cost_max": 3.085,
+        "id": "b89d8c50d5304781a0e1f006958c15d5",
+        "total_cost": 0
     },
     {
         "d_p": 11713758,
         "d_s": 23983532,
         "label": 0,
         "sl_max": 2.731,
-        "cost_max": 1.01,
-        "id": "96bce5f471994cc58ab1f2cbe5bbc208"
+        "cost_max": 1.334,
+        "id": "5060c7ca55ea4276a9a27d5c579d6a0a",
+        "total_cost": 0
     },
     {
         "d_p": 12275577,
         "d_s": 30476027,
         "label": 1,
         "sl_max": 1.793,
-        "cost_max": 1.666,
-        "id": "49349dcc1c02459fbfa17eef62afe15f"
+        "cost_max": 1.802,
+        "id": "e983b8cab5e549bfa6486a33e60701bc",
+        "total_cost": 0
     },
     {
         "d_p": 14282495,
         "d_s": 46088893,
         "label": 1,
         "sl_max": 3.018,
-        "cost_max": 1.581,
-        "id": "671e2e0121ca4933bf5a414a1ec7b7d7"
+        "cost_max": 2.272,
+        "id": "22df78fe0d114059a1d77399bc5cbb1a",
+        "total_cost": 0
     },
     {
         "d_p": 28745029,
         "d_s": 38144197,
         "label": 0,
         "sl_max": 3.114,
-        "cost_max": 2.406,
-        "id": "81359c5163ef496bb86b7fd0e4c8d35e"
+        "cost_max": 2.624,
+        "id": "5edc82fab0c44f768fb654166ac9e136",
+        "total_cost": 0
     },
     {
         "d_p": 30375837,
         "d_s": 6397034,
         "label": 1,
         "sl_max": 1.859,
-        "cost_max": 1.039,
-        "id": "707b9c20c35c47b98007116f23663290"
+        "cost_max": 1.154,
+        "id": "ea01ae7565fe40e7b8e4f7c7457a6c35",
+        "total_cost": 0
     },
     {
         "d_p": 42418860,
         "d_s": 42574567,
         "label": 1,
         "sl_max": 6.312,
-        "cost_max": 2.816,
-        "id": "7dd0fbef05c94e40ab24d2838c9f2e2b"
+        "cost_max": 3.167,
+        "id": "3a01403bae3b488ab217e0af3087f956",
+        "total_cost": 0
     },
     {
         "d_p": 14500083,
         "d_s": 34707994,
         "label": 0,
         "sl_max": 3.397,
-        "cost_max": 1.422,
-        "id": "cae127879880406887c8283caba52457"
+        "cost_max": 1.871,
+        "id": "9c555f418f034952af95452105d8acf3",
+        "total_cost": 0
     },
     {
         "d_p": 9028390,
         "d_s": 23614691,
         "label": 0,
         "sl_max": 1.994,
-        "cost_max": 1.142,
-        "id": "2e25e4944dad4cb69e37f23597542d1c"
+        "cost_max": 1.328,
+        "id": "d910e06a667949298055429b83f26ccb",
+        "total_cost": 0
     },
     {
         "d_p": 30441083,
         "d_s": 44220985,
         "label": 1,
         "sl_max": 5.73,
-        "cost_max": 2.359,
-        "id": "012dabecfcdc468c96acd82b6b46824f"
+        "cost_max": 2.818,
+        "id": "d8ff7352e8544ae58073da18e8171fec",
+        "total_cost": 0
     },
     {
         "d_p": 39236733,
         "d_s": 2178770,
         "label": 1,
         "sl_max": 2.723,
-        "cost_max": 0.869,
-        "id": "7a9b4b8b829c464f83b022e080bf5cba"
+        "cost_max": 1.119,
+        "id": "3d150b3c9a904266b7ee7f1e304f6a60",
+        "total_cost": 0
     },
     {
         "d_p": 4118451,
         "d_s": 20557629,
         "label": 1,
         "sl_max": 1.118,
-        "cost_max": 0.847,
-        "id": "2d84887486434e09b471d4bdff8103cf"
+        "cost_max": 1.03,
+        "id": "75b5de70007c49d18d0e8d50da1110f6",
+        "total_cost": 0
     },
     {
         "d_p": 38081832,
         "d_s": 36053356,
         "label": 0,
         "sl_max": 3.088,
-        "cost_max": 1.866,
-        "id": "b020d3cb68d44ee28b75e71efc1dc5ef"
+        "cost_max": 2.513,
+        "id": "3ac45ba12cad4d33b4cbdebdf51b7a3e",
+        "total_cost": 0
     },
     {
         "d_p": 16805549,
         "d_s": 34319694,
         "label": 0,
         "sl_max": 3.592,
-        "cost_max": 1.471,
-        "id": "1c1c3ad3cf724d0cab3eb948e7075114"
+        "cost_max": 1.92,
+        "id": "fdd48ade2f674e2986a8d02d72e0c426",
+        "total_cost": 0
     },
     {
         "d_p": 47418137,
         "d_s": 6630272,
         "label": 0,
         "sl_max": 3.652,
-        "cost_max": 1.207,
-        "id": "89032ab1385c4a4a80308bab621a9b5e"
+        "cost_max": 1.535,
+        "id": "a56ca3badb584dc2b40c5a118c7ee997",
+        "total_cost": 0
     },
     {
         "d_p": 38774015,
         "d_s": 49006416,
         "label": 1,
         "sl_max": 4.299,
-        "cost_max": 1.896,
-        "id": "e8c4c378ad204240b91971b2932e30c0"
+        "cost_max": 2.926,
+        "id": "6e5fcfd174cc44238121e2867ef1477e",
+        "total_cost": 0
     },
     {
         "d_p": 46198615,
         "d_s": 23821136,
         "label": 0,
         "sl_max": 4.092,
-        "cost_max": 1.953,
-        "id": "065150770a7f4e55bc31048082e6ca06"
+        "cost_max": 2.327,
+        "id": "3ec916f5982e49aaaecae43142cab3e6",
+        "total_cost": 0
     },
     {
         "d_p": 14204864,
         "d_s": 7163081,
         "label": 1,
         "sl_max": 1.31,
-        "cost_max": 0.439,
-        "id": "f8a4dc15319b4959b35038992f11acc8"
+        "cost_max": 0.646,
+        "id": "c8dbba3aa82746f5a3fa1ba71a844db2",
+        "total_cost": 0
     },
     {
         "d_p": 35409077,
         "d_s": 17847952,
         "label": 1,
         "sl_max": 3.176,
-        "cost_max": 1.546,
-        "id": "f53d48101bd748d48787bdcde5588287"
+        "cost_max": 1.791,
+        "id": "acdd6e67e45346519333efd199992b62",
+        "total_cost": 0
     },
     {
         "d_p": 2812919,
         "d_s": 42089165,
         "label": 0,
         "sl_max": 2.869,
-        "cost_max": 1.441,
-        "id": "d622940959164b73a59ac4c86ce4e1e1"
+        "cost_max": 1.89,
+        "id": "cc9fe2facd95473a8ca31e09655aaad2",
+        "total_cost": 0
     },
     {
         "d_p": 40659117,
         "d_s": 47928674,
         "label": 1,
         "sl_max": 4.56,
-        "cost_max": 1.939,
-        "id": "2d71f86d841f44ec84df2ad1bed416a6"
+        "cost_max": 2.945,
+        "id": "acfa383cbb1948e78a449bf5a98ac8cf",
+        "total_cost": 0
     },
     {
         "d_p": 30208418,
         "d_s": 24397191,
         "label": 1,
         "sl_max": 2.858,
-        "cost_max": 2.071,
-        "id": "04db7cf6b2dd4ca8b0483ed2892c8a06"
+        "cost_max": 2.104,
+        "id": "e0b3c8d405a24a6a94674db8023ae20e",
+        "total_cost": 0
     },
     {
         "d_p": 35152303,
         "d_s": 10584022,
         "label": 1,
         "sl_max": 2.118,
-        "cost_max": 0.859,
-        "id": "a4f0fb33304b404fbfeb8208af09da14"
+        "cost_max": 1.294,
+        "id": "19283729c740411cb722eb3e0f3db73f",
+        "total_cost": 0
     },
     {
         "d_p": 41972831,
         "d_s": 37031295,
         "label": 1,
         "sl_max": 5.123,
-        "cost_max": 1.976,
-        "id": "f6527361cf064f4cb45b086dfdbe509c"
+        "cost_max": 2.657,
+        "id": "32d23aeaff66403490309adef3c904e7",
+        "total_cost": 0
     },
     {
         "d_p": 42655364,
         "d_s": 46961477,
         "label": 1,
         "sl_max": 5.211,
-        "cost_max": 3.346,
-        "id": "abc5ac30313a42ccac6b5e3763113f0a"
+        "cost_max": 3.515,
+        "id": "3c87ee3d731b4070a35d426db2db2f4c",
+        "total_cost": 0
     },
     {
         "d_p": 10158713,
         "d_s": 21109933,
         "label": 0,
         "sl_max": 2.015,
-        "cost_max": 0.829,
-        "id": "a142508984964a9da1e9d9d37ad52e8c"
+        "cost_max": 1.148,
+        "id": "d020aab45e2545cebbf55517ea5c083a",
+        "total_cost": 0
     },
     {
         "d_p": 11849893,
         "d_s": 3375279,
         "label": 1,
         "sl_max": 0.973,
-        "cost_max": 0.402,
-        "id": "61daa14b913c45a79c719ec7060a5c5d"
+        "cost_max": 0.475,
+        "id": "f2383a18cbf24892b90ef862e65c41f2",
+        "total_cost": 0
     },
     {
         "d_p": 46732867,
         "d_s": 26452179,
         "label": 0,
         "sl_max": 5.416,
-        "cost_max": 2.271,
-        "id": "735600423ff04d74afc6ef4e18573877"
+        "cost_max": 2.543,
+        "id": "3d0d0236cba0476e9ac104b73822c75a",
+        "total_cost": 0
     },
     {
         "d_p": 30849941,
         "d_s": 16712084,
         "label": 1,
         "sl_max": 2.143,
-        "cost_max": 1.285,
-        "id": "a4ab27f6ce5a4d1a9be6fbba4b4673af"
+        "cost_max": 1.571,
+        "id": "fdfadea7c37142ad99dfa7015dd5a9ac",
+        "total_cost": 0
     },
     {
         "d_p": 45958137,
         "d_s": 28219006,
         "label": 1,
         "sl_max": 4.306,
-        "cost_max": 1.681,
-        "id": "3ffe97789d4b457fab94e458a6262665"
+        "cost_max": 2.346,
+        "id": "c4e5681fbb7f405b9a17c94793697173",
+        "total_cost": 0
     },
     {
         "d_p": 47371322,
         "d_s": 6214766,
         "label": 1,
         "sl_max": 3.666,
-        "cost_max": 1.712,
-        "id": "1f08df6d166549a7954ad212ed86cd1d"
+        "cost_max": 1.724,
+        "id": "29c3aa9e4dd340bb844ec3f8ca690547",
+        "total_cost": 0
     },
     {
         "d_p": 25905977,
         "d_s": 18571085,
         "label": 0,
         "sl_max": 3.475,
-        "cost_max": 1.413,
-        "id": "8494220540ea44a8a44b35cdc289f475"
+        "cost_max": 1.589,
+        "id": "5f393770865a47b2ada57191fb529cf3",
+        "total_cost": 0
     },
     {
         "d_p": 46862665,
         "d_s": 27537117,
         "label": 0,
         "sl_max": 4.896,
-        "cost_max": 2.126,
-        "id": "9789924890e845bda28a4db0433210d6"
+        "cost_max": 2.52,
+        "id": "d7e34fc76a9848218a175eb22571b7df",
+        "total_cost": 0
     },
     {
         "d_p": 37528526,
         "d_s": 18872152,
         "label": 1,
         "sl_max": 4.099,
-        "cost_max": 1.976,
-        "id": "249f5290eace4bd99704af6270e548b5"
+        "cost_max": 2.032,
+        "id": "590323175029408daab47611f289c3af",
+        "total_cost": 0
     },
     {
         "d_p": 36166164,
         "d_s": 41719320,
         "label": 0,
         "sl_max": 3.744,
-        "cost_max": 3.068,
-        "id": "c9c3ff2a45004a8e9902b549b7ccc751"
+        "cost_max": 3.13,
+        "id": "4f1195bbc06b4212a1fc074417260d33",
+        "total_cost": 0
     },
     {
         "d_p": 29201611,
         "d_s": 42318571,
         "label": 1,
         "sl_max": 5.57,
-        "cost_max": 2.821,
-        "id": "162d70718b2c412ebe22fe5de6476c38"
+        "cost_max": 2.924,
+        "id": "96c985bfb90f481d820e99fb757f72e1",
+        "total_cost": 0
     },
     {
         "d_p": 1940968,
         "d_s": 714487,
         "label": 0,
         "sl_max": 0.126,
-        "cost_max": 0.068,
-        "id": "fa55389a8df947b0891ac2371c4ec0c1"
+        "cost_max": 0.083,
+        "id": "e4714c132def48dfb4c44ab476ba9e8f",
+        "total_cost": 0
     },
     {
         "d_p": 4372711,
         "d_s": 37599572,
         "label": 0,
         "sl_max": 1.958,
-        "cost_max": 1.834,
-        "id": "51f8079b51d24f46ac4a2aaa7d1e4562"
+        "cost_max": 1.94,
+        "id": "dddc1c14231e4c85b9dcaf61acb49921",
+        "total_cost": 0
     },
     {
         "d_p": 45095561,
         "d_s": 25468417,
         "label": 0,
         "sl_max": 4.12,
-        "cost_max": 1.978,
-        "id": "39e8d0acab414390962c0cfc40ae545b"
+        "cost_max": 2.367,
+        "id": "7f9a552d06394eb398ba8ab1424a5728",
+        "total_cost": 0
     },
     {
         "d_p": 20495024,
         "d_s": 32978439,
         "label": 0,
         "sl_max": 4.261,
-        "cost_max": 1.316,
-        "id": "2641d8e8a9f64bb4bd428f48818204f9"
+        "cost_max": 1.885,
+        "id": "6d4dc81902c541d6854b9735dc06e6f3",
+        "total_cost": 0
     },
     {
         "d_p": 151826,
         "d_s": 21750128,
         "label": 1,
         "sl_max": 1.623,
-        "cost_max": 1.075,
-        "id": "1c442ecc505540ab86ba7805dbc7507d"
+        "cost_max": 1.085,
+        "id": "5336320e06444ff39b4afcbcb7299a37",
+        "total_cost": 0
     },
     {
         "d_p": 5218002,
         "d_s": 41629360,
         "label": 1,
         "sl_max": 2.63,
-        "cost_max": 1.718,
-        "id": "f5113181829b4dc6ab4f12fa4cf5e58b"
+        "cost_max": 2.03,
+        "id": "3272fcb8615e41dabaecdbe06986de7b",
+        "total_cost": 0
     },
     {
         "d_p": 36170917,
         "d_s": 23882876,
         "label": 1,
         "sl_max": 3.603,
-        "cost_max": 2.084,
-        "id": "8d5b2924fabe4282845e1ff33a38893f"
+        "cost_max": 2.201,
+        "id": "f7c893fcf29a47698b6e6f3d193e6390",
+        "total_cost": 0
     },
     {
         "d_p": 43487058,
         "d_s": 46894508,
         "label": 1,
         "sl_max": 4.928,
-        "cost_max": 2.362,
-        "id": "f4d7dcbf556c4d4ab743ca75aa32716d"
+        "cost_max": 3.134,
+        "id": "39aa70f81c124bafbd42068d789450be",
+        "total_cost": 0
     },
     {
         "d_p": 35801769,
         "d_s": 45200108,
         "label": 0,
         "sl_max": 4.887,
-        "cost_max": 2.106,
-        "id": "7db408aae4e942659d9b4996b2ef312c"
+        "cost_max": 2.843,
+        "id": "69746fab6dc943908ce680bedba37002",
+        "total_cost": 0
     },
     {
         "d_p": 3446961,
         "d_s": 22471436,
         "label": 0,
         "sl_max": 1.296,
-        "cost_max": 0.65,
-        "id": "4a5e5f5100884f10b699506f86a0df90"
+        "cost_max": 0.996,
+        "id": "bc633cd3f71b41ee9eb9e8ac923be915",
+        "total_cost": 0
     },
     {
         "d_p": 28897945,
         "d_s": 47722204,
         "label": 1,
         "sl_max": 3.237,
-        "cost_max": 2.42,
-        "id": "09721583cb154f1db8e6beef9a5e221d"
+        "cost_max": 2.92,
+        "id": "2562b92354f1417ba7471183b6fd74a1",
+        "total_cost": 0
     },
     {
         "d_p": 42708285,
         "d_s": 41803144,
         "label": 1,
         "sl_max": 4.626,
-        "cost_max": 1.924,
-        "id": "c232272dec2f41cfa1dc339ac930dbee"
+        "cost_max": 2.793,
+        "id": "d86d788732dc414a88e5cd9cb1d6c901",
+        "total_cost": 0
     },
     {
         "d_p": 33703392,
         "d_s": 27947417,
         "label": 1,
         "sl_max": 4.037,
-        "cost_max": 2.201,
-        "id": "be6f1282975b48ada071bb67f2d087b4"
+        "cost_max": 2.325,
+        "id": "366e074991cb4b20b1275afa41b4ebb5",
+        "total_cost": 0
     },
     {
         "d_p": 29148912,
         "d_s": 47780073,
         "label": 0,
         "sl_max": 5.797,
-        "cost_max": 2.641,
-        "id": "0a1f6149f4504e2381f0c0651ca4f9a6"
+        "cost_max": 3.015,
+        "id": "2cdbe2617b1d41c6b28b5dd131e42c1d",
+        "total_cost": 0
     },
     {
         "d_p": 16353817,
         "d_s": 26191877,
         "label": 0,
         "sl_max": 2.754,
-        "cost_max": 1.786,
-        "id": "4556e581ad624ac3913f787620459c47"
+        "cost_max": 1.794,
+        "id": "1ecf0b8667b942669c8f5890c2a2c211",
+        "total_cost": 0
     },
     {
         "d_p": 24694401,
         "d_s": 33927331,
         "label": 0,
         "sl_max": 4.433,
-        "cost_max": 1.911,
-        "id": "476d9e1cb61744c7937fa1b05f66dd41"
+        "cost_max": 2.227,
+        "id": "cf8892173cbf46198d1ea8b094f01901",
+        "total_cost": 0
     },
     {
         "d_p": 24843950,
         "d_s": 9792245,
         "label": 0,
         "sl_max": 1.666,
-        "cost_max": 1.024,
-        "id": "9d252c5a92244464ab30d8b986047a30"
+        "cost_max": 1.151,
+        "id": "5725c8b3ce8d413986dcd13fc723e565",
+        "total_cost": 0
     },
     {
         "d_p": 49794644,
         "d_s": 17497971,
         "label": 1,
         "sl_max": 3.346,
-        "cost_max": 2.017,
-        "id": "22984687fbd64af9bfab09edde3d001e"
+        "cost_max": 2.228,
+        "id": "e53fb05a37a94a2ab9473dd48af058ca",
+        "total_cost": 0
     },
     {
         "d_p": 37132966,
         "d_s": 2651550,
         "label": 1,
         "sl_max": 2.996,
-        "cost_max": 0.666,
-        "id": "5e1af104c6704f2785d5364662c406db"
+        "cost_max": 1.014,
+        "id": "efa9f18899d34be88a8cefda42a4e65a",
+        "total_cost": 0
     },
     {
         "d_p": 22781676,
         "d_s": 36500128,
         "label": 1,
         "sl_max": 4.327,
-        "cost_max": 1.952,
-        "id": "5d2b8218691e4263a4c0f20b85125e48"
+        "cost_max": 2.286,
+        "id": "5943d993663b44af98fec2f8757f8fd5",
+        "total_cost": 0
     },
     {
         "d_p": 41980655,
         "d_s": 2790294,
         "label": 0,
         "sl_max": 2.589,
-        "cost_max": 1.127,
-        "id": "57990fdda4fb4f3faeb34d8562af974d"
+        "cost_max": 1.29,
+        "id": "dc3490fa97db4f9bb9deb6be544550ce",
+        "total_cost": 0
     },
     {
         "d_p": 33370161,
         "d_s": 19387814,
         "label": 1,
         "sl_max": 3.079,
-        "cost_max": 1.527,
-        "id": "c377561b6b3945719ee3ce96e01f8679"
+        "cost_max": 1.793,
+        "id": "7820b189d184484b91583747a608c40c",
+        "total_cost": 0
     },
     {
         "d_p": 4126707,
         "d_s": 43157782,
         "label": 0,
         "sl_max": 3.638,
-        "cost_max": 2.12,
-        "id": "d31ac34a8a4543a2b1e0ab1c4559c041"
+        "cost_max": 2.217,
+        "id": "dd2c3238cece496e87935d1356318881",
+        "total_cost": 0
     },
     {
         "d_p": 5347650,
         "d_s": 11641896,
         "label": 0,
         "sl_max": 0.836,
-        "cost_max": 0.534,
-        "id": "79d3c32277e0445ab6e038bde7ffca1d"
+        "cost_max": 0.659,
+        "id": "b903f6e8520f4a9181a6bf376d49b4c7",
+        "total_cost": 0
     },
     {
         "d_p": 25742352,
         "d_s": 33024058,
         "label": 0,
         "sl_max": 3.943,
-        "cost_max": 1.522,
-        "id": "969fb6d052bc45e8ae17c545fea1d879"
+        "cost_max": 2.063,
+        "id": "529b83374da14edbb6dd74a76a951236",
+        "total_cost": 0
     },
     {
         "d_p": 12310730,
         "d_s": 30607159,
         "label": 0,
         "sl_max": 3.161,
-        "cost_max": 1.148,
-        "id": "ea15c3e7897e407689e6079930341ce5"
+        "cost_max": 1.599,
+        "id": "35f1c2036a094803af5a52027efefd23",
+        "total_cost": 0
     },
     {
         "d_p": 11910403,
         "d_s": 11899612,
         "label": 0,
         "sl_max": 1.273,
-        "cost_max": 0.869,
-        "id": "1406a0b41994484887a7dadd87bdfab9"
+        "cost_max": 0.919,
+        "id": "e57fba311f2840f1a2dc4c94d59f84fa",
+        "total_cost": 0
     },
     {
         "d_p": 494434,
         "d_s": 38994136,
         "label": 0,
         "sl_max": 2.053,
-        "cost_max": 1.25,
-        "id": "3bd8758ffe4f4c1d8dba246da97b61cc"
+        "cost_max": 1.679,
+        "id": "dae23011bee64319a4bb4e2733dded7a",
+        "total_cost": 0
     },
     {
         "d_p": 16115814,
         "d_s": 46814660,
         "label": 1,
         "sl_max": 4.454,
-        "cost_max": 1.923,
-        "id": "b153fc104d1540ad952ef860a6be7b23"
+        "cost_max": 2.464,
+        "id": "5b63f5e39c634ae88174c40d7e611856",
+        "total_cost": 0
     },
     {
         "d_p": 10162497,
         "d_s": 37976794,
         "label": 1,
         "sl_max": 2.055,
-        "cost_max": 1.423,
-        "id": "82553664ee2e44e58b24f91d3d706ba3"
+        "cost_max": 1.891,
+        "id": "d8b50547e6114e1aa2863793cf9da6a1",
+        "total_cost": 0
     },
     {
         "d_p": 13829828,
         "d_s": 31779216,
         "label": 1,
         "sl_max": 2.392,
-        "cost_max": 1.022,
-        "id": "f43d6ee3e39b450ea0607137420e69f2"
+        "cost_max": 1.611,
+        "id": "d3d963fefbd84a3aa9dcea37f8416005",
+        "total_cost": 0
     },
     {
         "d_p": 22008726,
         "d_s": 29009106,
         "label": 1,
         "sl_max": 3.201,
-        "cost_max": 1.536,
-        "id": "e9d767a1ab2d4f93848d656d1fbde375"
+        "cost_max": 1.881,
+        "id": "5debed2b72d64c949c97758a3799fb98",
+        "total_cost": 0
     },
     {
         "d_p": 38543048,
         "d_s": 1434311,
         "label": 0,
         "sl_max": 2.584,
-        "cost_max": 0.828,
-        "id": "0b4915efd61c4ee3940999c37cab34a1"
+        "cost_max": 1.068,
+        "id": "930272401ae044b193923e6a652b3308",
+        "total_cost": 0
     },
     {
         "d_p": 24816663,
         "d_s": 12550304,
         "label": 1,
         "sl_max": 2.417,
-        "cost_max": 0.734,
-        "id": "285c28ace1e243f0b66b61bba459bc8d"
+        "cost_max": 1.117,
+        "id": "fece91c031f4404ca1b621c758b0d07d",
+        "total_cost": 0
     },
     {
         "d_p": 43960450,
         "d_s": 35369674,
         "label": 0,
         "sl_max": 4.129,
-        "cost_max": 2.547,
-        "id": "9ce0dac0c8ee4f3ebe5760b9cfe78ac9"
+        "cost_max": 2.871,
+        "id": "677b50b131b44f048db23f88a8c933a2",
+        "total_cost": 0
     },
     {
         "d_p": 30909682,
         "d_s": 13435837,
         "label": 1,
         "sl_max": 2.769,
-        "cost_max": 1.115,
-        "id": "d969e3c48e2f48a7a21e39809adf4940"
+        "cost_max": 1.405,
+        "id": "5366794233594d6ebd5053bd9c475a76",
+        "total_cost": 0
     },
     {
         "d_p": 31371585,
         "d_s": 10631837,
         "label": 0,
         "sl_max": 2.99,
-        "cost_max": 1.168,
-        "id": "47484daca21a49c2a84e0d50020a4185"
+        "cost_max": 1.351,
+        "id": "427fddc44ae54a45a097e6631580bf30",
+        "total_cost": 0
     },
     {
         "d_p": 49634930,
         "d_s": 43566386,
         "label": 1,
         "sl_max": 6.864,
-        "cost_max": 3.264,
-        "id": "9aca60bab906429aa21cce233f225c06"
+        "cost_max": 3.506,
+        "id": "bfc9e39c2fe64a1b81240f9943d407f9",
+        "total_cost": 0
     },
     {
         "d_p": 33354127,
         "d_s": 8981749,
         "label": 1,
         "sl_max": 1.892,
-        "cost_max": 1.346,
-        "id": "964b3ba670c449dd807303d541198bcc"
+        "cost_max": 1.408,
+        "id": "d9101270ca6745b08d2194b23b69ae80",
+        "total_cost": 0
     },
     {
         "d_p": 47126295,
         "d_s": 10164416,
         "label": 0,
         "sl_max": 4.118,
-        "cost_max": 1.802,
-        "id": "0e42aa9a05e841beb612c8aa92e0ffe7"
+        "cost_max": 1.874,
+        "id": "ff7d3044c609485cbbef458a4ec54f24",
+        "total_cost": 0
     },
     {
         "d_p": 37297121,
         "d_s": 46811261,
         "label": 0,
         "sl_max": 6.556,
-        "cost_max": 2.427,
-        "id": "db20b66da2b54b719f1d8f18a95f5f48"
+        "cost_max": 3.047,
+        "id": "bb6998c9d6184a7f983c70d3c1ddd3f3",
+        "total_cost": 0
     },
     {
         "d_p": 35559683,
         "d_s": 37524558,
         "label": 1,
         "sl_max": 4.403,
-        "cost_max": 1.74,
-        "id": "7b56c754ac404f2fbc8af09e146bfa56"
+        "cost_max": 2.462,
+        "id": "d821cdb0eb1b49fb92855164ce2b8818",
+        "total_cost": 0
     },
     {
         "d_p": 26541177,
         "d_s": 21736583,
         "label": 1,
         "sl_max": 3.541,
-        "cost_max": 1.108,
-        "id": "6d561c4a8897445bbead015c4af9e69a"
+        "cost_max": 1.573,
+        "id": "6013c0aa62fe434c99a2344976e75ddb",
+        "total_cost": 0
     },
     {
         "d_p": 26026925,
         "d_s": 4037418,
         "label": 1,
         "sl_max": 2.288,
-        "cost_max": 0.725,
-        "id": "54f53d1707af48439d1859136e96b555"
+        "cost_max": 0.88,
+        "id": "c5f5dde44fb14b1a91fe4c4d98b742eb",
+        "total_cost": 0
     },
     {
         "d_p": 29905057,
         "d_s": 17599812,
         "label": 1,
         "sl_max": 2.682,
-        "cost_max": 1.22,
-        "id": "20c3c3ce956d442ba3202364fdcef700"
+        "cost_max": 1.554,
+        "id": "0551e3c8ac6641ec92ccfb8f846fce28",
+        "total_cost": 0
     },
     {
         "d_p": 48783359,
         "d_s": 45039488,
         "label": 1,
         "sl_max": 5.755,
-        "cost_max": 3.251,
-        "id": "17cc4d9fd6024414bda8ed8dfaf01ecd"
+        "cost_max": 3.529,
+        "id": "5a5c7ba7455140e1992636ec54fde587",
+        "total_cost": 0
     },
     {
         "d_p": 33536905,
         "d_s": 21325774,
         "label": 0,
         "sl_max": 3.882,
-        "cost_max": 1.323,
-        "id": "d73d179db9ee490cb830a39adb28895a"
+        "cost_max": 1.773,
+        "id": "8420effb1c8f4277be856cf200ecd9ad",
+        "total_cost": 0
     },
     {
         "d_p": 39840253,
         "d_s": 28425943,
         "label": 0,
         "sl_max": 3.882,
-        "cost_max": 1.52,
-        "id": "b7aecb88ed2e4dae9bb983caf2e486ea"
+        "cost_max": 2.178,
+        "id": "8451a36fd51a41dc8ba2f0d40bfafddd",
+        "total_cost": 0
     },
     {
         "d_p": 49869382,
         "d_s": 16935032,
         "label": 1,
         "sl_max": 4.818,
-        "cost_max": 1.792,
-        "id": "4dca5e74dacc4aa5a26317dbb58f5537"
+        "cost_max": 2.122,
+        "id": "a63089338a5848298fd2f2fe00d009fd",
+        "total_cost": 0
     },
     {
         "d_p": 13202023,
         "d_s": 25891259,
         "label": 1,
         "sl_max": 2.242,
-        "cost_max": 1.263,
-        "id": "3c245c1cc6ef4506b7b0d42e973a1ba3"
+        "cost_max": 1.52,
+        "id": "745b5cc2d125401f8eefed859183a598",
+        "total_cost": 0
     },
     {
         "d_p": 25642143,
         "d_s": 328523,
         "label": 1,
         "sl_max": 1.934,
-        "cost_max": 0.731,
-        "id": "8b23e31d3db74b94b7f0e996860102de"
+        "cost_max": 0.764,
+        "id": "93bdaf52e11544879ab801cc565f7a61",
+        "total_cost": 0
     },
     {
         "d_p": 27663636,
         "d_s": 19559515,
         "label": 1,
         "sl_max": 3.154,
-        "cost_max": 1.778,
-        "id": "1d48f53153fc495580746ad0f6d2d9e3"
+        "cost_max": 1.796,
+        "id": "61e2ebbb585a463c9d4905c5458d96c9",
+        "total_cost": 0
     },
     {
         "d_p": 19114788,
         "d_s": 20939391,
         "label": 0,
         "sl_max": 2.377,
-        "cost_max": 1.298,
-        "id": "c3c5979c60304500ab733b47de6b3ffd"
+        "cost_max": 1.491,
+        "id": "d46be8c0b84c4a5d87b11a91ec89cb44",
+        "total_cost": 0
     },
     {
         "d_p": 1430416,
         "d_s": 22270438,
         "label": 1,
         "sl_max": 1.051,
-        "cost_max": 1.001,
-        "id": "4fe0bac8ea1b4fceaf0fa1894ae92feb"
+        "cost_max": 1.094,
+        "id": "653639f21ae2487386303b2cadca9304",
+        "total_cost": 0
     },
     {
         "d_p": 4974820,
         "d_s": 10262031,
         "label": 1,
         "sl_max": 0.644,
-        "cost_max": 0.578,
-        "id": "965c1f20b1824bfca190cbd92ca5b26b"
+        "cost_max": 0.629,
+        "id": "fe86fabd98eb473cab8e3779553a3ba7",
+        "total_cost": 0
     },
     {
         "d_p": 17580844,
         "d_s": 28243922,
         "label": 1,
         "sl_max": 3.457,
-        "cost_max": 1.046,
-        "id": "483c8edf7c594a47bd0b5f0eb4a8e799"
+        "cost_max": 1.582,
+        "id": "5146d0cc39984fa1b633e969c0dbeb6a",
+        "total_cost": 0
     },
     {
         "d_p": 30106812,
         "d_s": 24460690,
         "label": 1,
         "sl_max": 4.082,
-        "cost_max": 1.718,
-        "id": "c64533570c8343d29ec8226322ad0faa"
+        "cost_max": 1.963,
+        "id": "8420e7eea4c143efad0a6ffb1dc00e4e",
+        "total_cost": 0
     },
     {
         "d_p": 19809729,
         "d_s": 17077419,
         "label": 1,
         "sl_max": 1.567,
-        "cost_max": 0.775,
-        "id": "ecdfeb18fe5a44bbbf6fe5fc9d03dcc3"
+        "cost_max": 1.179,
+        "id": "5e3a2448bb9a482d974afa5da2a642e3",
+        "total_cost": 0
     },
     {
         "d_p": 37382175,
         "d_s": 9070684,
         "label": 1,
         "sl_max": 3.272,
-        "cost_max": 0.802,
-        "id": "e7b6d9ac2bc54483aa7a796ae04952ae"
+        "cost_max": 1.266,
+        "id": "cda71b12bf72427aa9a537ec57445736",
+        "total_cost": 0
     },
     {
         "d_p": 49864437,
         "d_s": 19154489,
         "label": 0,
         "sl_max": 3.309,
-        "cost_max": 2.179,
-        "id": "a00814af7b5a4eebbc44add1f70c8970"
+        "cost_max": 2.344,
+        "id": "276f1620ec9045cbb903616660b16cbd",
+        "total_cost": 0
     },
     {
         "d_p": 26140272,
         "d_s": 11212981,
         "label": 0,
         "sl_max": 2.426,
-        "cost_max": 1.01,
-        "id": "7e944eaee9f644489140b58a547a5396"
+        "cost_max": 1.211,
+        "id": "1b8258e4d3d540f19dc7b61f6b2a269c",
+        "total_cost": 0
     },
     {
         "d_p": 34550653,
         "d_s": 27609890,
         "label": 1,
         "sl_max": 2.773,
-        "cost_max": 1.368,
-        "id": "b67c3ad8f6da4cfb9b7551f56192fb6a"
+        "cost_max": 1.997,
+        "id": "5318ea2b0ef34d3eb3739c775e3d9d7b",
+        "total_cost": 0
     },
     {
         "d_p": 14358853,
         "d_s": 42882250,
         "label": 0,
         "sl_max": 3.039,
-        "cost_max": 2.152,
-        "id": "f0802c2b10764c6a98566ebe44babfca"
+        "cost_max": 2.406,
+        "id": "0a50768aa889440da568bcc6d53a199a",
+        "total_cost": 0
     },
     {
         "d_p": 48789647,
         "d_s": 13748399,
         "label": 1,
         "sl_max": 3.116,
-        "cost_max": 1.42,
-        "id": "dce85b9573f8410fb03275b67272e78c"
+        "cost_max": 1.859,
+        "id": "27e76e8456194fb2b5dbd7f1c5b98300",
+        "total_cost": 0
     },
     {
         "d_p": 35425278,
         "d_s": 48849944,
         "label": 1,
         "sl_max": 4.294,
-        "cost_max": 2.57,
-        "id": "cdb38d6e915c4ffcaf682014dd8a5bdc"
+        "cost_max": 3.131,
+        "id": "e6f18de8732b469db2873ad14f6961a8",
+        "total_cost": 0
     },
     {
         "d_p": 38749623,
         "d_s": 18462672,
         "label": 1,
         "sl_max": 2.827,
-        "cost_max": 1.921,
-        "id": "4b824cb8a4a94047ba33ce8a668b9aef"
+        "cost_max": 2.02,
+        "id": "5137ab3700c346f8a405ebfc128233e5",
+        "total_cost": 0
     },
     {
         "d_p": 11927984,
         "d_s": 33294303,
         "label": 0,
         "sl_max": 1.838,
-        "cost_max": 1.842,
-        "id": "78003b52a031453691c224d2ae25a569"
+        "cost_max": 1.95,
+        "id": "e61653a675244e07bbbe1b9c329f36d5",
+        "total_cost": 0
     },
     {
         "d_p": 15094941,
         "d_s": 34968181,
         "label": 0,
         "sl_max": 3.33,
-        "cost_max": 1.649,
-        "id": "b56d0ef2be4f496886a21540cb1deb37"
+        "cost_max": 1.98,
+        "id": "a62679d6a6d44fc78f61d670a20ffb15",
+        "total_cost": 0
     },
     {
         "d_p": 3079437,
         "d_s": 12078894,
         "label": 1,
         "sl_max": 0.772,
-        "cost_max": 0.354,
-        "id": "855f720355e44f8ca35ecb0383dd2f95"
+        "cost_max": 0.559,
+        "id": "4724fb7d10b446598837d7cac859f02f",
+        "total_cost": 0
     },
     {
         "d_p": 31050559,
         "d_s": 15742443,
         "label": 0,
         "sl_max": 1.929,
-        "cost_max": 1.138,
-        "id": "d92bcdee2e654fc497e60bc2cb064de7"
+        "cost_max": 1.487,
+        "id": "ebf49a5b43444314bf9d3e9ae39a9d85",
+        "total_cost": 0
     },
     {
         "d_p": 48407166,
         "d_s": 20026253,
         "label": 1,
         "sl_max": 3.349,
-        "cost_max": 2.102,
-        "id": "9b0805f4328649a4affc3de7a4a98b05"
+        "cost_max": 2.313,
+        "id": "1c874d70c3a747aa8fdfbc0f176e7f98",
+        "total_cost": 0
     },
     {
         "d_p": 18226098,
         "d_s": 1230497,
         "label": 0,
         "sl_max": 1.178,
-        "cost_max": 0.39,
-        "id": "3c4ac6c9424146f4b8d5922bdc3fd9d0"
+        "cost_max": 0.521,
+        "id": "1b51236d027b4a78ba79edaf7d2fe32a",
+        "total_cost": 0
     },
     {
         "d_p": 40343755,
         "d_s": 46620866,
         "label": 0,
         "sl_max": 4.394,
-        "cost_max": 1.828,
-        "id": "1d337cb750f344b9aeed3ad649abdaf4"
+        "cost_max": 2.856,
+        "id": "086c5af210424d2ba83e4d560b07e5be",
+        "total_cost": 0
     },
     {
         "d_p": 49476724,
         "d_s": 29352170,
         "label": 0,
         "sl_max": 3.666,
-        "cost_max": 2.641,
-        "id": "ed0e1acc07374220b17848683908f754"
+        "cost_max": 2.828,
+        "id": "5ce56fd202cb452687aed6969e6c6491",
+        "total_cost": 0
     },
     {
         "d_p": 13115080,
         "d_s": 5257976,
         "label": 1,
         "sl_max": 1.349,
-        "cost_max": 0.501,
-        "id": "13dd0f3274f944d59cb0481cf1a9127c"
+        "cost_max": 0.594,
+        "id": "2460db3be2214bb8a0e6de1a7fa1b7cf",
+        "total_cost": 0
     },
     {
         "d_p": 19832283,
         "d_s": 46974600,
         "label": 0,
         "sl_max": 3.392,
-        "cost_max": 2.12,
-        "id": "c991910f391c4e45b7efa5c39923c43c"
+        "cost_max": 2.614,
+        "id": "9fca47e55fa04944857a1bf1417126b4",
+        "total_cost": 0
     },
     {
         "d_p": 26243949,
         "d_s": 36378806,
         "label": 1,
         "sl_max": 3.083,
-        "cost_max": 1.37,
-        "id": "321b226d648a45e280a9000d945ed21e"
+        "cost_max": 2.112,
+        "id": "d673f6acc51d4b6794c6e287f81d6730",
+        "total_cost": 0
     },
     {
         "d_p": 42532623,
         "d_s": 26479764,
         "label": 1,
         "sl_max": 5.513,
-        "cost_max": 1.485,
-        "id": "82460335ee954dbbb8b5363372035378"
+        "cost_max": 2.154,
+        "id": "e88cef4c60364277af9c23ef25eb6596",
+        "total_cost": 0
     },
     {
         "d_p": 36334086,
         "d_s": 31146259,
         "label": 1,
         "sl_max": 4.516,
-        "cost_max": 1.815,
-        "id": "cbb4e3c0623144b4b3bdf23af457a9d1"
+        "cost_max": 2.315,
+        "id": "ea679a7f415d44098b7ca0b38f083ef2",
+        "total_cost": 0
     },
     {
         "d_p": 13230056,
         "d_s": 8368546,
         "label": 1,
         "sl_max": 0.957,
-        "cost_max": 0.554,
-        "id": "c177f984141848fb98597569380a12f7"
+        "cost_max": 0.711,
+        "id": "6f58d29d1d5f43a8885149a50045107f",
+        "total_cost": 0
     },
     {
         "d_p": 1386350,
         "d_s": 4164482,
         "label": 1,
         "sl_max": 0.294,
-        "cost_max": 0.243,
-        "id": "bcb386dfba74422b9d14e088e0827b32"
+        "cost_max": 0.247,
+        "id": "3c69f9b67bc34218b9962e9dd77820b4",
+        "total_cost": 0
     },
     {
         "d_p": 34816541,
         "d_s": 24135789,
         "label": 0,
         "sl_max": 3.063,
-        "cost_max": 1.525,
-        "id": "6ae7c60f3080467ab36231dc86f99056"
+        "cost_max": 1.961,
+        "id": "ad89b5f2ac01470e9e9da3e1ed5d21f4",
+        "total_cost": 0
     },
     {
         "d_p": 15865181,
         "d_s": 11290550,
         "label": 1,
         "sl_max": 1.994,
-        "cost_max": 0.691,
-        "id": "837e18897fc843088d40b73fe57b2087"
+        "cost_max": 0.901,
+        "id": "e3b6af06cc324826853b91b7b7a12e05",
+        "total_cost": 0
     },
     {
         "d_p": 6559867,
         "d_s": 22106544,
         "label": 1,
         "sl_max": 1.199,
-        "cost_max": 1.225,
-        "id": "aca2a4d36ff44b9aaebb772a3538b5d7"
+        "cost_max": 1.271,
+        "id": "3689d1b0e90f404d812cf10bb2366e6b",
+        "total_cost": 0
     },
     {
         "d_p": 19286999,
         "d_s": 18895464,
         "label": 1,
         "sl_max": 1.85,
-        "cost_max": 1.205,
-        "id": "a3bcbaad6ef74128b2209e5a166f7868"
+        "cost_max": 1.396,
+        "id": "46de1e6cb96f42e1aebd5cf499915bf6",
+        "total_cost": 0
     },
     {
         "d_p": 45508708,
         "d_s": 18330093,
         "label": 0,
         "sl_max": 4.872,
-        "cost_max": 2.177,
-        "id": "0a0e1209bfab47869587fabfd06a26e4"
+        "cost_max": 2.24,
+        "id": "87f90616b0e343f1a34a0169eb47b3ae",
+        "total_cost": 0
     },
     {
         "d_p": 3665078,
         "d_s": 47291488,
         "label": 0,
         "sl_max": 3.405,
-        "cost_max": 1.638,
-        "id": "6a7dbf0f8add4dff925679abd3c92909"
+        "cost_max": 2.14,
+        "id": "2634b37ba3bb4832b9ca47bdbbde7773",
+        "total_cost": 0
     },
     {
         "d_p": 49715386,
         "d_s": 21296910,
         "label": 0,
         "sl_max": 4.613,
-        "cost_max": 2.211,
-        "id": "63b2c092698445f989a476aaef347c73"
+        "cost_max": 2.418,
+        "id": "fbab6e44f75c4242aecddd664da454ff",
+        "total_cost": 0
     },
     {
         "d_p": 43434162,
         "d_s": 4290417,
         "label": 0,
         "sl_max": 3.3,
-        "cost_max": 1.087,
-        "id": "5e8ebbf6c22045b08c15578a5cf4b08d"
+        "cost_max": 1.345,
+        "id": "3c65b7e1e59e4a7d9e41db2c5351d616",
+        "total_cost": 0
     },
     {
         "d_p": 39538029,
         "d_s": 21915170,
         "label": 0,
         "sl_max": 2.605,
-        "cost_max": 2.156,
-        "id": "a6cef09483724007a1fa427e929238b1"
+        "cost_max": 2.231,
+        "id": "4557c91389d94e57845bab69b5905967",
+        "total_cost": 0
     },
     {
         "d_p": 37654673,
         "d_s": 26968622,
         "label": 0,
         "sl_max": 3.44,
-        "cost_max": 1.349,
-        "id": "825c63e1cb594b558f89034011bd1cc0"
+        "cost_max": 2.026,
+        "id": "fa5bd044a74648eca9c0aa29a08c98c7",
+        "total_cost": 0
     },
     {
         "d_p": 10484045,
         "d_s": 48018984,
         "label": 0,
         "sl_max": 3.717,
-        "cost_max": 2.477,
-        "id": "009290fb7b964803a66e20d15854298e"
+        "cost_max": 2.62,
+        "id": "ac79ee6c1e8a44ad8e5086b1ca7337bf",
+        "total_cost": 0
     },
     {
         "d_p": 8234577,
         "d_s": 1172133,
         "label": 0,
         "sl_max": 0.515,
-        "cost_max": 0.293,
-        "id": "f35acbb17f8a404ab1f864e72e355572"
+        "cost_max": 0.301,
+        "id": "f8d2b95d913243c09185b112d9f4eb72",
+        "total_cost": 0
     },
     {
         "d_p": 13076348,
         "d_s": 20355310,
         "label": 1,
         "sl_max": 2.427,
-        "cost_max": 1.031,
-        "id": "f14cc71184944b9f86822e41d07c70af"
+        "cost_max": 1.258,
+        "id": "218696d8c68b48dea83720bfcb3665bf",
+        "total_cost": 0
     },
     {
         "d_p": 45834002,
         "d_s": 43875119,
         "label": 1,
         "sl_max": 5.578,
-        "cost_max": 1.872,
-        "id": "bc858d1efb86489cad7e21aceb1e9448"
+        "cost_max": 2.89,
+        "id": "83d1212374814bd78f8a97d90f3f90da",
+        "total_cost": 0
     },
     {
         "d_p": 1411346,
         "d_s": 1318167,
         "label": 1,
         "sl_max": 0.208,
-        "cost_max": 0.102,
-        "id": "a97d865dbb6b49168a536fa1c6884454"
+        "cost_max": 0.106,
+        "id": "1fcd2a795cfa4d828b9a149680cc9bae",
+        "total_cost": 0
     },
     {
         "d_p": 9691607,
         "d_s": 46097188,
         "label": 1,
         "sl_max": 3.372,
-        "cost_max": 2.022,
-        "id": "488df4a96557488686d044279417f1cd"
+        "cost_max": 2.366,
+        "id": "8ec4c481eb7f4850abc02da3c0b94745",
+        "total_cost": 0
     },
     {
         "d_p": 8685349,
         "d_s": 11835170,
         "label": 1,
         "sl_max": 1.236,
-        "cost_max": 0.702,
-        "id": "b1240e82c7d543bca9a41504ec48c6cd"
+        "cost_max": 0.792,
+        "id": "a3152b32f3014e68b94559e9b1c6cd23",
+        "total_cost": 0
     },
     {
         "d_p": 41167818,
         "d_s": 16079102,
         "label": 1,
         "sl_max": 4.227,
-        "cost_max": 1.483,
-        "id": "7a8a734f44af4f42bfe64005572ebe32"
+        "cost_max": 1.816,
+        "id": "75e18b2fb45344d2a00cd3085edc9524",
+        "total_cost": 0
     },
     {
         "d_p": 44340968,
         "d_s": 46533759,
         "label": 1,
         "sl_max": 5.622,
-        "cost_max": 3.219,
-        "id": "980de5a0e84a4f06ba1c7b77e7b72418"
+        "cost_max": 3.482,
+        "id": "5d17ba4376d14d60be29de0b1d9d4069",
+        "total_cost": 0
     },
     {
         "d_p": 15646982,
         "d_s": 10750109,
         "label": 1,
         "sl_max": 1.659,
-        "cost_max": 0.601,
-        "id": "bd1e38f77f59418698ed34f7654e7825"
+        "cost_max": 0.844,
+        "id": "b8f022c64fe24d3085fa4f7ad5fa506a",
+        "total_cost": 0
     },
     {
         "d_p": 11051306,
         "d_s": 36795529,
         "label": 1,
         "sl_max": 3.062,
-        "cost_max": 1.854,
-        "id": "4a83f17ccd954776bebe7d33404b3a2a"
+        "cost_max": 2.044,
+        "id": "3c5a2ae1a5154306bd30d746bb828e89",
+        "total_cost": 0
     },
     {
         "d_p": 42284731,
         "d_s": 41543884,
         "label": 1,
         "sl_max": 6.552,
-        "cost_max": 3.278,
-        "id": "0ca9a4111dd14ec5a7e3658ffc329567"
+        "cost_max": 3.319,
+        "id": "10131f73b9d041c388b9334dce07f1dd",
+        "total_cost": 0
     },
     {
         "d_p": 13933526,
         "d_s": 28899722,
         "label": 1,
         "sl_max": 2.911,
-        "cost_max": 1.14,
-        "id": "f84c2b38f389444db8b2d5127b07f016"
+        "cost_max": 1.574,
+        "id": "3e2b4aef30334b4dbef21599f2a4143e",
+        "total_cost": 0
     },
     {
         "d_p": 23990394,
         "d_s": 38300713,
         "label": 0,
         "sl_max": 3.922,
-        "cost_max": 1.57,
-        "id": "3719d259b08f4ae98b212c98e6f4ae14"
+        "cost_max": 2.209,
+        "id": "008cb685837d4ea29f7f5d25d4f07299",
+        "total_cost": 0
     },
     {
         "d_p": 20670781,
         "d_s": 25265515,
         "label": 0,
         "sl_max": 2.579,
-        "cost_max": 1.491,
-        "id": "28d9a7d06a3d43f48ee49528ac17723b"
+        "cost_max": 1.726,
+        "id": "f50fc022f6904e6187f7919d24db532b",
+        "total_cost": 0
     },
     {
         "d_p": 38109037,
         "d_s": 23080265,
         "label": 0,
         "sl_max": 4.092,
-        "cost_max": 1.531,
-        "id": "4beab67972ef4ae2bdc2870a87bbd351"
+        "cost_max": 1.991,
+        "id": "c4a3861b77c742fbb3ff0f8cd44c83a0",
+        "total_cost": 0
     },
     {
         "d_p": 31160612,
         "d_s": 25478536,
         "label": 0,
         "sl_max": 4.166,
-        "cost_max": 1.953,
-        "id": "7b8eeddf8a3d45419f4ad0691f4e969d"
+        "cost_max": 2.106,
+        "id": "f96ef01d10254ff0ad43b02561d694ee",
+        "total_cost": 0
     },
     {
         "d_p": 32952082,
         "d_s": 47087455,
         "label": 1,
         "sl_max": 5.253,
-        "cost_max": 3.251,
-        "id": "fa70809493364fdcbb850996336817a9"
+        "cost_max": 3.306,
+        "id": "79782f18458246f5b1683cf57d2ae6d5",
+        "total_cost": 0
     },
     {
         "d_p": 31333888,
         "d_s": 24827253,
         "label": 1,
         "sl_max": 3.417,
-        "cost_max": 1.906,
-        "id": "ecc8a16449ef4836adcd15817f438158"
+        "cost_max": 2.071,
+        "id": "e15c265d06d24969abab2356aa7588b2",
+        "total_cost": 0
     },
     {
         "d_p": 27354504,
         "d_s": 31700691,
         "label": 0,
         "sl_max": 2.676,
-        "cost_max": 2.296,
-        "id": "20cef578ba054b319c3179c81c352a2a"
+        "cost_max": 2.362,
+        "id": "df4a3ef562e34362a2b874a852969f4b",
+        "total_cost": 0
     },
     {
         "d_p": 45609057,
         "d_s": 31150505,
         "label": 0,
         "sl_max": 4.895,
-        "cost_max": 2.76,
-        "id": "0d35cf8072fe479d97617b709e7c621b"
+        "cost_max": 2.86,
+        "id": "318e42570224401695453aa00b885a83",
+        "total_cost": 0
     },
     {
         "d_p": 1054786,
         "d_s": 26096703,
         "label": 1,
         "sl_max": 1.966,
-        "cost_max": 0.944,
-        "id": "35ca109cb063495a978696f20db46ffa"
+        "cost_max": 1.179,
+        "id": "d800c4f34fd74121bf2fd54ff7b839f2",
+        "total_cost": 0
     },
     {
         "d_p": 17890556,
         "d_s": 24655065,
         "label": 1,
         "sl_max": 3.109,
-        "cost_max": 1.158,
-        "id": "d42cd27f3ec040adb6638dafa4ded72a"
+        "cost_max": 1.525,
+        "id": "e5b2be9af57e41a98a44668f37e4a5c9",
+        "total_cost": 0
     },
     {
         "d_p": 8374543,
         "d_s": 4507036,
         "label": 1,
         "sl_max": 0.987,
-        "cost_max": 0.353,
-        "id": "804e3ac6a2b94787b0c82bf01957c484"
+        "cost_max": 0.427,
+        "id": "8487990d35434818b0e61b16d79e9629",
+        "total_cost": 0
     },
     {
         "d_p": 20045095,
         "d_s": 5237947,
         "label": 0,
         "sl_max": 1.404,
-        "cost_max": 0.763,
-        "id": "fa8d22391bb049ea9687ed589b963855"
+        "cost_max": 0.823,
+        "id": "9af171e3995f48638cc0c84c1cc7bc9e",
+        "total_cost": 0
     },
     {
         "d_p": 33772834,
         "d_s": 38862501,
         "label": 0,
         "sl_max": 4.6,
-        "cost_max": 2.377,
-        "id": "ea9ea8afed0e43e587fa7b83e2b4496f"
+        "cost_max": 2.724,
+        "id": "ed3013aab3fa40bbab41caa5d544bfd1",
+        "total_cost": 0
     },
     {
         "d_p": 16804173,
         "d_s": 8915638,
         "label": 0,
         "sl_max": 1.85,
-        "cost_max": 0.673,
-        "id": "bf9e889cd26f4d69826c5d3b7fc54672"
+        "cost_max": 0.839,
+        "id": "dc4b8919bfbc47f89f8728530a0665ad",
+        "total_cost": 0
     },
     {
         "d_p": 4751594,
         "d_s": 46885885,
         "label": 0,
         "sl_max": 3.458,
-        "cost_max": 1.553,
-        "id": "dc9fed74fdb24aa7bf2f1b8b09aeffb0"
+        "cost_max": 2.113,
+        "id": "d19a029095ce4c109c2dc55b444a99f8",
+        "total_cost": 0
     },
     {
         "d_p": 6470521,
         "d_s": 22819453,
         "label": 0,
         "sl_max": 1.174,
-        "cost_max": 0.729,
-        "id": "8db95fdd15d641549af2b88e9a4427c0"
+        "cost_max": 1.093,
+        "id": "9591eda543644b20bedf037eb5f1019f",
+        "total_cost": 0
     },
     {
         "d_p": 11133937,
         "d_s": 10761086,
         "label": 0,
         "sl_max": 1.36,
-        "cost_max": 0.839,
-        "id": "d20d13763d3e4883a10b40b0d05d3abc"
+        "cost_max": 0.859,
+        "id": "6ddf741a43ab447fb5ab8b21b85b8170",
+        "total_cost": 0
     },
     {
         "d_p": 3921474,
         "d_s": 4100388,
         "label": 0,
         "sl_max": 0.379,
-        "cost_max": 0.24,
-        "id": "92e2e60d52fc4bfbba83d34f5d8acb91"
+        "cost_max": 0.29,
+        "id": "6eb90c4874b1427a87cb92092b7d4fb4",
+        "total_cost": 0
     },
     {
         "d_p": 47048610,
         "d_s": 10865715,
         "label": 0,
         "sl_max": 2.396,
-        "cost_max": 1.455,
-        "id": "39ebe2373df5436c8ff501b2663a8139"
+        "cost_max": 1.755,
+        "id": "f928aa5747204c81881194a8184b91f9",
+        "total_cost": 0
     },
     {
         "d_p": 26207003,
         "d_s": 41872341,
         "label": 0,
         "sl_max": 5.095,
-        "cost_max": 2.329,
-        "id": "17fb0160edb4471fa78e3b8dfa1c0d76"
+        "cost_max": 2.66,
+        "id": "98a8600874674199ad09d863ca57a847",
+        "total_cost": 0
     },
     {
         "d_p": 49234130,
         "d_s": 27401219,
         "label": 0,
         "sl_max": 3.172,
-        "cost_max": 2.63,
-        "id": "4e301f14c4154a8f8353b9d3c8b1a139"
+        "cost_max": 2.76,
+        "id": "c825eaeb82664d94b6f99205ca9ca41d",
+        "total_cost": 0
     },
     {
         "d_p": 12146510,
         "d_s": 17323942,
         "label": 1,
         "sl_max": 2.302,
-        "cost_max": 1.167,
-        "id": "6e3de22963af4557af327392345a1c3a"
+        "cost_max": 1.205,
+        "id": "4c296893a97146d58440ad5b69fc4e33",
+        "total_cost": 0
     },
     {
         "d_p": 22024180,
         "d_s": 25336970,
         "label": 1,
         "sl_max": 2.967,
-        "cost_max": 1.363,
-        "id": "443c3c22fe654c6da52280022fa2c3da"
+        "cost_max": 1.702,
+        "id": "a82d28233e3341d5a0aa45a45e4adc5a",
+        "total_cost": 0
     },
     {
         "d_p": 1183310,
         "d_s": 39973873,
         "label": 1,
         "sl_max": 2.371,
-        "cost_max": 1.411,
-        "id": "0646de6b63924b4ba51077c666039bc1"
+        "cost_max": 1.785,
+        "id": "568347ec20a240c3a3ddb563af1f640e",
+        "total_cost": 0
     },
     {
         "d_p": 14497035,
         "d_s": 32623365,
         "label": 1,
         "sl_max": 3.548,
-        "cost_max": 1.423,
-        "id": "507d40b02b5d4d7393fb240a009e6ec0"
+        "cost_max": 1.809,
+        "id": "1284d44048554a7f9317d7e72cac46b9",
+        "total_cost": 0
     },
     {
         "d_p": 12944832,
         "d_s": 8325250,
         "label": 1,
         "sl_max": 1.463,
-        "cost_max": 0.711,
-        "id": "f0c9c0337e60455ba560bc39adfc7526"
+        "cost_max": 0.767,
+        "id": "a8aa38cd71f64f7bac421c57fc53ed51",
+        "total_cost": 0
     },
     {
         "d_p": 42148764,
         "d_s": 28381517,
         "label": 0,
         "sl_max": 4.596,
-        "cost_max": 1.454,
-        "id": "1e3eb2075fce4771953ca65a149ae3af"
+        "cost_max": 2.192,
+        "id": "e1ea3d259ad14cb8a5fd94a765037951",
+        "total_cost": 0
     },
     {
         "d_p": 7537222,
         "d_s": 9063505,
         "label": 1,
         "sl_max": 1.292,
-        "cost_max": 0.368,
-        "id": "c8d4bfaeeb4d491282697f1380134cab"
+        "cost_max": 0.555,
+        "id": "ff6fed631a2b409db64505f0f79c3be9",
+        "total_cost": 0
     },
     {
         "d_p": 49102424,
         "d_s": 45256930,
         "label": 0,
         "sl_max": 7.201,
-        "cost_max": 2.202,
-        "id": "6197925f9c02466a93d690dbd3f3aa80"
+        "cost_max": 3.122,
+        "id": "dae06f01b31c43c183a6a8894a482cde",
+        "total_cost": 0
     },
     {
         "d_p": 4331248,
         "d_s": 43947282,
         "label": 0,
         "sl_max": 3.33,
-        "cost_max": 1.502,
-        "id": "784d0911500541f293d6a26d4c1f1487"
+        "cost_max": 1.997,
+        "id": "5ec3971b4cf34e28b77b63e20df4844e",
+        "total_cost": 0
     },
     {
         "d_p": 6523959,
         "d_s": 18883568,
         "label": 0,
         "sl_max": 1.488,
-        "cost_max": 0.626,
-        "id": "cee677be60bf463788a5fccd2fbea317"
+        "cost_max": 0.934,
+        "id": "71332c5776f94dc6b3a6a897cd3e5ed3",
+        "total_cost": 0
     },
     {
         "d_p": 4067682,
         "d_s": 41008874,
         "label": 1,
         "sl_max": 2.362,
-        "cost_max": 1.598,
-        "id": "b4a6b13ad9a24510981425577eb27f84"
+        "cost_max": 1.943,
+        "id": "ff76a18d1cf740369a9473695c6dd5e6",
+        "total_cost": 0
     },
     {
         "d_p": 4628407,
         "d_s": 8617789,
         "label": 0,
         "sl_max": 0.57,
-        "cost_max": 0.408,
-        "id": "119588499a044da39378df0b709255df"
+        "cost_max": 0.505,
+        "id": "cc79abc3f3b14bce8d02c47070d9fe06",
+        "total_cost": 0
     },
     {
         "d_p": 23417357,
         "d_s": 1350172,
         "label": 1,
         "sl_max": 1.448,
-        "cost_max": 0.445,
-        "id": "2dd012c46dae4f4bb4e9a1188813e56f"
+        "cost_max": 0.64,
+        "id": "ef48713bf2464617abe82723c330ff63",
+        "total_cost": 0
     },
     {
         "d_p": 17600066,
         "d_s": 27960828,
         "label": 0,
         "sl_max": 2.527,
-        "cost_max": 1.682,
-        "id": "338dfec066d549e3a8bfe01634a37d21"
+        "cost_max": 1.828,
+        "id": "4e26485de4524a20b513cca0388f6e6b",
+        "total_cost": 0
     },
     {
         "d_p": 33335866,
         "d_s": 20418769,
         "label": 0,
         "sl_max": 3.376,
-        "cost_max": 1.049,
-        "id": "c85c088571d844ab8ab93ca8fe432707"
+        "cost_max": 1.632,
+        "id": "cc878b96c4ee4d7b8670a20e21e3feb0",
+        "total_cost": 0
     },
     {
         "d_p": 5949750,
         "d_s": 31764874,
         "label": 1,
         "sl_max": 2.783,
-        "cost_max": 1.72,
-        "id": "e54aef5c45e54260ae2f79bf3ea0f591"
+        "cost_max": 1.748,
+        "id": "f58791752e53437a9aff12ed1dfa298f",
+        "total_cost": 0
     },
     {
         "d_p": 10825009,
         "d_s": 24122850,
         "label": 1,
         "sl_max": 2.667,
-        "cost_max": 1.155,
-        "id": "c7ef42611aaa4d96b3d9af631a63b65f"
+        "cost_max": 1.381,
+        "id": "ff7a9f125c34461291a19565a817ada1",
+        "total_cost": 0
     },
     {
         "d_p": 28941005,
         "d_s": 40609279,
         "label": 0,
         "sl_max": 5.056,
-        "cost_max": 1.502,
-        "id": "7f865682161d4bd5ae6986ac8572b44b"
+        "cost_max": 2.34,
+        "id": "9d9fbca8b5054a07ae50bb0979fb771a",
+        "total_cost": 0
     },
     {
         "d_p": 47325731,
         "d_s": 27020412,
         "label": 0,
         "sl_max": 3.511,
-        "cost_max": 2.121,
-        "id": "32feb87639e7405ab65070bb95fcb7b4"
+        "cost_max": 2.511,
+        "id": "bf551de624594cfeb8ba702455be94ab",
+        "total_cost": 0
     },
     {
         "d_p": 25256063,
         "d_s": 44468624,
         "label": 0,
         "sl_max": 4.824,
-        "cost_max": 1.647,
-        "id": "838bc0d0c690495086292822a503c76b"
+        "cost_max": 2.447,
+        "id": "a01fb8e860374ce2b5b07f7ea21358cf",
+        "total_cost": 0
     },
     {
         "d_p": 45716693,
         "d_s": 1851675,
         "label": 0,
         "sl_max": 2.814,
-        "cost_max": 1.403,
-        "id": "967b7528a280468a9c9d83a399e6c5c1"
+        "cost_max": 1.44,
+        "id": "ee102f6024c848bfa8ddb51ef3b3335d",
+        "total_cost": 0
     },
     {
         "d_p": 35322524,
         "d_s": 4182529,
         "label": 0,
         "sl_max": 2.33,
-        "cost_max": 0.875,
-        "id": "44eba8ee3fdc4be5bdd251eccc3fdd17"
+        "cost_max": 1.111,
+        "id": "fc6e060b0eee4a948abe4be6e6db4b67",
+        "total_cost": 0
     },
     {
         "d_p": 6135990,
         "d_s": 29758268,
         "label": 0,
         "sl_max": 2.618,
-        "cost_max": 1.01,
-        "id": "40f78e61c41b46208609a9f980107a13"
+        "cost_max": 1.407,
+        "id": "b14c85f63b2941cb855de95f6ceb3a57",
+        "total_cost": 0
     },
     {
         "d_p": 28976494,
         "d_s": 14621833,
         "label": 0,
         "sl_max": 2.602,
-        "cost_max": 1.257,
-        "id": "d92e766abcd0439491304529abe1d1bf"
+        "cost_max": 1.463,
+        "id": "a55f4a7f9253434a83a5e18d2392defb",
+        "total_cost": 0
     },
     {
         "d_p": 27929086,
         "d_s": 39521620,
         "label": 1,
         "sl_max": 5.373,
-        "cost_max": 2.694,
-        "id": "577b1515393b46e494d79d3afaa85f82"
+        "cost_max": 2.766,
+        "id": "f1e26ffbd5944001b741f9736b343e71",
+        "total_cost": 0
     },
     {
         "d_p": 10380097,
         "d_s": 7862086,
         "label": 0,
         "sl_max": 0.832,
-        "cost_max": 0.534,
-        "id": "c3969038d3aa45978c1122a31ef941af"
+        "cost_max": 0.636,
+        "id": "65a1ef540e884396a76883489366895c",
+        "total_cost": 0
     },
     {
         "d_p": 36808185,
         "d_s": 15354790,
         "label": 0,
         "sl_max": 3.456,
-        "cost_max": 1.386,
-        "id": "5e143505883146cfb1363ef0b2136a40"
+        "cost_max": 1.677,
+        "id": "c5e13fd7bf074d449eb1c0a7e29d673f",
+        "total_cost": 0
     },
     {
         "d_p": 36238832,
         "d_s": 27585744,
         "label": 1,
         "sl_max": 4.401,
-        "cost_max": 1.376,
-        "id": "7826d6e6fa8b40f9ae87f2f5681a4ef9"
+        "cost_max": 2.03,
+        "id": "3bae196f619c4b04833fce90a7e837ab",
+        "total_cost": 0
     },
     {
         "d_p": 34700043,
         "d_s": 33988021,
         "label": 1,
         "sl_max": 4.732,
-        "cost_max": 1.604,
-        "id": "cf1969efbe5f4a3d9c2a7d343b6620c9"
+        "cost_max": 2.286,
+        "id": "dacfd393fcc8424d968455329bff78a6",
+        "total_cost": 0
     },
     {
         "d_p": 17926565,
         "d_s": 10155458,
         "label": 1,
         "sl_max": 1.783,
-        "cost_max": 0.599,
-        "id": "72cf4b72974e456793b4d5f0fb94aa3d"
+        "cost_max": 0.867,
+        "id": "cd713edd870e43d586e2292b50af8644",
+        "total_cost": 0
     },
     {
         "d_p": 35255189,
         "d_s": 9129544,
         "label": 1,
         "sl_max": 2.81,
-        "cost_max": 0.919,
-        "id": "f4a9719a0bb3488a8c403912f02b9745"
+        "cost_max": 1.276,
+        "id": "3da75d9c57a84720a28a30e63cfa74bc",
+        "total_cost": 0
     },
     {
         "d_p": 31712212,
         "d_s": 41258378,
         "label": 0,
         "sl_max": 5.335,
-        "cost_max": 2.046,
-        "id": "471a65d3dbfa4c429feb7f7dfc1ce6cf"
+        "cost_max": 2.627,
+        "id": "46274d97b177478a9855aa0f6d1cf369",
+        "total_cost": 0
     },
     {
         "d_p": 13278448,
         "d_s": 3030948,
         "label": 1,
         "sl_max": 0.842,
-        "cost_max": 0.428,
-        "id": "650b136b1e044c508faf4d5d026dd13f"
+        "cost_max": 0.501,
+        "id": "aa596e86ae0f474da9054dbcd2c1b0dc",
+        "total_cost": 0
     },
     {
         "d_p": 44923420,
         "d_s": 16235576,
         "label": 1,
         "sl_max": 3.229,
-        "cost_max": 1.944,
-        "id": "3cd8437c7854453d877e5a467a79530e"
+        "cost_max": 2.073,
+        "id": "5fabeeac437643f4ae6f4e1586f6130f",
+        "total_cost": 0
     },
     {
         "d_p": 17373138,
         "d_s": 24821414,
         "label": 0,
         "sl_max": 2.498,
-        "cost_max": 1.061,
-        "id": "c58aca468def477c8a0233646c5c7df9"
+        "cost_max": 1.482,
+        "id": "41c7591f99594270be30351289962a7c",
+        "total_cost": 0
     },
     {
         "d_p": 10030217,
         "d_s": 36283554,
         "label": 0,
         "sl_max": 2.006,
-        "cost_max": 1.718,
-        "id": "a271fcd8103945ed8165459ba9947bd2"
+        "cost_max": 1.956,
+        "id": "f52c693c7e984116804d6774e9545724",
+        "total_cost": 0
     },
     {
         "d_p": 42358504,
         "d_s": 14582858,
         "label": 1,
         "sl_max": 3.025,
-        "cost_max": 1.395,
-        "id": "8dcf060029c0431caaccf35266a03942"
+        "cost_max": 1.758,
+        "id": "4649f57d8a3645e0ae8ab15dc24b02ba",
+        "total_cost": 0
     },
     {
         "d_p": 13869782,
         "d_s": 33002771,
         "label": 1,
         "sl_max": 3.651,
-        "cost_max": 2.039,
-        "id": "c7199d126cb942e198df9698dc2d7096"
+        "cost_max": 2.055,
+        "id": "4315c0ccab004bdebf8384afc60cc613",
+        "total_cost": 0
     },
     {
         "d_p": 20322891,
         "d_s": 12778485,
         "label": 0,
         "sl_max": 1.573,
-        "cost_max": 1.144,
-        "id": "3ade0be2de454233a01d4ef2e6622fe0"
+        "cost_max": 1.207,
+        "id": "7ab3440b45374694a781732bccc6648a",
+        "total_cost": 0
     },
     {
         "d_p": 11135395,
         "d_s": 11060698,
         "label": 1,
         "sl_max": 1.06,
-        "cost_max": 0.805,
-        "id": "bd8f4ab6725d4a9aa66e089c422f79d3"
+        "cost_max": 0.854,
+        "id": "d9ab13f054784d179f52be88edb60ee5",
+        "total_cost": 0
     },
     {
         "d_p": 729139,
         "d_s": 20800512,
         "label": 0,
         "sl_max": 1.117,
-        "cost_max": 0.541,
-        "id": "fd1e516358be4c9e9c44583f00b868c6"
+        "cost_max": 0.853,
+        "id": "dbb9349ed4bc467386598377633d11ca",
+        "total_cost": 0
     },
     {
         "d_p": 48927258,
         "d_s": 23051709,
         "label": 1,
         "sl_max": 2.906,
-        "cost_max": 1.761,
-        "id": "5ef78f60cf05406cbd962b146a6fca06"
+        "cost_max": 2.277,
+        "id": "9650856fac664740a7e8c852dbe39b62",
+        "total_cost": 0
     },
     {
         "d_p": 17087314,
         "d_s": 9915532,
         "label": 0,
         "sl_max": 2.151,
-        "cost_max": 0.951,
-        "id": "b81e5fb865a542dd9871fa264b3eb88d"
+        "cost_max": 0.986,
+        "id": "95b7e16ad03c44fdae8bcc6a3fd09a50",
+        "total_cost": 0
     },
     {
         "d_p": 40789622,
         "d_s": 31312088,
         "label": 0,
         "sl_max": 4.751,
-        "cost_max": 2.69,
-        "id": "6e5d86f82c6848589119d8e59e9654a2"
+        "cost_max": 2.75,
+        "id": "e340205f793c4771ad05af6871334a7d",
+        "total_cost": 0
     },
     {
         "d_p": 17544649,
         "d_s": 17595789,
         "label": 1,
         "sl_max": 2.347,
-        "cost_max": 0.931,
-        "id": "97916b8ca46c4b67a62f437473b43565"
+        "cost_max": 1.216,
+        "id": "9482ac3c417745fabe8fa97de228c2c5",
+        "total_cost": 0
     },
     {
         "d_p": 535565,
         "d_s": 7361646,
         "label": 1,
         "sl_max": 0.414,
-        "cost_max": 0.21,
-        "id": "fdf9387fab00431695b9ea0150e216b5"
+        "cost_max": 0.314,
+        "id": "de0614551be048bc80dcb36e028e4bd9",
+        "total_cost": 0
     },
     {
         "d_p": 22529817,
         "d_s": 16638907,
         "label": 0,
         "sl_max": 1.764,
-        "cost_max": 1.106,
-        "id": "cf593b9cde5840059724d0b11907fe3b"
+        "cost_max": 1.347,
+        "id": "1f6663a127e94c0ab27af78eae36a9dc",
+        "total_cost": 0
     },
     {
         "d_p": 49644589,
         "d_s": 1808515,
         "label": 0,
         "sl_max": 3.488,
-        "cost_max": 0.833,
-        "id": "3212d5938b2c41b1aa5f6c9bd57b984e"
+        "cost_max": 1.281,
+        "id": "321cb6c8f86e405893cf0414af4bdbdc",
+        "total_cost": 0
     },
     {
         "d_p": 8820200,
         "d_s": 49228846,
         "label": 1,
         "sl_max": 2.982,
-        "cost_max": 2.599,
-        "id": "c3051c40a0fa42319acbd4f5b35a25ba"
+        "cost_max": 2.675,
+        "id": "a2b0a533aa0f49bc99fdbab80fcbe8e2",
+        "total_cost": 0
     },
     {
         "d_p": 39932948,
         "d_s": 31280984,
         "label": 1,
         "sl_max": 4.397,
-        "cost_max": 2.284,
-        "id": "8625ee500034409997aad4c37631bae0"
+        "cost_max": 2.571,
+        "id": "d2205a1643e546a383cfdb910a6f6efd",
+        "total_cost": 0
     },
     {
         "d_p": 39660401,
         "d_s": 45573307,
         "label": 1,
         "sl_max": 5.05,
-        "cost_max": 3.223,
-        "id": "2907812616764f9e9b245bae4cd1bd50"
+        "cost_max": 3.37,
+        "id": "29d08b292f3d48a9ae55d9c5abcb0248",
+        "total_cost": 0
     },
     {
         "d_p": 42916221,
         "d_s": 49536762,
         "label": 0,
         "sl_max": 7.336,
-        "cost_max": 3.132,
-        "id": "0f12b959529e4dadbefb91c250df9616"
+        "cost_max": 3.512,
+        "id": "0c7930ff6c1441419064de3a9e76f984",
+        "total_cost": 0
     },
     {
         "d_p": 9338912,
         "d_s": 36751711,
         "label": 0,
         "sl_max": 1.921,
-        "cost_max": 1.239,
-        "id": "5d217fd0025d4e36a33088c988d4eba2"
+        "cost_max": 1.766,
+        "id": "910169017ee347548e006ed8dda13257",
+        "total_cost": 0
     },
     {
         "d_p": 23682360,
         "d_s": 34370940,
         "label": 1,
         "sl_max": 3.857,
-        "cost_max": 2.097,
-        "id": "0de40fb8de1b44e388534bea0f5e8c6d"
+        "cost_max": 2.296,
+        "id": "2655af8239374735937c17ab74589331",
+        "total_cost": 0
     },
     {
         "d_p": 2985189,
         "d_s": 48151447,
         "label": 0,
         "sl_max": 3.614,
-        "cost_max": 1.642,
-        "id": "b6f006412205454abdaa65dfaf43d22f"
+        "cost_max": 2.155,
+        "id": "37b3ed2f2f894fe59647010cb3be2ffb",
+        "total_cost": 0
     },
     {
         "d_p": 46534773,
         "d_s": 3110418,
         "label": 0,
         "sl_max": 2.048,
-        "cost_max": 0.902,
-        "id": "c5a54520e5704d2aa6ba7945ca4c4853"
+        "cost_max": 1.292,
+        "id": "e319bf3004ff4dacb0f645a151848d12",
+        "total_cost": 0
     },
     {
         "d_p": 1748269,
         "d_s": 42747613,
         "label": 0,
         "sl_max": 2.485,
-        "cost_max": 1.525,
-        "id": "2a4eb0a5a9b743498b627daaf66db184"
+        "cost_max": 1.924,
+        "id": "1acd585b952e40988f17bb5d0eed60f9",
+        "total_cost": 0
     },
     {
         "d_p": 12451570,
         "d_s": 30981524,
         "label": 0,
         "sl_max": 2.699,
-        "cost_max": 1.318,
-        "id": "70f66379ff934765907b57cfc3f19180"
+        "cost_max": 1.681,
+        "id": "e4fb6458e9324371bf2c711fa28e1c84",
+        "total_cost": 0
     },
     {
         "d_p": 22658353,
         "d_s": 25079430,
         "label": 1,
         "sl_max": 2.513,
-        "cost_max": 1.405,
-        "id": "a08acc960f324b4d89a51e441dfd6f66"
+        "cost_max": 1.722,
+        "id": "64bca05f039647fb9579784403edb818",
+        "total_cost": 0
     },
     {
         "d_p": 24114828,
         "d_s": 10580096,
         "label": 0,
         "sl_max": 2.501,
-        "cost_max": 0.708,
-        "id": "c554f3cdf03f409c854daf3e46403caa"
+        "cost_max": 1.035,
+        "id": "c4c57dd97523439e8a0f8707f8fa8629",
+        "total_cost": 0
     },
     {
         "d_p": 21226165,
         "d_s": 1477010,
         "label": 0,
         "sl_max": 0.987,
-        "cost_max": 0.598,
-        "id": "bdde9079139d4d12a371f5f9d56e5c6a"
+        "cost_max": 0.665,
+        "id": "2b3d5c30d0ce4a60b0ef2ce68521a054",
+        "total_cost": 0
     },
     {
         "d_p": 35782476,
         "d_s": 49035604,
         "label": 0,
         "sl_max": 3.761,
-        "cost_max": 2.026,
-        "id": "81e0e3c347964b2ba48f401c6ef48c08"
+        "cost_max": 2.926,
+        "id": "58c90b37952449c1a6bdb9c8e1c476bf",
+        "total_cost": 0
     },
     {
         "d_p": 16450925,
         "d_s": 38424316,
         "label": 1,
         "sl_max": 3.698,
-        "cost_max": 1.321,
-        "id": "7a969387ad14400282008055e0fb40c6"
+        "cost_max": 1.977,
+        "id": "7dc73305c7c9493e839d60edf31c7499",
+        "total_cost": 0
     },
     {
         "d_p": 38305561,
         "d_s": 37367791,
         "label": 1,
         "sl_max": 5.367,
-        "cost_max": 2.795,
-        "id": "c0bb051ab923465d8db8b4c6424819ca"
+        "cost_max": 2.929,
+        "id": "f28e3f2bfbe14cf99382d29b7332695b",
+        "total_cost": 0
     },
     {
         "d_p": 49152427,
         "d_s": 33221939,
         "label": 1,
         "sl_max": 3.865,
-        "cost_max": 2.889,
-        "id": "936524d82864444ba0f8af37eb8de052"
+        "cost_max": 3.037,
+        "id": "2971311391ee4291bb88275fba3af95c",
+        "total_cost": 0
     },
     {
         "d_p": 35798320,
         "d_s": 28195801,
         "label": 1,
         "sl_max": 4.22,
-        "cost_max": 1.949,
-        "id": "4b0b6793680d4b4cad73746cbcf9ac80"
+        "cost_max": 2.27,
+        "id": "08bfafc6d9be43bfbe61f648ae8004b4",
+        "total_cost": 0
     },
     {
         "d_p": 32021082,
         "d_s": 42699664,
         "label": 0,
         "sl_max": 4.581,
-        "cost_max": 3.061,
-        "id": "140df7ce3b7c4dd68d72170c249dba0b"
+        "cost_max": 3.082,
+        "id": "3ea194dd41bd4068beb75d5632f9ddef",
+        "total_cost": 0
     },
     {
         "d_p": 20186084,
         "d_s": 9664435,
         "label": 0,
         "sl_max": 1.605,
-        "cost_max": 0.727,
-        "id": "0e36960e6c6f42c4bde73278366b005e"
+        "cost_max": 0.944,
+        "id": "0357a098a247435b9568f28ee9cc9a89",
+        "total_cost": 0
     },
     {
         "d_p": 14001072,
         "d_s": 25764528,
         "label": 0,
         "sl_max": 2.589,
-        "cost_max": 1.627,
-        "id": "1c996a362cfa4b9392ff3322d60f8d1e"
+        "cost_max": 1.676,
+        "id": "3f71095e06e2446ab00d51ead3c088d1",
+        "total_cost": 0
     },
     {
         "d_p": 49470553,
         "d_s": 41541461,
         "label": 0,
         "sl_max": 5.433,
-        "cost_max": 2.893,
-        "id": "c4085cd596f94b8094141334755ed848"
+        "cost_max": 3.294,
+        "id": "a8ce81e62f1d4a0caf9d7eeaffb65f7f",
+        "total_cost": 0
     },
     {
         "d_p": 10818798,
         "d_s": 3638427,
         "label": 1,
         "sl_max": 0.805,
-        "cost_max": 0.46,
-        "id": "da847f0328ad4985a342959d60282982"
+        "cost_max": 0.488,
+        "id": "d57b767101f34cd78da3d3d3587cac25",
+        "total_cost": 0
     },
     {
         "d_p": 42312210,
         "d_s": 8799925,
         "label": 1,
         "sl_max": 2.838,
-        "cost_max": 1.072,
-        "id": "c8f2eb513b6b4187a1bff248ff42ba00"
+        "cost_max": 1.455,
+        "id": "8efcb8a23e1a4b42801cfd55638ed084",
+        "total_cost": 0
     },
     {
         "d_p": 12676403,
         "d_s": 20040875,
         "label": 1,
         "sl_max": 1.768,
-        "cost_max": 1.048,
-        "id": "7e42789855024ba08da3cf1389a31fd0"
+        "cost_max": 1.249,
+        "id": "76b17737ee1c4183953a841d6ae40a57",
+        "total_cost": 0
     },
     {
         "d_p": 35188755,
         "d_s": 48804500,
         "label": 0,
         "sl_max": 4.828,
-        "cost_max": 3.369,
-        "id": "2894ad7182f2467e8d4ba2d6ce2e9ecc"
+        "cost_max": 3.445,
+        "id": "89daed92eb6240498e2da7e5132f5324",
+        "total_cost": 0
     },
     {
         "d_p": 24558505,
         "d_s": 5867334,
         "label": 1,
         "sl_max": 2.041,
-        "cost_max": 0.613,
-        "id": "0d918b95d107465f95e1b93fefb68107"
+        "cost_max": 0.863,
+        "id": "5b70f8d800b0495c9bd8c9021421582e",
+        "total_cost": 0
     },
     {
         "d_p": 26657747,
         "d_s": 31280824,
         "label": 1,
         "sl_max": 2.483,
-        "cost_max": 1.835,
-        "id": "b2abc37757fa427a8b6de0f0880aed75"
+        "cost_max": 2.152,
+        "id": "9c363102181e409fb1e5816189ccf32f",
+        "total_cost": 0
     },
     {
         "d_p": 30938906,
         "d_s": 5846005,
         "label": 0,
         "sl_max": 2.399,
-        "cost_max": 0.81,
-        "id": "892b2cfa2e3844e2a2f35a142268cccd"
+        "cost_max": 1.056,
+        "id": "e211f5792fa64226a6b2459a93e452a1",
+        "total_cost": 0
     },
     {
         "d_p": 48097787,
         "d_s": 20125690,
         "label": 0,
         "sl_max": 2.757,
-        "cost_max": 2.437,
-        "id": "d33b7cd82a3a4318a35d16b3698e90a1"
+        "cost_max": 2.444,
+        "id": "eac3ed4abeee49a18d57b82ed419e99f",
+        "total_cost": 0
     },
     {
         "d_p": 22077941,
         "d_s": 11230757,
         "label": 1,
         "sl_max": 2.231,
-        "cost_max": 0.838,
-        "id": "6c48ad7e3ff84d4bb097d6f92460e7b9"
+        "cost_max": 1.069,
+        "id": "9a3eaa71541142b5b690dc53bd68cf4f",
+        "total_cost": 0
     },
     {
         "d_p": 33306248,
         "d_s": 13534878,
         "label": 1,
         "sl_max": 2.99,
-        "cost_max": 1.648,
-        "id": "7dffa6dd129641e88066f8e2e0f461fd"
+        "cost_max": 1.665,
+        "id": "59215a38aaab440284d5ba05b5c4684c",
+        "total_cost": 0
     },
     {
         "d_p": 20940053,
         "d_s": 36787873,
         "label": 0,
         "sl_max": 4.19,
-        "cost_max": 2.114,
-        "id": "720af4a5112948ce803b30ffb37a13c3"
+        "cost_max": 2.326,
+        "id": "671b781a757b44bab8a54963ef89a335",
+        "total_cost": 0
     },
     {
         "d_p": 14546820,
         "d_s": 12893318,
         "label": 0,
         "sl_max": 1.363,
-        "cost_max": 0.857,
-        "id": "3b76a590583c438fa2c3da23ec23518e"
+        "cost_max": 0.991,
+        "id": "22c14410880b4dbd8f011423dff9c415",
+        "total_cost": 0
     },
     {
         "d_p": 42703758,
         "d_s": 9598117,
         "label": 1,
         "sl_max": 3.653,
-        "cost_max": 1.016,
-        "id": "ce07717ce1c844deaf43fe303b19df5e"
+        "cost_max": 1.463,
+        "id": "e7b2274f8b40409fa97d77e856ed1e2e",
+        "total_cost": 0
     },
     {
         "d_p": 32217145,
         "d_s": 44240708,
         "label": 1,
         "sl_max": 3.812,
-        "cost_max": 1.903,
-        "id": "82b3e2b9f88f428c97bbe9c220844bf5"
+        "cost_max": 2.669,
+        "id": "3b1c544323614adfb32db102928e40f1",
+        "total_cost": 0
     },
     {
         "d_p": 42247258,
         "d_s": 6941232,
         "label": 0,
         "sl_max": 2.539,
-        "cost_max": 1.53,
-        "id": "bd93c91cd2754e46a897d8c65cf71a23"
+        "cost_max": 1.581,
+        "id": "417a1bce4e2748a0b4b44d52b5488269",
+        "total_cost": 0
     },
     {
         "d_p": 47849720,
         "d_s": 26032293,
         "label": 0,
         "sl_max": 3.316,
-        "cost_max": 1.49,
-        "id": "58c75858744a4b3c9428d33df39b6a56"
+        "cost_max": 2.238,
+        "id": "97b7a118dccb4c74a5dcc33eccf39b70",
+        "total_cost": 0
     },
     {
         "d_p": 5136909,
         "d_s": 33235698,
         "label": 1,
         "sl_max": 2.867,
-        "cost_max": 1.579,
-        "id": "67f9526b79284c77b38fdaab19c5a5ff"
+        "cost_max": 1.721,
+        "id": "2828a2f9d970426295b4b4ebb0598f0e",
+        "total_cost": 0
     },
     {
         "d_p": 10806570,
         "d_s": 47041950,
         "label": 0,
         "sl_max": 3.786,
-        "cost_max": 2.635,
-        "id": "3cd3c5bf503b40d2824f9c2fc9abfdd0"
+        "cost_max": 2.66,
+        "id": "6be2a5465c2d4ab98fd00a49482f4408",
+        "total_cost": 0
     },
     {
         "d_p": 44625160,
         "d_s": 14739061,
         "label": 0,
         "sl_max": 3.548,
-        "cost_max": 1.085,
-        "id": "e8bb0153b7a949b9bb29d95e618668ed"
+        "cost_max": 1.68,
+        "id": "2f85c231d48546aaa794f23f97608950",
+        "total_cost": 0
     },
     {
         "d_p": 40273823,
         "d_s": 38272069,
         "label": 1,
         "sl_max": 4.449,
-        "cost_max": 1.655,
-        "id": "b991032ddb2940d584abbfdb161bf0b6"
+        "cost_max": 2.535,
+        "id": "974928d5b95e49f889bc3c9bca5cbfd9",
+        "total_cost": 0
     },
     {
         "d_p": 14985864,
         "d_s": 32950312,
         "label": 1,
         "sl_max": 2.642,
-        "cost_max": 1.945,
-        "id": "4270ecf963e2486db73156f79940e9db"
+        "cost_max": 2.036,
+        "id": "e7f4b9e4abb749ea8d460176e88e8220",
+        "total_cost": 0
     },
     {
         "d_p": 20968981,
         "d_s": 24542887,
         "label": 1,
         "sl_max": 3.554,
-        "cost_max": 0.994,
-        "id": "864706f2bf864b4591e9c0ef3e8d81f5"
+        "cost_max": 1.511,
+        "id": "9f10580dbfc34bf9a8385d515bdf06ce",
+        "total_cost": 0
     },
     {
         "d_p": 18870278,
         "d_s": 15955534,
         "label": 0,
         "sl_max": 2.457,
-        "cost_max": 0.952,
-        "id": "73b4a825bfa74777a4a575a04ee3a1ee"
+        "cost_max": 1.199,
+        "id": "cb79bc1bcd434dee98fd4aa05e5eaa7f",
+        "total_cost": 0
     },
     {
         "d_p": 12031111,
         "d_s": 17578756,
         "label": 1,
         "sl_max": 2.036,
-        "cost_max": 0.652,
-        "id": "4ceb5fa6da264719a1ba64e93e3d0c6c"
+        "cost_max": 1.005,
+        "id": "c8d05e5dd3b5459a973595d607d0b876",
+        "total_cost": 0
     },
     {
         "d_p": 1934675,
         "d_s": 18015813,
         "label": 0,
         "sl_max": 0.846,
-        "cost_max": 0.709,
-        "id": "4cb13c56f4814068a91cc6ba752e5cb4"
+        "cost_max": 0.859,
+        "id": "ad5202d44e7f44698ed26e78149a4d7f",
+        "total_cost": 0
     },
     {
         "d_p": 18157123,
         "d_s": 4716311,
         "label": 0,
         "sl_max": 1.237,
-        "cost_max": 0.519,
-        "id": "d5d66fec482b4e9d93f0e425118b3470"
+        "cost_max": 0.676,
+        "id": "0065809ab5bf4d1fa0e1b4fbf7e1861f",
+        "total_cost": 0
     },
     {
         "d_p": 23865951,
         "d_s": 33437343,
         "label": 0,
         "sl_max": 3.862,
-        "cost_max": 2.308,
-        "id": "d033a2cf6a8845ea80107a458a32c7de"
+        "cost_max": 2.356,
+        "id": "6303c8ab82b2407888044886de6a1495",
+        "total_cost": 0
     },
     {
         "d_p": 31318240,
         "d_s": 28009104,
         "label": 1,
         "sl_max": 2.95,
-        "cost_max": 1.406,
-        "id": "3d6f0a5848bc400f91a2e0bc5b8cc6c2"
+        "cost_max": 1.966,
+        "id": "a5439b3bfb4248d9a957f2daf3b4a888",
+        "total_cost": 0
     },
     {
         "d_p": 47052076,
         "d_s": 43935037,
         "label": 0,
         "sl_max": 4.842,
-        "cost_max": 3.233,
-        "id": "88da5ba0654a48eb9887ee4bfee978d7"
+        "cost_max": 3.458,
+        "id": "31600b83e10d410fbce325168516b538",
+        "total_cost": 0
     },
     {
         "d_p": 4472534,
         "d_s": 44057130,
         "label": 1,
         "sl_max": 2.452,
-        "cost_max": 1.975,
-        "id": "d4155e97ffe64296914545d68428418a"
+        "cost_max": 2.192,
+        "id": "ea541b63a5da456fa5276e7ea63c3a4d",
+        "total_cost": 0
     },
     {
         "d_p": 27606011,
         "d_s": 3956747,
         "label": 1,
         "sl_max": 1.382,
-        "cost_max": 0.722,
-        "id": "2c152d440a904f58bc15618da5ffe227"
+        "cost_max": 0.904,
+        "id": "f348b78f9ca144cb821f57c02b1ada1e",
+        "total_cost": 0
     },
     {
         "d_p": 41715949,
         "d_s": 661583,
         "label": 1,
         "sl_max": 1.99,
-        "cost_max": 1.236,
-        "id": "fbab9abffebf4d2db48bf7d7c573df0b"
+        "cost_max": 1.265,
+        "id": "0901e6f1f9a344e28ff3f5573787e665",
+        "total_cost": 0
     },
     {
         "d_p": 49941086,
         "d_s": 6396809,
         "label": 0,
         "sl_max": 3.156,
-        "cost_max": 1.645,
-        "id": "3e1c97eb30a449d5b86029f3495b271b"
+        "cost_max": 1.749,
+        "id": "8e00a7ae5ae94d339e1ad5556fe86386",
+        "total_cost": 0
     },
     {
         "d_p": 17504078,
         "d_s": 24143150,
         "label": 1,
         "sl_max": 2.28,
-        "cost_max": 1.242,
-        "id": "4673fd3e6852448099d8789d542a858f"
+        "cost_max": 1.536,
+        "id": "46e357f83c034a4c8ad611f385ce4bef",
+        "total_cost": 0
     },
     {
         "d_p": 22603775,
         "d_s": 18629147,
         "label": 0,
         "sl_max": 1.919,
-        "cost_max": 0.949,
-        "id": "52ad293af6dd44c798b86168100c119e"
+        "cost_max": 1.345,
+        "id": "52cb9d9121f54d0aa645ec14aa96200e",
+        "total_cost": 0
     },
     {
         "d_p": 32243931,
         "d_s": 8876380,
         "label": 0,
         "sl_max": 3.223,
-        "cost_max": 1.13,
-        "id": "4f766376ea554569a288a7b45d5b0e49"
+        "cost_max": 1.299,
+        "id": "93d84a2ba8a2420dba50151bd76a9567",
+        "total_cost": 0
     },
     {
         "d_p": 38666011,
         "d_s": 24969567,
         "label": 1,
         "sl_max": 4.858,
-        "cost_max": 2.187,
-        "id": "26a4781681364d898a2c0de1c238fa13"
+        "cost_max": 2.32,
+        "id": "422fcaa2e6c644fdbd864a94e03177dc",
+        "total_cost": 0
     },
     {
         "d_p": 5332812,
         "d_s": 48405664,
         "label": 1,
         "sl_max": 2.204,
-        "cost_max": 2.206,
-        "id": "72869a72c70d4bab89ea524a4adf2d86"
+        "cost_max": 2.431,
+        "id": "bff88bd0616a451c87fdf8b0b7b99684",
+        "total_cost": 0
     },
     {
         "d_p": 7131712,
         "d_s": 33869104,
         "label": 0,
         "sl_max": 3.134,
-        "cost_max": 1.199,
-        "id": "55f96cff5a3f41fe8b1622208ef4738f"
+        "cost_max": 1.624,
+        "id": "a5b9fe701c0b408881ec05d6a2c91309",
+        "total_cost": 0
     },
     {
         "d_p": 35928776,
         "d_s": 11537488,
         "label": 0,
         "sl_max": 3.509,
-        "cost_max": 0.994,
-        "id": "e00278a211fa49448fc77428259b038d"
+        "cost_max": 1.391,
+        "id": "82960136ca44429e87f576eebb55d7fb",
+        "total_cost": 0
     },
     {
         "d_p": 37144097,
         "d_s": 9590820,
         "label": 1,
         "sl_max": 3.707,
-        "cost_max": 0.969,
-        "id": "8f9ba54843dd448b89c5cdf7c40b43b7"
+        "cost_max": 1.344,
+        "id": "ddc68ad37d4c4432a6c9b8071592c447",
+        "total_cost": 0
     },
     {
         "d_p": 48815775,
         "d_s": 1813216,
         "label": 0,
         "sl_max": 2.944,
-        "cost_max": 1.183,
-        "id": "8667b2f686e34c21ad02b36e1f84810c"
+        "cost_max": 1.406,
+        "id": "668f44cf1bc14706aac3e18c96613fc6",
+        "total_cost": 0
     },
     {
         "d_p": 41559850,
         "d_s": 37550614,
         "label": 1,
         "sl_max": 5.422,
-        "cost_max": 2.197,
-        "id": "d8ab7bce7f1440f68a1ed68ffa6636ae"
+        "cost_max": 2.753,
+        "id": "dd784ed291864aeba6526845320cdda7",
+        "total_cost": 0
     },
     {
         "d_p": 26419554,
         "d_s": 22045388,
         "label": 0,
         "sl_max": 3.462,
-        "cost_max": 1.605,
-        "id": "20b02ecb615648698f05aaa2146e5ff8"
+        "cost_max": 1.779,
+        "id": "a6a8ca40a7e841e688ac8ae851fe31f0",
+        "total_cost": 0
     },
     {
         "d_p": 3634327,
         "d_s": 22407434,
         "label": 0,
         "sl_max": 1.082,
-        "cost_max": 0.681,
-        "id": "dadd419ceb6a47279d5305901454f91e"
+        "cost_max": 1.01,
+        "id": "71c889a14c5443b08e76b3f12562dcfe",
+        "total_cost": 0
     },
     {
         "d_p": 4958187,
         "d_s": 8085844,
         "label": 0,
         "sl_max": 0.619,
-        "cost_max": 0.534,
-        "id": "ed804f5b8726428f9d2b81e13753c407"
+        "cost_max": 0.545,
+        "id": "2b894315b3ae4f1f83c6c63a5ef59512",
+        "total_cost": 0
     },
     {
         "d_p": 20974821,
         "d_s": 15260569,
         "label": 1,
         "sl_max": 2.257,
-        "cost_max": 0.739,
-        "id": "559ce958708640e3a033935e91898ee1"
+        "cost_max": 1.131,
+        "id": "fb05cd237d3a491f87545a986b9425bf",
+        "total_cost": 0
     },
     {
         "d_p": 49927853,
         "d_s": 47532587,
         "label": 1,
         "sl_max": 6.684,
-        "cost_max": 2.362,
-        "id": "5876ea57b3bb4ce3848592291e5b4d05"
+        "cost_max": 3.27,
+        "id": "60788888f3d541f5aede2b417deca409",
+        "total_cost": 0
     },
     {
         "d_p": 46813944,
         "d_s": 38681242,
         "label": 1,
         "sl_max": 5.418,
-        "cost_max": 2.451,
-        "id": "da30927784b34f33b9a9bcecf8743f64"
+        "cost_max": 2.984,
+        "id": "e11147f10edb4b958675f4979f1e08bb",
+        "total_cost": 0
     },
     {
         "d_p": 21420110,
         "d_s": 42787370,
         "label": 0,
         "sl_max": 4.367,
-        "cost_max": 2.741,
-        "id": "87922a9315c64f5aab4a616f11062650"
+        "cost_max": 2.766,
+        "id": "ec8a1bfae0384cb58d13b710affc7305",
+        "total_cost": 0
     },
     {
         "d_p": 2330555,
         "d_s": 7050875,
         "label": 0,
         "sl_max": 0.452,
-        "cost_max": 0.398,
-        "id": "7f3c8094c1db42f3bd1b42f33f6fbbfb"
+        "cost_max": 0.413,
+        "id": "3959dff9991f48b386435318589a360d",
+        "total_cost": 0
     },
     {
         "d_p": 44575018,
         "d_s": 42293583,
         "label": 0,
         "sl_max": 5.319,
-        "cost_max": 2.881,
-        "id": "efffd75089a04d419382b04e122b551e"
+        "cost_max": 3.223,
+        "id": "a71c5bd6431c4209bc0ebcce5ed56b80",
+        "total_cost": 0
     },
     {
         "d_p": 24007255,
         "d_s": 9435106,
         "label": 0,
         "sl_max": 2.459,
-        "cost_max": 0.842,
-        "id": "9c71b1d3604b4ca6841c48f6bd5e3f4d"
+        "cost_max": 1.052,
+        "id": "5ba0cd4fd99b4b00b68d5b13ee99a34d",
+        "total_cost": 0
     },
     {
         "d_p": 19069429,
         "d_s": 26865225,
         "label": 0,
         "sl_max": 2.21,
-        "cost_max": 1.438,
-        "id": "48fa180f9d944734bf0629ee90e700f6"
+        "cost_max": 1.724,
+        "id": "3ac8df3503d74e6c8a233fe24baa0975",
+        "total_cost": 0
     },
     {
         "d_p": 22744162,
         "d_s": 16507737,
         "label": 0,
         "sl_max": 2.027,
-        "cost_max": 1.45,
-        "id": "5e430eb5a7754f9d8021ee106f3b3533"
+        "cost_max": 1.485,
+        "id": "55b8862180fd45b8a9a7b5b8c8480c2d",
+        "total_cost": 0
     },
     {
         "d_p": 41021869,
         "d_s": 27686374,
         "label": 1,
         "sl_max": 4.543,
-        "cost_max": 1.927,
-        "id": "f2ecc6e8db3749c79aa7de57338273df"
+        "cost_max": 2.34,
+        "id": "c69a3045161c46798f0039f05bae6b3d",
+        "total_cost": 0
     },
     {
         "d_p": 8164538,
         "d_s": 27909298,
         "label": 1,
         "sl_max": 1.595,
-        "cost_max": 1.459,
-        "id": "0d9852baff3947f0b9e2a8f50f85d16c"
+        "cost_max": 1.568,
+        "id": "64f6a9f41ef547ffaaec776a75634fdb",
+        "total_cost": 0
     },
     {
         "d_p": 23008911,
         "d_s": 45800543,
         "label": 0,
         "sl_max": 4.781,
-        "cost_max": 2.755,
-        "id": "e47d1009be044a94a4bed947db3799f6"
+        "cost_max": 2.89,
+        "id": "c90ecf4dece546a6a38b07961e927306",
+        "total_cost": 0
     },
     {
         "d_p": 17912469,
         "d_s": 37206984,
         "label": 0,
         "sl_max": 4.277,
-        "cost_max": 1.485,
-        "id": "69a45bf2512b477fbc8a02847108fe73"
+        "cost_max": 2.033,
+        "id": "9758195a012c465daedee35cba80be22",
+        "total_cost": 0
     },
     {
         "d_p": 35099340,
         "d_s": 1817695,
         "label": 1,
         "sl_max": 2.066,
-        "cost_max": 1.018,
-        "id": "2f4c5d63cccf48a28b6e1bd387065fa1"
+        "cost_max": 1.094,
+        "id": "96b27d9d9bfd40e890f0d6f6750f3374",
+        "total_cost": 0
     },
     {
         "d_p": 32761890,
         "d_s": 15885856,
         "label": 0,
         "sl_max": 2.585,
-        "cost_max": 1.023,
-        "id": "55f3fc1105db472d96e0fab31eb6bcfe"
+        "cost_max": 1.476,
+        "id": "485b22a55cc041d7a16310bee566d74c",
+        "total_cost": 0
     },
     {
         "d_p": 16978572,
         "d_s": 7663895,
         "label": 0,
         "sl_max": 1.57,
-        "cost_max": 0.71,
-        "id": "5443b546ef874dc2938c69a68cd754f9"
+        "cost_max": 0.819,
+        "id": "663a2171d3b44a7b802c8a641a68ff7e",
+        "total_cost": 0
     },
     {
         "d_p": 19537093,
         "d_s": 7405461,
         "label": 0,
         "sl_max": 1.636,
-        "cost_max": 0.911,
-        "id": "ef48983f5e324ff0bb696ef0d9b1c3e1"
+        "cost_max": 0.938,
+        "id": "57688a3f55694069b5c37cda705e363f",
+        "total_cost": 0
     },
     {
         "d_p": 27489446,
         "d_s": 34594446,
         "label": 0,
         "sl_max": 3.507,
-        "cost_max": 1.298,
-        "id": "2eece26a05a54afc8dc6177a8aafb45f"
+        "cost_max": 2.052,
+        "id": "4b9c230f21994ce98fc6117ac6e2408d",
+        "total_cost": 0
     },
     {
         "d_p": 22784051,
         "d_s": 31092340,
         "label": 1,
         "sl_max": 3.866,
-        "cost_max": 1.727,
-        "id": "a7d1ea51330e4dc6a75de3e482b7cd05"
+        "cost_max": 2.034,
+        "id": "9b43ddb81c014877b5ae67525dd1afc0",
+        "total_cost": 0
     },
     {
         "d_p": 4359873,
         "d_s": 33601413,
         "label": 0,
         "sl_max": 2.744,
-        "cost_max": 0.921,
-        "id": "e145f230f6104d45ac17db5902cc0eda"
+        "cost_max": 1.455,
+        "id": "28b13bd93fa24b8a88f4e58880d0e1ee",
+        "total_cost": 0
     },
     {
         "d_p": 49157314,
         "d_s": 21590133,
         "label": 1,
         "sl_max": 5.056,
-        "cost_max": 2.064,
-        "id": "d4ba283799984a8280f46ad2ddfbfebd"
+        "cost_max": 2.358,
+        "id": "b289f630275f47b8ae8e5bbe53c0615b",
+        "total_cost": 0
     },
     {
         "d_p": 7991582,
         "d_s": 11112715,
         "label": 0,
         "sl_max": 0.79,
-        "cost_max": 0.569,
-        "id": "f2a466656f8a4a6eb03e0e153279c150"
+        "cost_max": 0.705,
+        "id": "1d45098bc5ff4aaa9f40e98ce762d6ea",
+        "total_cost": 0
     },
     {
         "d_p": 25254351,
         "d_s": 13514304,
         "label": 1,
         "sl_max": 2.153,
-        "cost_max": 0.856,
-        "id": "7a03895245e149c084b2ead9adc8fe24"
+        "cost_max": 1.202,
+        "id": "dc587449f06843539db3cc3411ffab06",
+        "total_cost": 0
     },
     {
         "d_p": 48170331,
         "d_s": 13094506,
         "label": 1,
         "sl_max": 2.597,
-        "cost_max": 1.897,
-        "id": "e966b53b2ede4f8b8eb2032b63f2ff86"
+        "cost_max": 2.019,
+        "id": "83a96824c8084ea6a5b45e89db7e50bd",
+        "total_cost": 0
     },
     {
         "d_p": 13114251,
         "d_s": 29610929,
         "label": 1,
         "sl_max": 1.848,
-        "cost_max": 1.771,
-        "id": "3805b798d1514d87bd6db0a7f0fecf3d"
+        "cost_max": 1.833,
+        "id": "2e4d2d59188347a0aede0ae832a51ce5",
+        "total_cost": 0
     },
     {
         "d_p": 7854243,
         "d_s": 17202199,
         "label": 1,
         "sl_max": 1.763,
-        "cost_max": 0.687,
-        "id": "093f6127d526436bae3e506f5c4f5d70"
+        "cost_max": 0.932,
+        "id": "fd6325386d864b20a35a1e156c9b05e4",
+        "total_cost": 0
     },
     {
         "d_p": 19093064,
         "d_s": 47157449,
         "label": 0,
         "sl_max": 2.766,
-        "cost_max": 1.846,
-        "id": "e2df70b2d81a40d6a44b6e4a29edb476"
+        "cost_max": 2.497,
+        "id": "aca28c62e5f64f8ba35a2458c509c458",
+        "total_cost": 0
     },
     {
         "d_p": 34400170,
         "d_s": 47197629,
         "label": 0,
         "sl_max": 5.391,
-        "cost_max": 3.0,
-        "id": "67958b02561e4b4dab211432eacd5f34"
+        "cost_max": 3.235,
+        "id": "67e58ac8869d4d359bfc0410a91ed7ff",
+        "total_cost": 0
     },
     {
         "d_p": 2624677,
         "d_s": 34284170,
         "label": 0,
         "sl_max": 1.49,
-        "cost_max": 1.044,
-        "id": "a9c2925191ba48e3a818668d0284e6af"
+        "cost_max": 1.493,
+        "id": "de7c4e63b0d34753a76218fecfcb2641",
+        "total_cost": 0
     },
     {
         "d_p": 37253137,
         "d_s": 37591536,
         "label": 1,
         "sl_max": 3.795,
-        "cost_max": 2.054,
-        "id": "620b786de90c47438b5bf53c22e4d3ff"
+        "cost_max": 2.62,
+        "id": "33b6225e31694e069146cc2518d6d287",
+        "total_cost": 0
     },
     {
         "d_p": 37674376,
         "d_s": 40942205,
         "label": 1,
         "sl_max": 4.603,
-        "cost_max": 2.54,
-        "id": "c4f45445a3654702bdac51de25372218"
+        "cost_max": 2.922,
+        "id": "9e88219e77db494c997fa1319c23cfe0",
+        "total_cost": 0
     },
     {
         "d_p": 7934183,
         "d_s": 48768936,
         "label": 1,
         "sl_max": 3.903,
-        "cost_max": 1.362,
-        "id": "fd02412b4db345aca9c47c7385c77c58"
+        "cost_max": 2.151,
+        "id": "5ff313c765bf4b18b61118d684f10303",
+        "total_cost": 0
     },
     {
         "d_p": 32105552,
         "d_s": 3049943,
         "label": 0,
         "sl_max": 2.676,
-        "cost_max": 1.059,
-        "id": "3e7e6572856d46b7a4da3537aa260d4e"
+        "cost_max": 1.093,
+        "id": "1efb115bb9a94581a9e90d0536098c67",
+        "total_cost": 0
     },
     {
         "d_p": 38661581,
         "d_s": 41687634,
         "label": 1,
         "sl_max": 6.418,
-        "cost_max": 3.225,
-        "id": "fec93200736b44368145d8715d17b2ae"
+        "cost_max": 3.237,
+        "id": "4ee876e6f49f491e92dbe762d4e09922",
+        "total_cost": 0
     },
     {
         "d_p": 18857338,
         "d_s": 7035175,
         "label": 0,
         "sl_max": 1.987,
-        "cost_max": 0.779,
-        "id": "9e4873464bf44d6e8ef5cb16cd5e9db6"
+        "cost_max": 0.862,
+        "id": "e54cee77f21946f197b7a5896f75e3eb",
+        "total_cost": 0
     },
     {
         "d_p": 44400890,
         "d_s": 1944410,
         "label": 1,
         "sl_max": 3.244,
-        "cost_max": 1.356,
-        "id": "d4394bf09b0b46c2a8ca7ac4d114b21a"
+        "cost_max": 1.4,
+        "id": "88e8a73951f447a98aacee02e10bce80",
+        "total_cost": 0
     },
     {
         "d_p": 13746937,
         "d_s": 12841556,
         "label": 1,
         "sl_max": 1.076,
-        "cost_max": 0.597,
-        "id": "bfe3e9d9fffc4686ba966ad19baa7a52"
+        "cost_max": 0.872,
+        "id": "04b8434324af4317a1f44e67eae6e62c",
+        "total_cost": 0
     },
     {
         "d_p": 36273040,
         "d_s": 42500764,
         "label": 1,
         "sl_max": 5.02,
-        "cost_max": 2.481,
-        "id": "a8baca5d30984efda1016096ab45b9df"
+        "cost_max": 2.92,
+        "id": "bcc15b4f012542e6b07ff774caa7eb9c",
+        "total_cost": 0
     },
     {
         "d_p": 15897214,
         "d_s": 26081491,
         "label": 1,
         "sl_max": 3.184,
-        "cost_max": 1.073,
-        "id": "6a642ff767214c1fa788d5f48e6e2dce"
+        "cost_max": 1.498,
+        "id": "4988cb78b5c64a75962ce5e152652bd1",
+        "total_cost": 0
     }
 ]

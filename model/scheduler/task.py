@@ -20,6 +20,10 @@ class Task(ToDict):
         self.sl_max = sl_max    # Number of seconds
         self.cost_max = cost_max    # Amount of USD
         self.id = uuid4().hex
+        self.total_cost = 0
+        
+    def reset(self):
+        self.total_cost = 0
 
     def __repr__(self):
         return str(self.to_dict())

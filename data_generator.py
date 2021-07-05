@@ -21,7 +21,8 @@ def create_task():
     t_p = randint(DefaultData.T_PROCESSING_BOUND[0], DefaultData.T_PROCESSING_BOUND[1])
     t_s = randint(DefaultData.T_STORAGE_BOUND[0], DefaultData.T_STORAGE_BOUND[1])
     # $0.0001 -> 10KB
-    cost_max = round(uniform(0.5, 1.0) * (t_p * DefaultData.COST_PRO_PER_B + t_s * DefaultData.COST_STR_PER_B), 3)
+    cost_max = round(uniform(0.8, 1.0) * (t_p * DefaultData.COST_PRO_PER_B + t_s * DefaultData.COST_STR_PER_B), 3)
+    print(cost_max)
     label = 0 if uniform() < 0.5 else 1
     sl_max = round(uniform(0.5, 1.0) * (t_p * DefaultData.LATENCY_PER_B + t_s * DefaultData.LATENCY_PER_B), 3)
     return Task(t_p, t_s, label, sl_max, cost_max)

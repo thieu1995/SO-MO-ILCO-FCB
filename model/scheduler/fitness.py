@@ -11,7 +11,7 @@ from config import *
 from model.scheduler.schedule import Schedule
 from model.scheduler.formulas import power, latency
 from model.scheduler.formulas import cost
-from numpy import array
+from numpy import array, math
 from numpy.linalg import norm
 
 
@@ -44,6 +44,11 @@ class Fitness:
 
     def set_min_cost(self, value: float):
         self._min_cost = value
+        
+    def get_punished_cost(self, exceeded_cost):
+        exceeded_cost = max(0, exceeded_cost)
+        return min(0.1, math.log(1 + exceeded_cost))
+
 
     def fitness(self, solution: Schedule) -> float:
         power = self.calc_power_consumption(solution)
@@ -96,7 +101,42 @@ class Fitness:
         return la_p + la_t + la_max
 
     def calc_cost(self, schedule: Schedule) -> float:
+        
+        for fog_id, list_task_id in schedule.schedule_fogs_tasks.items():
+            for idx, task_id in enumerate(list_task_id):
+                task = self.tasks[task_id]
+                task.reset()
+
+        for cloud_id, list_task_id in schedule.schedule_clouds_tasks.items():
+            for idx, task_id in enumerate(list_task_id):
+                task = self.tasks[task_id]
+                task.reset()
+                    
+        for peer_id, list_task_id in schedule.schedule_peers_tasks.items():
+            for idx, task_id in enumerate(list_task_id):
+                task = self.tasks[task_id]
+                task.reset()
+                
         co = cost.data_forwarding_cost(self.clouds, self.fogs, self.peers, self.tasks, schedule)
         co += cost.computation_cost(self.clouds, self.fogs, self.peers, self.tasks, schedule)
         co += cost.storage_cost(self.clouds, self.fogs, self.peers, self.tasks, schedule)
+        
+        punish_cost = 0
+        
+        for fog_id, list_task_id in schedule.schedule_fogs_tasks.items():
+            for idx, task_id in enumerate(list_task_id):
+                task = self.tasks[task_id]
+                punish_cost += self.get_punished_cost(task.total_cost - task.cost_max)
+
+        for cloud_id, list_task_id in schedule.schedule_clouds_tasks.items():
+            for idx, task_id in enumerate(list_task_id):
+                task = self.tasks[task_id]
+                punish_cost += self.get_punished_cost(task.total_cost - task.cost_max)
+                    
+        for peer_id, list_task_id in schedule.schedule_peers_tasks.items():
+            for idx, task_id in enumerate(list_task_id):
+                task = self.tasks[task_id]
+                punish_cost += self.get_punished_cost(task.total_cost - task.cost_max)
+        print(punish_cost)        
+        
         return co
