@@ -16,6 +16,7 @@ from config import Config
 from model.scheduler.fitness import Fitness
 from utils.schedule_util import matrix_to_schedule
 from sys import exit
+import matplotlib.pyplot as plt
 
 
 class Root:
@@ -24,6 +25,8 @@ class Root:
     """
     ID_POS = 0
     ID_FIT = 1
+    ID_LOCAL_POS = 2       # Personal best location
+    ID_LOCAL_FIT = 3       # Personal best fitness
 
     EPSILON = 10E-10
 
@@ -45,7 +48,7 @@ class Root:
             if schedule.is_valid():
                 fitness = self.Fit.fitness(schedule)
                 break
-        return [matrix, fitness]        # [solution, fit]
+        return [matrix, fitness, matrix, fitness]        # [solution, fit]
 
     def early_stopping(self, array, patience=5):
         if patience <= len(array) - 1:
@@ -239,6 +242,7 @@ class Root:
         pop = [self.create_solution() for _ in range(self.pop_size)]
         g_best = self.get_g_best(pop)
         g_best_list = [g_best[self.ID_FIT]]
+        current_best_list = []
 
         if Config.MODE == 'epoch':
             for epoch in range(self.epoch):
@@ -246,6 +250,10 @@ class Root:
                 pop = self.evolve(pop, None, epoch, g_best)
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
                 g_best_list.append(g_best[self.ID_FIT])
+                current_best_list.append(current_best[self.ID_FIT])
+                # print("EPOCH:", epoch, " / ", current_best[self.ID_FIT])
+                # plt.plot(current_best_list)
+                # plt.show()
                 time_epoch_end = time() - time_epoch_start
                 break_loop = self.check_break_loop(epoch+1, current_best, g_best, time_epoch_end, time_bound_start)
                 if break_loop:

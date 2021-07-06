@@ -7,12 +7,6 @@
 #       Github:     https://github.com/thieu1995                                                        %
 # ------------------------------------------------------------------------------------------------------%
 
-''' Formular for cost constraint:
-    Constraint: es * E(dp + ds) < cost_max
-    From: es * E(dp + ds) = mean_cost
-    => estimate_param (es) = (gamma * mean_cost - E(qp + qs)) / (E(rp + rs) - E(qp + qs))
-'''
-
 from model.scheduler.schedule import Schedule
 from utils.ops_util import find_closet_node, is_instance_of_fog, get_cloud_node
 

@@ -137,6 +137,6 @@ class Fitness:
             for idx, task_id in enumerate(list_task_id):
                 task = self.tasks[task_id]
                 punish_cost += self.get_punished_cost(task.total_cost - task.cost_max)
-        print(punish_cost)        
+        # print(punish_cost)        
         
         return co
