@@ -3,7 +3,6 @@ configuration/ICCS/
 optimizer/ALO.py
 benchmark/
 visualization/
-data/
 
 drafts/
 .idea/
