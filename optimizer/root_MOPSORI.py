@@ -14,11 +14,11 @@ from numpy import inf, zeros, argmin, array
 from numpy.random import uniform
 from optimizer.root import Root
 from utils.schedule_util import matrix_to_schedule
-from utils.visual.scatter import visualize_2D
+from utils.visual.scatter import visualize_2D, visualize_3D
 from uuid import uuid4
 from copy import deepcopy
 from model.scheduler.fitness import Fitness
-
+import math
 
 class Root3(Root):
 
@@ -85,6 +85,13 @@ class Root3(Root):
                 return False
         return better
 
+    def step_decay(self, epoch):
+       init_explore_rate = 0.9
+       drop = (1 - 1 / (math.e + 3)) 
+       epochs_drop = math.floor(math.sqrt(self.epoch))
+       explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + epoch)/epochs_drop))
+       return explore_rate
+ 
     # Function to carry out NSGA-II's fast non dominated sort
     def fast_non_dominated_sort(self, pop: dict):
         objs = [[] for _ in range(0, self.n_objs)]
@@ -152,7 +159,6 @@ class Root3(Root):
                 
             for epoch in range(self.epoch):
                 time_epoch_start = time()
-                # print(epoch)
                 pop = self.evolve(pop, None, epoch, mo_g_best)
                 fronts, rank = self.fast_non_dominated_sort(pop)
                 current_best = []
@@ -170,9 +176,10 @@ class Root3(Root):
                     for idx, item in enumerate(pop.values()):
                         for i in range(self.n_objs):
                             obj[i][idx] = float(item[self.ID_FIT][i])
-                    # visualize_2D(obj[:2])
-                    print(f'Epoch: {epoch+1}, Front size: {len(fronts[0])}, including {list(pop.values())[fronts[0][0]][self.ID_FIT]}, '
-                          f'time: {time_epoch_end:.2f} seconds')
+                    # print(obj)
+                    visualize_3D(obj)
+                # print(f'Epoch: {epoch+1}, Front size: {len(fronts[0])}, including {list(pop.values())[fronts[0][0]][self.ID_FIT]}, '
+                #       f'time: {time_epoch_end:.2f} seconds')
                 if Config.TIME_BOUND_KEY:
                     if time() - time_bound_start >= Config.TIME_BOUND_VALUE_PER_TASK * self.problem["n_tasks"]:
                         print('====== Over time for training ======')

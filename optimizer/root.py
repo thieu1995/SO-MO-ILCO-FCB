@@ -246,14 +246,15 @@ class Root:
 
         if Config.MODE == 'epoch':
             for epoch in range(self.epoch):
+                print(epoch)
                 time_epoch_start = time()
                 pop = self.evolve(pop, None, epoch, g_best)
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
                 g_best_list.append(g_best[self.ID_FIT])
                 current_best_list.append(current_best[self.ID_FIT])
-                # print("EPOCH:", epoch, " / ", current_best[self.ID_FIT])
-                # plt.plot(current_best_list)
-                # plt.show()
+                print("EPOCH:", epoch, " / ", current_best[self.ID_FIT])
+                plt.plot(current_best_list)
+                plt.show()
                 time_epoch_end = time() - time_epoch_start
                 break_loop = self.check_break_loop(epoch+1, current_best, g_best, time_epoch_end, time_bound_start)
                 if break_loop:

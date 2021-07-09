@@ -33,9 +33,9 @@ def visualize_3D(list_points):
     ax.set_zlabel('Z')
     ax.scatter(x, y, z)
     ax.set_title('3d Scatter plot')
-    ax.set_xlim(50, 75)
-    ax.set_ylim(460, 520)
-    ax.set_zlim(24, 28)
+    # ax.set_xlim(50, 75)
+    # ax.set_ylim(460, 520)
+    # ax.set_zlim(24, 28)
     
     plt.show()
 

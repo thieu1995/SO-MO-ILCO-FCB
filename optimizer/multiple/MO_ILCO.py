@@ -13,6 +13,7 @@ import random
 from utils.schedule_util import matrix_to_schedule
 from numpy.random import uniform, randint, normal, random
 from numpy import ceil, sqrt, array, mean, cos
+from random import choice, sample, randint
 
 
 class MO_ILCO(Root3):
@@ -37,33 +38,37 @@ class MO_ILCO(Root3):
 
     def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
         # epoch: current chance, self.epoch: number of chances
-        wf = 0.5 + 0.5 * (epoch / self.epoch) ** 2   # weight factor
-        a = 1.0 - cos(0) * (1.0 / cos(1 - (epoch + 1) / self.epoch))
-        coef = 2 - 2 * epoch / (self.epoch - 1)  # linearly decreased from 2 to 0
-
+        a = self.step_decay(epoch)
+        
+        # pop is (reversed) sorted by fitness
+        key_list = list(pop.keys())
         for i in range(0, self.pop_size):
-            idx = list(pop.keys())[i]
+            idx = key_list[i]
             
             while True:
                 rand_number = random()
 
-                if rand_number < 0.1:  # Update using Eq. 1, update from n best position
-                    temp = array([random() * pop[list(pop.keys())[randint(0, self.pop_size - 1)]][self.ID_POS] \
-                                  for j in range(0, self.n_sqrt)], dtype = object)
-                    temp = mean(temp, axis=0)
-                elif 0.1 <= rand_number <= 0.75:  # Exploitation, update group 2
+                if rand_number > 0.8:  # Update using Eq. 1, exploitation
+                    # choose sqrt(n) / 2 from sqrt(n) best indivs
+                    rd_index = sample([i + (self.pop_size - self.n_sqrt) for i in range (self.n_sqrt)], int(self.n_sqrt * 0.5))
+                    temp = array([pop[key_list[j]][self.ID_POS] for j in rd_index])
+                    coeff = random() * 0.5 * a # explore rate
+                    temp = coeff * mean(temp, axis=0) + (1 - coeff) * pop[idx][self.ID_POS]
+
+                elif rand_number < 0.6:  # Update using Eq. 2-6
                     g_best_mean = self.get_gbest_mean(g_best)
-                    if random() < 0.5:
-                        if i != 0:
-                            better_diff = a * (pop[list(pop.keys())[i - 1]][self.ID_POS] - pop[idx][self.ID_POS])
-                        else:
-                            better_diff = a * (g_best_mean - pop[idx][self.ID_POS])
-                        best_diff = (1 - a) * (g_best_mean - pop[idx][self.ID_POS])
-                        temp = wf * pop[idx][self.ID_POS] + uniform() * better_diff + uniform() * best_diff
-                    else:
-                        # temp = wf * self.get_gbest_mean(g_best) + \
-                        #        normal(0, 1, self.problem["shape"]) * a * (self.get_gbest_mean(g_best) - pop[idx][self.ID_POS])
-                        temp = a * g_best_mean + coef * self.get_step_levy_flight(beta=0.5, step=0.01) * (g_best_mean - uniform() * pop[i][self.ID_POS])
+                    if random() < 0.5: # Exploitation
+                        # choose a random better indiv
+                        keys = key_list[randint(i, self.pop_size - 1)]
+                        better_diff = a * (pop[keys][self.ID_POS] - pop[idx][self.ID_POS])
+                        # mean set of best local solution
+                        best_diff = (1 - a) * (mean(pop[idx][self.ID_LOCAL_POS], axis = 0) - pop[idx][self.ID_POS])
+                    
+                        temp = pop[idx][self.ID_POS] + (better_diff + best_diff)
+                    else: # Exploitation and exploration
+                        # direct to the best, add outlier with explore rate
+                        temp = pop[idx][self.ID_POS] + a * \
+                            (g_best_mean - pop[idx][self.ID_POS] + normal(0, 0.5, self.problem["shape"]))
                 else:  # Exploration, update group 3
                     while True:
                         pos_new = self.ub - (pop[idx][self.ID_POS] - self.lb) * random()
