@@ -57,7 +57,7 @@ def data_forwarding_cost(clouds: {}, fogs: {}, peers: {}, tasks: {}, schedule: S
                 task.total_cost += change
                 n_dps += 1
             else:  # Fog
-                pchange = (fog.sigma_idle + peer.sigma_sm) +  (fog.sigma + peer.sigma) * (task.d_p + task.d_s)
+                change = (fog.sigma_idle + peer.sigma_sm) +  (fog.sigma + peer.sigma) * (task.d_p + task.d_s)
                 peer_cost += change
                 task.total_cost += change
                 total_dps += (task.d_p + task.d_s)
