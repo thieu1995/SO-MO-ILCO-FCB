@@ -17,6 +17,7 @@ from model.scheduler.fitness import Fitness
 from utils.schedule_util import matrix_to_schedule
 from sys import exit
 import matplotlib.pyplot as plt
+import math
 
 
 class Root:
@@ -229,6 +230,14 @@ class Root:
         # elif case == 3:
         #     return position + 0.01 * levy
 
+
+    def step_decay(self, epoch):
+       init_explore_rate = 0.9
+       drop = (1 - 1 / (math.e + 3)) 
+       epochs_drop = math.floor(math.sqrt(self.epoch))
+       explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + epoch)/epochs_drop))
+       return explore_rate
+   
     def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
         pass
 
@@ -242,19 +251,19 @@ class Root:
         pop = [self.create_solution() for _ in range(self.pop_size)]
         g_best = self.get_g_best(pop)
         g_best_list = [g_best[self.ID_FIT]]
-        current_best_list = []
+        # current_best_list = []
 
         if Config.MODE == 'epoch':
             for epoch in range(self.epoch):
-                print(epoch)
+                # print(epoch)
                 time_epoch_start = time()
                 pop = self.evolve(pop, None, epoch, g_best)
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
                 g_best_list.append(g_best[self.ID_FIT])
-                current_best_list.append(current_best[self.ID_FIT])
-                print("EPOCH:", epoch, " / ", current_best[self.ID_FIT])
-                plt.plot(current_best_list)
-                plt.show()
+                # current_best_list.append(current_best[self.ID_FIT])
+                # print("EPOCH:", epoch, " / ", current_best[self.ID_FIT])
+                # plt.plot(current_best_list)
+                # plt.show()
                 time_epoch_end = time() - time_epoch_start
                 break_loop = self.check_break_loop(epoch+1, current_best, g_best, time_epoch_end, time_bound_start)
                 if break_loop:
