@@ -178,8 +178,7 @@ class Root3(Root):
                             obj[i][idx] = float(item[self.ID_FIT][i])
                     # print(obj)
                     # visualize_3D(obj)
-                # print(f'Epoch: {epoch+1}, Front size: {len(fronts[0])}, including {list(pop.values())[fronts[0][0]][self.ID_FIT]}, '
-                #       f'time: {time_epoch_end:.2f} seconds')
+                    print(f'Epoch: {epoch+1}, Front size: {len(fronts[0])}, including {list(pop.values())[fronts[0][0]][self.ID_FIT]}, time: {time_epoch_end:.2f} seconds')
                 if Config.TIME_BOUND_KEY:
                     if time() - time_bound_start >= Config.TIME_BOUND_VALUE_PER_TASK * self.problem["n_tasks"]:
                         print('====== Over time for training ======')
