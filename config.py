@@ -14,7 +14,7 @@ basedir = abspath(dirname(__file__))
 class Config:
     CORE_DATA_DIR = f'{basedir}/data'
     INPUT_DATA = f'{CORE_DATA_DIR}/input_data'
-    RESULTS_DATA = f'{CORE_DATA_DIR}/results_multi'
+    RESULTS_DATA = f'{CORE_DATA_DIR}/results_5s'
     MODE = 'epoch'  # epoch, fe (function evaluation counter instead of epoch)
     TIME_BOUND_KEY = True  # time bound for the training process
     TIME_BOUND_VALUE_PER_TASK = 5
@@ -179,6 +179,6 @@ class OptExp:       # Optimizer paras in experiments
     # N_TASKS = [500]
     # TIME_BOUND_VALUES = [5]
     # POP_SIZE = [50]
-    # EPOCH = [10]
+    # EPOCH = [3]
     # FE = [100000]
     # VERBOSE = True
