@@ -83,16 +83,12 @@ def group_bar2d(groups:list, data:list, models:list, xy_labels:list, title:str, 
     mopsori = data[5]
 
     x = np.arange(len(groups))  # the label locations
-    width = 0.15  # the width of the bars
-
+    width = 0.1  # the width of the bars
+    rects = []
     fig, ax = plt.subplots()
-    rects1 = ax.bar(x, nsgaii, width, label=models[0])
-    rects2 = ax.bar(x + 1.0*width, nsgaiii, width, label=models[1])
-    rects3 = ax.bar(x + 2.0*width, moalo, width, label=models[2])
-    rects4 = ax.bar(x + 3.0*width, mossa, width, label=models[3])
-    rects5 = ax.bar(x + 4.0*width, nsgaiisde, width, label=models[4])
-    rects6 = ax.bar(x + 5.0*width, mopsori, width, label=models[5])
-
+    for i in range(7):
+        r = ax.bar(x + i * width, data[i], width, label=models[i])
+        rects.append(r)
     # Add some text for labels, title and custom x-axis tick labels, etc.
     ax.set_ylabel(xy_labels[1])
     ax.set_xlabel(xy_labels[0])
@@ -111,10 +107,8 @@ def group_bar2d(groups:list, data:list, models:list, xy_labels:list, title:str, 
                         textcoords="offset points",
                         ha='center', va='bottom')
     if auto_label:
-        autolabel(rects1)
-        autolabel(rects2)
-        autolabel(rects3)
-        autolabel(rects4)
+        for r in rects:
+            auto_label(r)
 
     for idx, ext in enumerate(exts):
         plt.savefig(pathsave[idx] + filename + ext, bbox_inches='tight')

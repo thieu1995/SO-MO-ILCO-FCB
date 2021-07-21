@@ -62,7 +62,7 @@ def getting_results_for_task(models):
     return matrix_fit[1:]
 
 starttime = time()
-clouds, fogs, peers = load_nodes(f'{Config.INPUT_DATA}/nodes_2_8_5.json')
+clouds, fogs, peers = load_nodes(f'{Config.INPUT_DATA}/nodes_4_10_7.json')
 problem = {
     "clouds": clouds,
     "fogs": fogs,
@@ -75,10 +75,12 @@ models = [
     {"name": "NSGA-II", "class": "BaseNSGA_II", "param_grid": OptParas.NSGA_II, "problem": problem},
     {"name": "NSGA-III", "class": "BaseNSGA_III", "param_grid": OptParas.NSGA_III, "problem": problem},
     {"name": "NSGAII_SDE", "class": "BaseNSGAII_SDE", "param_grid": OptParas.NSGAII_SDE, "problem": problem},
-    {"name": "MOPSORI", "class": "BaseMOPSORI", "param_grid": OptParas.MOPSORI, "problem": problem},
+    {"name": "MO-PSO-RI", "class": "BaseMOPSORI", "param_grid": OptParas.MOPSORI, "problem": problem},
+    {"name": "MO_ILCO", "class": "MO_ILCO", "param_grid": OptParas.MO_ILCO, "problem": problem},
     {"name": "MO-ALO", "class": "BaseMO_ALO", "param_grid": OptParas.MO_ALO, "problem": problem},
     {"name": "MO-SSA", "class": "BaseMO_SSA", "param_grid": OptParas.MO_SSA, "problem": problem},
     {"name": "NS-SSA", "class": "BaseNS_SSA", "param_grid": OptParas.MO_SSA, "problem": problem},
+    {"name": "Improved-NSGA-III", "class": "Improved_NSGA_III", "param_grid": OptParas.IMPROVED_NSGA_III, "problem": problem},
 ]
 ## Load all results of all trials
 matrix_results = getting_results_for_task(models)
@@ -152,8 +154,8 @@ for n_task in OptExp.N_TASKS:
         hv_min, hv_max, hv_mean, hv_std, hv_cv = min(hv_list), max(hv_list), mean(hv_list), std(hv_list), std(hv_list) / mean(hv_list)
         har_min, har_max, har_mean, har_std, har_cv = min(har_list), max(har_list), mean(har_list), std(har_list), std(har_list) / mean(har_list)
         performance_results_mean.append([n_task, model["name"], er_min, er_max, er_mean, er_std, er_cv, gd_min, gd_max, gd_mean, gd_std, gd_cv,
-                                         igd_min, igd_max, igd_mean, igd_std, igd_cv, ste_min, ste_max, ste_mean, ste_std, ste_cv,
-                                         hv_min, hv_max, hv_mean, hv_std, hv_cv, har_min, har_max, har_mean, har_std, har_cv])
+                                          igd_min, igd_max, igd_mean, igd_std, igd_cv, ste_min, ste_max, ste_mean, ste_std, ste_cv,
+                                          hv_min, hv_max, hv_mean, hv_std, hv_cv, har_min, har_max, har_mean, har_std, har_cv])
 
     filepath1 = f'{Config.RESULTS_DATA}/100s/task_{n_task}/{Config.METRICS}/metrics'
     Path(filepath1).mkdir(parents=True, exist_ok=True)
@@ -164,15 +166,15 @@ for n_task in OptExp.N_TASKS:
                                                   "GD-MIN", "GD-MAX", "GD-MEAN", "GD-STD", "GD-CV",
                                                   "IGD-MIN", "IGD-MAX", "IGD-MEAN", "IGD-STD", "IGD-CV",
                                                   "STE-MIN", "STE-MAX", "STE-MEAN", "STE-STD", "STE-CV",
-                                                       "HV-MIN", "HV-MAX", "HV-MEAN", "HV-STD", "HV-CV",
-                                                       "HAR-MIN", "HAR-MAX", "HAR-MEAN", "HAR-STD", "HAR-CV"])
+                                                        "HV-MIN", "HV-MAX", "HV-MEAN", "HV-STD", "HV-CV",
+                                                        "HAR-MIN", "HAR-MAX", "HAR-MEAN", "HAR-STD", "HAR-CV"])
     df2.to_csv(f'{filepath1}/statistics.csv', index=False)
 
 
     ## Drawing some pareto-fronts founded. task --> trial ---> [modle1, model2, model3, ....]
     filepath3 = f'{Config.RESULTS_DATA}/100s/task_{n_task}/{Config.METRICS}/visual/'
     Path(filepath3).mkdir(parents=True, exist_ok=True)
-
+    print(filepath3)
     labels = ["Power Consumption (Wh)", "Service Latency (s)", "Monetary Cost ($)"]
     names = ["Reference Front"]
     list_color = [Config.VISUAL_FRONTS_COLORS[0]]

@@ -263,6 +263,8 @@ class Root:
                 # current_best_list.append(current_best[self.ID_FIT])
                 # print("EPOCH:", epoch, " / ", current_best[self.ID_FIT])
                 # plt.plot(current_best_list)
+                # ft = [pop[i][self.ID_FIT] for i in range(self.pop_size)]
+                # plt.plot(ft, 'o')
                 # plt.show()
                 time_epoch_end = time() - time_epoch_start
                 break_loop = self.check_break_loop(epoch+1, current_best, g_best, time_epoch_end, time_bound_start)

@@ -89,16 +89,16 @@ class I_LCO(Root):
         a = self.step_decay(epoch)
         pop = sorted(pop, key=lambda x: x[self.ID_FIT], reverse=True)
         # print([x[self.ID_FIT] for x in pop])
-        for i in range(0, self.pop_size):
+        for i in range(0, self.pop_size - 1):
             while True:
                 rand_number = random()
-                if rand_number > 0.8:  # Update using Eq. 1, update from n best position
-                    rd_index = sample([i + (self.pop_size - self.n_sqrt) for i in range (self.n_sqrt)], int(self.n_sqrt * 0.5))
+                if rand_number > 0.9:  # Update using Eq. 1, update from n best position
+                    rd_index = sample([i + (self.pop_size - self.n_sqrt) for i in range (self.n_sqrt)], 3)
                     temp = array([pop[j][self.ID_POS] for j in rd_index])
                     coeff = random() * 0.5 * a
                     temp = coeff * mean(temp, axis=0) + (1 - coeff) * pop[i][self.ID_POS]
-                elif rand_number < 0.6:  # Update using Eq. 2-6
-                    if random() < 0.5:
+                elif rand_number < 0.7:  # Update using Eq. 2-6
+                    if random() < 0.3:
                         better_diff = a * (pop[randint(i, self.pop_size - 1)][self.ID_POS] - pop[i][self.ID_POS]) 
                         best_diff = (1 - a) * (pop[i][self.ID_LOCAL_POS] - pop[i][self.ID_POS])
                         temp = pop[i][self.ID_POS] + (better_diff + best_diff)

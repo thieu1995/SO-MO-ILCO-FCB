@@ -30,13 +30,17 @@ metrics_matrix = metrics_matrix[1:]
 df1 = DataFrame(metrics_matrix, columns=cols)
 df1.to_csv(pathsave, index=False)
 
+path_textfile = f'datapaper.txt'
+
 ## Draw some figures
 
 ## get the data for figures
 data_types = ["MEAN"]
 metrics = ["ER", "GD", "IGD", "STE", "HV", "HAR"]
 groups = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
-models = ["NSGA-II", "NSGA-III", "MO-ALO", "MO-SSA", "NSGAII_SDE", "MOPSORI"]
+models = ["NSGA-II", "NSGA-III", "NSGAII_SDE",
+          "MO-PSO-RI", "MO_ILCO", "MO-ALO",
+          "MO-SSA", "NS-SSA"]
 pathsave = f'{Config.RESULTS_DATA}/{n_timebound}/paper/'
 Path(pathsave).mkdir(parents=True, exist_ok=True)
 

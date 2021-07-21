@@ -82,13 +82,13 @@ if __name__ == '__main__':
         "n_peers": len(peers),
     }
     models = [
-        # {"name": "GA", "class": "BaseGA", "param_grid": OptParas.GA, "problem": problem},
-        # {"name": "PSO", "class": "BasePSO", "param_grid": OptParas.PSO, "problem": problem},
-        # {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},
-        # {"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},
-        # {"name": "EO", "class": "BaseEO", "param_grid": OptParas.EO, "problem": problem},
-        # {"name": "AEO", "class": "BaseAEO", "param_grid": OptParas.AEO, "problem": problem},
-        #
+        {"name": "GA", "class": "BaseGA", "param_grid": OptParas.GA, "problem": problem},
+        {"name": "PSO", "class": "BasePSO", "param_grid": OptParas.PSO, "problem": problem},
+        {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},
+        {"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},
+        {"name": "EO", "class": "BaseEO", "param_grid": OptParas.EO, "problem": problem},
+        {"name": "AEO", "class": "BaseAEO", "param_grid": OptParas.AEO, "problem": problem},
+        
         {"name": "SHADE", "class": "SHADE", "param_grid": OptParas.SHADE, "problem": problem},
         {"name": "A-GA", "class": "BaseGA", "param_grid": OptParas.GA, "problem": problem},
         {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},

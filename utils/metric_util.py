@@ -79,10 +79,13 @@ def error_ratio(pareto_fronts: ndarray, reference_fronts: ndarray):
 
 def spacing_to_extent(pareto_fronts: ndarray):
     size_pars = len(pareto_fronts)
-
     dist_min_list = zeros(size_pars)
     for i in range(size_pars):
-        dist_min = min([norm(pareto_fronts[i] - pareto_fronts[j]) for j in range(size_pars) if i != j])
+        arr = [norm(pareto_fronts[i] - pareto_fronts[j]) for j in range(size_pars) if i != j]
+        if(len(arr) == 0):
+            return 0
+            arr = [norm(pareto_fronts[i] - pareto_fronts[j]) for j in range(size_pars)]
+        dist_min = min(arr)
         dist_min_list[i] = dist_min
     dist_mean = mean(dist_min_list)
     spacing = sum((dist_min_list - dist_mean) ** 2) / (size_pars - 1)

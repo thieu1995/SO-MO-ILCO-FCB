@@ -42,22 +42,22 @@ class MO_ILCO(Root3):
         
         # pop is (reversed) sorted by fitness
         key_list = list(pop.keys())
-        for i in range(0, self.pop_size):
+        for i in range(0, self.pop_size - 1):
             idx = key_list[i]
             
             while True:
                 rand_number = random()
 
-                if rand_number > 0.8:  # Update using Eq. 1, exploitation
-                    # choose sqrt(n) / 2 from sqrt(n) best indivs
-                    rd_index = sample([i + (self.pop_size - self.n_sqrt) for i in range (self.n_sqrt)], int(self.n_sqrt * 0.5))
+                if rand_number > 0.9:  # Update using Eq. 1, exploitation
+                    # choose 3 from sqrt(n) best indivs
+                    rd_index = sample([i + (self.pop_size - self.n_sqrt) for i in range (self.n_sqrt)], 3)
                     temp = array([pop[key_list[j]][self.ID_POS] for j in rd_index])
                     coeff = random() * 0.5 * a # explore rate
                     temp = coeff * mean(temp, axis=0) + (1 - coeff) * pop[idx][self.ID_POS]
 
-                elif rand_number < 0.6:  # Update using Eq. 2-6
+                elif rand_number < 0.7:  # Update using Eq. 2-6
                     g_best_mean = self.get_gbest_mean(g_best)
-                    if random() < 0.5: # Exploitation
+                    if random() < 0.3: # Exploitation
                         # choose a random better indiv
                         keys = key_list[randint(i, self.pop_size - 1)]
                         better_diff = a * (pop[keys][self.ID_POS] - pop[idx][self.ID_POS])
