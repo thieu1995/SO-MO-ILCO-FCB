@@ -20,6 +20,7 @@ from optimizer.single.WOA import HI_WOA
 from optimizer.single.AEO import I_AEO
 from optimizer.single.LCO import I_LCO
 from optimizer.single.DE import SHADE
+from optimizer.single.IBLA import IBLA
 
 from optimizer.multiple.NSGA_II import BaseNSGA_II
 from optimizer.multiple.NSGA_III import BaseNSGA_III

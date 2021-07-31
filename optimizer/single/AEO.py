@@ -169,7 +169,7 @@ class I_AEO(Root):
 
                 if uniform() < 0.5:
                     beta = 1 - (1 - 0) * ((epoch + 1) / self.epoch)  # Eq. 21
-                    x_r = pop[randint(0, self.pop_size)][self.ID_POS]
+                    x_r = pop[randint(0, self.pop_size - 1)][self.ID_POS]
                     if uniform() < 0.5:
                         child = beta * x_r + (1 - beta) * pop[i][self.ID_POS]
                     else:

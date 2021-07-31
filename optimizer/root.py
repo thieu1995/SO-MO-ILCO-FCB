@@ -159,7 +159,7 @@ class Root:
                   f'Global best fit {g_best[self.ID_FIT]:.4f}, Time: {time_end:.2f} seconds')
         if Config.TIME_BOUND_KEY:
             if time() - time_bound_start >= Config.TIME_BOUND_VALUE_PER_TASK * self.problem["n_tasks"]:
-                print('====== Over time for training ======')
+                print('====== Over time for training {} ======'.format(self.problem["n_tasks"]))
                 break_loop = True
         return break_loop
 
@@ -231,12 +231,12 @@ class Root:
         #     return position + 0.01 * levy
 
 
-    def step_decay(self, epoch):
-       init_explore_rate = 0.9
+    def step_decay(self, epoch, init_er):
+       init_explore_rate = init_er
        drop = (1 - 1 / (math.e + 3)) 
        epochs_drop = math.floor(math.sqrt(self.epoch))
        explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + epoch)/epochs_drop))
-       return explore_rate
+       return max(explore_rate, 0.02)
    
     def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
         pass
@@ -261,7 +261,7 @@ class Root:
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
                 g_best_list.append(g_best[self.ID_FIT])
                 # current_best_list.append(current_best[self.ID_FIT])
-                # print("EPOCH:", epoch, " / ", current_best[self.ID_FIT])
+                # print("EPOCH:", epoch, " / ", round(current_best[self.ID_FIT], 3))
                 # plt.plot(current_best_list)
                 # ft = [pop[i][self.ID_FIT] for i in range(self.pop_size)]
                 # plt.plot(ft, 'o')

@@ -40,7 +40,7 @@ class Config:
     # 1. Pareto-front
 
     ## finally: metrics = ["power", "latency", "cost", "weighting", "distancing", "min-max", "weighting-min", "pareto",...]
-    METRICS = "latency"
+    METRICS = ["latency"]
     OBJ_WEIGHTING_METRICS = [0.2, 0.3, 0.5]
     OBJ_DISTANCING_METRICS = [800, 40000, 500]  ## DEMAND-LEVEL REQUIREMENT
     OBJ_MINMAX_METRICS = [800, 40000, 500]
@@ -123,6 +123,9 @@ class OptParas:     # Optimizer parameters config
     }
     LCO = {
         "r1": [2.35],  # This parameters are actually fixed parameters in LCO
+    }
+    
+    IBLA = {
     }
 
     ### Multi-objectives

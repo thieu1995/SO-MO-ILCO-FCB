@@ -68,13 +68,13 @@ problem = {
     "n_peers": len(peers),
 }
 models = [
-    # {"name": "SHADE", "class": "SHADE", "param_grid": OptParas.SHADE, "problem": problem},
-    # {"name": "A-GA", "class": "BaseGA", "param_grid": OptParas.GA, "problem": problem},
-    # {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},
+    {"name": "SHADE", "class": "SHADE", "param_grid": OptParas.SHADE, "problem": problem},
+    {"name": "A-GA", "class": "BaseGA", "param_grid": OptParas.GA, "problem": problem},
+    {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},
     {"name": "HI-WOA", "class": "HI_WOA", "param_grid": OptParas.HI_WOA, "problem": problem},
-    # {"name": "RW-EO", "class": "BaseEO", "param_grid": OptParas.EO, "problem": problem},
+    {"name": "RW-EO", "class": "BaseEO", "param_grid": OptParas.EO, "problem": problem},
     {"name": "I-AEO", "class": "I_AEO", "param_grid": OptParas.AEO, "problem": problem},
-    {"name": "LCO", "class": "BaseLCO", "param_grid": OptParas.LCO, "problem": problem},
+    # {"name": "LCO", "class": "BaseLCO", "param_grid": OptParas.LCO, "problem": problem},
     {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
     {"name": "SSA", "class": "BaseSSA", "param_grid": OptParas.SSA, "problem": problem},
     {"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},

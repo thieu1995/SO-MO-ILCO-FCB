@@ -88,6 +88,7 @@ class I_LCO(Root):
         # wf = 0.5 + 0.5 * (epoch / self.epoch) ** 2   # weight factor
         a = self.step_decay(epoch)
         pop = sorted(pop, key=lambda x: x[self.ID_FIT], reverse=True)
+        # print(pop[-1][self.ID_POS])
         # print([x[self.ID_FIT] for x in pop])
         for i in range(0, self.pop_size - 1):
             while True:
