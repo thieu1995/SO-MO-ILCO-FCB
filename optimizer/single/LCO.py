@@ -86,7 +86,7 @@ class I_LCO(Root):
     def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
         # epoch: current chance, self.epoch: number of chances
         # wf = 0.5 + 0.5 * (epoch / self.epoch) ** 2   # weight factor
-        a = self.step_decay(epoch)
+        a = self.step_decay(epoch, 0.9)
         pop = sorted(pop, key=lambda x: x[self.ID_FIT], reverse=True)
         # print(pop[-1][self.ID_POS])
         # print([x[self.ID_FIT] for x in pop])
