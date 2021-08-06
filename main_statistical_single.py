@@ -70,13 +70,14 @@ problem = {
 models = [
     {"name": "SHADE", "class": "SHADE", "param_grid": OptParas.SHADE, "problem": problem},
     {"name": "A-GA", "class": "BaseGA", "param_grid": OptParas.GA, "problem": problem},
-    {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},
+    # {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},
     {"name": "HI-WOA", "class": "HI_WOA", "param_grid": OptParas.HI_WOA, "problem": problem},
     {"name": "RW-EO", "class": "BaseEO", "param_grid": OptParas.EO, "problem": problem},
     {"name": "I-AEO", "class": "I_AEO", "param_grid": OptParas.AEO, "problem": problem},
     # {"name": "LCO", "class": "BaseLCO", "param_grid": OptParas.LCO, "problem": problem},
-    {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
-    {"name": "SSA", "class": "BaseSSA", "param_grid": OptParas.SSA, "problem": problem},
+    # {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
+    {"name": "IBLA", "class": "IBLA", "param_grid": OptParas.IBLA, "problem": problem},
+    # {"name": "SSA", "class": "BaseSSA", "param_grid": OptParas.SSA, "problem": problem},
     {"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},
 ]
 
@@ -93,8 +94,8 @@ print(matrix_results[0].to_numpy())
 sample_df = pd.DataFrame({
     'pages':((i for i in matrix_results[0].to_numpy())),
     'action':(i for i in matrix_results[1].to_numpy()),
-    'page_view':(i for i in matrix_results[2].to_numpy()),
-    'action_view':(i for i in matrix_results[2].to_numpy())          
+    'page_view':(i for i in matrix_results[4].to_numpy()),
+    'action_view':(i for i in matrix_results[4].to_numpy())          
 })
 
 #Code for plot

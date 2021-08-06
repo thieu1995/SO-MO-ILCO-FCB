@@ -91,6 +91,14 @@ class Root3(Root):
        epochs_drop = math.floor(math.sqrt(self.epoch))
        explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + epoch)/epochs_drop))
        return explore_rate
+   
+    def step_decay2(self, epoch, init_er):
+       init_explore_rate = init_er
+       drop = (1 - 1 / (math.e + 3)) 
+       epochs_drop = math.floor(math.sqrt(self.epoch))
+       explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + epoch)/epochs_drop))
+       return max(explore_rate, 0.02)
+   
  
     # Function to carry out NSGA-II's fast non dominated sort
     def fast_non_dominated_sort(self, pop: dict):
@@ -171,13 +179,13 @@ class Root3(Root):
                 g_best_dict[epoch] = array(current_best)
                 time_epoch_end = time() - time_epoch_start
                 training_info = self.adding_element_to_dict(training_info, ["Epoch", "FrontSize", "Time"], [epoch+1, len(fronts[0]), time_epoch_end])
-                if self.verbose:
+                if not self.verbose:
                     obj = [zeros(len(pop)) for i in range(self.n_objs)]
                     for idx, item in enumerate(pop.values()):
                         for i in range(self.n_objs):
                             obj[i][idx] = float(item[self.ID_FIT][i])
                     # print(obj)
-                    # visualize_3D(obj)
+                    visualize_3D(obj)
                     print(f'Epoch: {epoch+1}, Front size: {len(fronts[0])}, including {list(pop.values())[fronts[0][0]][self.ID_FIT]}, time: {time_epoch_end:.2f} seconds')
                 if Config.TIME_BOUND_KEY:
                     if time() - time_bound_start >= Config.TIME_BOUND_VALUE_PER_TASK * self.problem["n_tasks"]:

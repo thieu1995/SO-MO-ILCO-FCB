@@ -23,6 +23,7 @@ from optimizer.single.DE import SHADE
 from optimizer.single.IBLA import IBLA
 
 from optimizer.multiple.NSGA_II import BaseNSGA_II
+from optimizer.multiple.MO_IBLA import MO_IBLA
 from optimizer.multiple.NSGA_III import BaseNSGA_III
 from optimizer.multiple.NSGAII_SDE import BaseNSGAII_SDE
 from optimizer.multiple.NS_SSA import BaseNS_SSA
