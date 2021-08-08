@@ -179,7 +179,7 @@ class Root3(Root):
                 g_best_dict[epoch] = array(current_best)
                 time_epoch_end = time() - time_epoch_start
                 training_info = self.adding_element_to_dict(training_info, ["Epoch", "FrontSize", "Time"], [epoch+1, len(fronts[0]), time_epoch_end])
-                if not self.verbose:
+                if self.verbose:
                     obj = [zeros(len(pop)) for i in range(self.n_objs)]
                     for idx, item in enumerate(pop.values()):
                         for i in range(self.n_objs):
