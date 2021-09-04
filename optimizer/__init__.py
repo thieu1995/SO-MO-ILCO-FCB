@@ -31,6 +31,7 @@ from optimizer.multiple.NS_SSA import BaseNS_SSA
 from optimizer.multiple.MO_SSA import BaseMO_SSA
 from optimizer.multiple.MO_ALO import BaseMO_ALO
 from optimizer.multiple.MO_ILCO import MO_ILCO
+from optimizer.multiple.MO_ILCO_2 import MO_ILCO_2
 from optimizer.multiple.MO_PSO_RI import BaseMOPSORI
 from optimizer.multiple.improved_NSGA_III import Improved_NSGA_III
 
