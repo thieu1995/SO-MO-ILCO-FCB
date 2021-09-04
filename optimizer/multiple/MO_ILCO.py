@@ -178,7 +178,7 @@ class MO_ILCO(Root3):
                         
                     for j in range(self.n_sqrt):
                         for k in range(len(new_pop[i][self.ID_POS])):
-                            new_pop[i][self.ID_POS][k] += wf * self.get_step_levy_flight()
+                            temp += wf * self.get_step_levy_flight()
                         child = self.amend_position_random(temp)
                         schedule = matrix_to_schedule(self.problem, child.astype(int))
                         if schedule.is_valid():
