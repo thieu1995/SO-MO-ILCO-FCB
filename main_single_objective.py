@@ -97,7 +97,8 @@ if __name__ == '__main__':
         #{"name": "I-AEO", "class": "I_AEO", "param_grid": OptParas.AEO, "problem": problem},
         #{"name": "LCO", "class": "BaseLCO", "param_grid": OptParas.LCO, "problem": problem},
         # {"name": "IBLA", "class": "IBLA", "param_grid": OptParas.IBLA, "problem": problem},
-        {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
+        # {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
+        {"name": "ILCO-2", "class": "ILCO_2", "param_grid": OptParas.LCO, "problem": problem},
         #{"name": "SSA", "class": "BaseSSA", "param_grid": OptParas.SSA, "problem": problem},
         #{"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},
     ]
