@@ -10,7 +10,7 @@
 from time import time
 from config import Config
 from sys import exit
-from numpy import inf, zeros, argmin, array
+from numpy import inf, zeros, argmin, array, mean
 from numpy.random import uniform
 from optimizer.root import Root
 from utils.schedule_util import matrix_to_schedule
@@ -68,14 +68,17 @@ class Root3(Root):
                 better = True
         return better
 
-    def dominated(self, obj1, obj2):
-        better = False
+    def is_dominate(self, obj1, obj2):
         for i in range(self.n_objs):
             if obj1[i] > obj2[i]:
                 return False
-            elif obj1[i] < obj2[i]:
-                better = True
-        return better
+        return True
+    
+    def is_non_dominated(self, obj1, obj2):
+        for i in range(self.n_objs):
+            if obj1[i] < obj2[i]:
+                return True
+        return False
     
     def is_better(self, fit_1, fit_2):
         better = True
@@ -85,7 +88,7 @@ class Root3(Root):
                 return False
         return better
 
-    def step_decay(self, epoch):
+    def step_decay(self, epoch, init_explore_rate = 0.9):
        init_explore_rate = 0.9
        drop = (1 - 1 / (math.e + 3)) 
        epochs_drop = math.floor(math.sqrt(self.epoch))
@@ -102,31 +105,35 @@ class Root3(Root):
  
     # Function to carry out NSGA-II's fast non dominated sort
     def fast_non_dominated_sort(self, pop: dict):
-        objs = [[] for _ in range(0, self.n_objs)]
-        for idx, item in pop.items():
-            for i in range(self.n_objs):
-                objs[i].append(item[self.ID_FIT][i])
-        size = len(objs[0])
+        key_list = list(pop.keys())
+        # id_list = {}
+        # for i in range(0, self.pop_size):
+            # id_list[key_list[i]] = i
+            
         front = []
         num_assigned_individuals = 0
-        indv_ranks = [0 for _ in range(0, size)]
+        indv_ranks = [0 for _ in range(0, self.pop_size)]
         rank = 1
+        mx, mn = [0] * self.n_objs, [0] * self.n_objs
+        for j in range(self.n_objs):
+            mx[j] = max([pop[key_list[i]][self.ID_FIT][j] for i in range(self.pop_size)])
+            mn[j] = min([pop[key_list[i]][self.ID_FIT][j] for i in range(self.pop_size)])
         
-        while num_assigned_individuals < size:
+        while num_assigned_individuals < self.pop_size:
             cur_front = []
-            for i in range(size):
+            for i in range(self.pop_size):
                 if indv_ranks[i] > 0:
                     continue
                 be_dominated = False
                 
                 j = 0
                 while j < len(cur_front):
-                    idx_1 = cur_front[j]
-                    idx_2 = i
-                    if self.dominate(idx_1, idx_2, objs):
+                    idx_1 = key_list[cur_front[j]]
+                    idx_2 = key_list[i]
+                    if self.is_dominate(pop[idx_1][self.ID_FIT], pop[idx_2][self.ID_FIT]):
                         be_dominated = True
                         break
-                    elif self.dominate(idx_2, idx_1, objs):
+                    elif self.is_dominate(pop[idx_2][self.ID_FIT], pop[idx_1][self.ID_FIT]):
                         cur_front[j] = cur_front[-1]
                         cur_front.pop()
                         j -= 1
@@ -134,12 +141,15 @@ class Root3(Root):
                         
                 if not be_dominated:
                     cur_front.append(i)
-                    
+            sorted(cur_front, key=lambda x: 
+                sum([(pop[key_list[x]][self.ID_FIT][j] - mn[j]) / (mx[j] - mn[j] + 1e-10)
+                     for j in range(self.n_objs)]
+                ))
             for i in range(len(cur_front)):
                 indv_ranks[ cur_front[i] ] = rank
+                rank += 1
             front.append(cur_front)
             num_assigned_individuals += len(cur_front)
-            rank += 1
         return front, indv_ranks
 
     def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
@@ -175,7 +185,6 @@ class Root3(Root):
                     current_best.append(list(pop.values())[it][self.ID_FIT])
                 for it in fronts[0]:
                     mo_g_best.append(pop[list(pop.keys())[it]])
-                    # print(pop[list(pop.keys())[it]])
                 g_best_dict[epoch] = array(current_best)
                 time_epoch_end = time() - time_epoch_start
                 training_info = self.adding_element_to_dict(training_info, ["Epoch", "FrontSize", "Time"], [epoch+1, len(fronts[0]), time_epoch_end])
@@ -186,7 +195,18 @@ class Root3(Root):
                             obj[i][idx] = float(item[self.ID_FIT][i])
                     # print(obj)
                     visualize_3D(obj)
-                    print(f'Epoch: {epoch+1}, Front size: {len(fronts[0])}, including {list(pop.values())[fronts[0][0]][self.ID_FIT]}, time: {time_epoch_end:.2f} seconds')
+                    # for j in  range(len(fronts[0])):
+                    #     idx = fronts[0][j]
+                    #     for i in range(self.n_objs):
+                    #         obj[i][j] = float(pop[list(pop.keys())[idx]][self.ID_FIT][i])
+                    # obj = [zeros(len(fronts)) for i in range(self.n_objs)]
+                    # visualize_3D(obj, 'red', True)
+                    value = [0] * self.n_objs
+                    for i in range(self.n_objs):
+                        value[i] = mean([list(pop.values())[j][self.ID_FIT][i] for j in fronts[0]])
+                    for i in range(len(value)):
+                        value[i] = round(value[i], 3)
+                    print(f'Epoch: {epoch+1}, Front size: {len(fronts[0])}, including {value}, time: {time_epoch_end:.2f} seconds')
                 if Config.TIME_BOUND_KEY:
                     if time() - time_bound_start >= Config.TIME_BOUND_VALUE_PER_TASK * self.problem["n_tasks"]:
                         print('====== Over time for training ======')

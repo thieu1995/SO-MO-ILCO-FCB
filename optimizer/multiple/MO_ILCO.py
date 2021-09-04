@@ -8,7 +8,11 @@
 # ------------------------------------------------------------------------------------------------------%
 
 from config import Config
+from copy import deepcopy
+import numpy as np
 from optimizer.root_MOPSORI import Root3
+from bisect import bisect_left
+from numpy import ceil, sqrt, array, mean, cos, std, zeros,  subtract, sum
 import random
 from utils.schedule_util import matrix_to_schedule
 from numpy.random import uniform, randint, normal, random
@@ -36,7 +40,7 @@ class MO_ILCO(Root3):
         temp = array([item[self.ID_POS] for item in g_best])
         return mean(temp, axis=0)
 
-    def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
+    def evolve2(self, pop=None, fe_mode=None, epoch=None, g_best=None):
         # epoch: current chance, self.epoch: number of chances
         a = self.step_decay(epoch)
         
@@ -129,4 +133,119 @@ class MO_ILCO(Root3):
         else:
             counter = self.pop_size  # pop_new + pop_mutation operations
             return pop, counter
+        
+    def get_current_best(self, pop):
+        key_list = list(pop.keys())
+        idx = key_list[0]
+        for i in range(1, self.pop_size):
+            if self.is_dominate(pop[key_list[i]][self.ID_FIT], pop[idx][self.ID_FIT]):
+                idx = key_list[i]
+        return pop[idx]
+   
+    def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
+        # epoch: current chance, self.epoch: number of chances
+        key_list = list(pop.keys())
+        id_list = {}
+        for i in range(0, self.pop_size):
+            id_list[key_list[i]] = i
+        fronts, rank = self.fast_non_dominated_sort(pop)
+        n_best = len(fronts)
+            
+        key_list = sorted(key_list, key=lambda x: id_list[x])
+        new_pop = deepcopy(pop)
+        wf = self.step_decay(epoch, 0.5)
+        
+        prob = [np.exp((self.pop_size - i + self.n_sqrt) / self.n_sqrt) for i in range(self.pop_size)]
+        prob = array(prob / sum(prob))
+        for i in range(1, self.pop_size): prob[i] += prob[i - 1]
+            
+        for _i in range(0, self.pop_size):
+            i = key_list[_i]
+            while True:
+                K = min(n_best, bisect_left(prob, uniform()) + 1)
+                # K = randint(1, self.n_sqrt)
+                master = sum(array([pop[key_list[j]][self.ID_POS] for j in sample([_ for _ in range(K)], min(K, 3))]), axis=0) / min(K, 3)
+                if _i < K:
+                    temp = pop[i][self.ID_POS] + normal(0, 0.3) * (master - pop[i][self.ID_POS])
+                    for j in range(len(pop[i][self.ID_POS])):
+                        temp[j] += self.get_step_levy_flight()
+                    best = new_pop[i][self.ID_POS]
+                    best_fit = 1e9
+                    child = self.amend_position_random(new_pop[i][self.ID_POS])
+                    schedule = matrix_to_schedule(self.problem, child.astype(int))
+                    if schedule.is_valid():
+                        best_fit = self.Fit.fitness(schedule)
+                        
+                    for j in range(self.n_sqrt):
+                        for k in range(len(new_pop[i][self.ID_POS])):
+                            new_pop[i][self.ID_POS][k] += wf * self.get_step_levy_flight()
+                        child = self.amend_position_random(temp)
+                        schedule = matrix_to_schedule(self.problem, child.astype(int))
+                        if schedule.is_valid():
+                            fit = self.Fit.fitness(schedule)
+                            if self.is_dominate(fit, best_fit):
+                                best_fit = fit
+                                best = temp
+                                
+                    new_pop[i][self.ID_POS] = best
+                else:
+                    rand_number = random()
+                    if rand_number < 0.9:
+                        d = normal(0, 0.3)
+                        teacher = np.argmin([sum(np.absolute(subtract(pop[i][self.ID_POS], pop[key_list[j]][self.ID_POS]))) for j in range (K) if j != i]) 
+                        new_pop[i][self.ID_POS] = pop[i][self.ID_POS] +\
+                            d * (pop[key_list[teacher]][self.ID_POS] - pop[i][self.ID_POS])
+                        for j in range(len(new_pop[i][self.ID_POS])):
+                            new_pop[i][self.ID_POS][j] += self.get_step_levy_flight()
+                    else:
+                        _pos  = randint(0, _i - 1)
+                        friend = new_pop[key_list[_pos]][self.ID_POS]
+                        new_pop[i][self.ID_POS] = wf * friend + (1 - wf) * new_pop[i][self.ID_POS] \
+                             + self.get_step_levy_flight()
+                        
+                child = self.amend_position_random(new_pop[i][self.ID_POS])
+                schedule = matrix_to_schedule(self.problem, child.astype(int))
+                if schedule.is_valid():
+                    fit = self.Fit.fitness(schedule)
+                    new_pop[i][self.ID_POS] = child
+                    new_pop[i][self.ID_FIT] = fit
+                    if self.is_dominate(new_pop[i][self.ID_FIT], pop[i][self.ID_FIT])\
+                        or (self.is_non_dominated(pop[i][self.ID_FIT], new_pop[i][self.ID_FIT])
+                            and random() < 0.1):
+                        pop[i] = new_pop[i]
+                    break
+                 
+        current_best = self.get_current_best(pop)
+        # Decomposition
+        ## Eq. 10, 11, 12, 9
+        for _i in range(0, self.pop_size):
+            i = key_list[_i]
+            while True:
+                r3 = uniform()
+                d = normal(0, 0.5)
+                e = r3 * randint(1, 3) - 1
+                h = 2 * r3 - 1
+                child = current_best[self.ID_POS] + d * (e * current_best[self.ID_POS] - h * pop[i][self.ID_POS])
 
+                for j in range(len(current_best[self.ID_POS])):
+                        current_best[self.ID_POS][j] += self.get_step_levy_flight()
+
+                child = self.amend_position_random(child)
+                schedule = matrix_to_schedule(self.problem, child.astype(int))
+                if schedule.is_valid():
+                    fit = self.Fit.fitness(schedule)
+                    if self.is_dominate(fit, new_pop[i][self.ID_FIT]):
+                        new_pop[i][self.ID_POS] = child
+                        new_pop[i][self.ID_FIT] = fit
+                        if self.is_dominate(new_pop[i][self.ID_FIT], pop[i][self.ID_FIT])\
+                            or (self.is_non_dominated(pop[i][self.ID_FIT], new_pop[i][self.ID_FIT])
+                                and random() < 0.1):
+                            pop[i] = new_pop[i]
+                    break 
+                
+        # pop = new_pop
+        if fe_mode is None:
+            return pop
+        else:
+            counter = 2 * self.pop_size  # pop_new + pop_mutation operations
+            return pop, counter
