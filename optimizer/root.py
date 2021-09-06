@@ -268,7 +268,8 @@ class Root:
                 # plt.show()
                 time_epoch_end = time() - time_epoch_start
                 break_loop = self.check_break_loop(epoch+1, current_best, g_best, time_epoch_end, time_bound_start)
-                if break_loop:
+                if break_loop:                
+                    print("LAST EPOCH:", epoch, " / ", round(current_best[self.ID_FIT], 3))
                     break
             time_total = time() - time_total
             return g_best[0], g_best[1], array(g_best_list), time_total
