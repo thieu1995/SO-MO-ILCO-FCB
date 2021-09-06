@@ -40,7 +40,7 @@ metrics = ["ER", "GD", "IGD", "STE", "HV", "HAR"]
 groups = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
 models = ["NSGA-II", "NSGA-III", "NSGAII_SDE",
           "MO-PSO-RI", "MO_ILCO", "MO_ILCO_2",
-          "MO-SSA"]
+          "MO-ALO"]
 pathsave = f'{Config.RESULTS_DATA}/{n_timebound}/paper/'
 Path(pathsave).mkdir(parents=True, exist_ok=True)
 
