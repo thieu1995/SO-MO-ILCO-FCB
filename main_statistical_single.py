@@ -106,7 +106,7 @@ plt.xlabel('pages')
 plt.ylabel('action_view')
 plt.legend(loc='upper left', bbox_to_anchor=(1,1))
 
-
+plt.savefig('single.pdf')
 '''
 
 data = {'Task': matrix_results[:, 0],
