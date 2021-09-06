@@ -95,8 +95,8 @@ print(matrix_results[0].to_numpy())
 sample_df = pd.DataFrame({
     'pages':((i for i in matrix_results[0].to_numpy())),
     'action':(i for i in matrix_results[1].to_numpy()),
-    'page_view':(i for i in matrix_results[4].to_numpy()),
-    'action_view':(i for i in matrix_results[4].to_numpy())          
+    'page_view':(i for i in matrix_results[3].to_numpy()),
+    'action_view':(i for i in matrix_results[3].to_numpy())          
 })
 
 #Code for plot
@@ -106,7 +106,7 @@ plt.xlabel('pages')
 plt.ylabel('action_view')
 plt.legend(loc='upper left', bbox_to_anchor=(1,1))
 
-plt.savefig('single.pdf')
+plt.savefig('single3.pdf')
 '''
 
 data = {'Task': matrix_results[:, 0],
