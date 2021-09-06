@@ -70,18 +70,21 @@ class ILCO_2(Root):
                     new_pop[i][self.ID_POS] = best
                 else:
                     rand_number = random()
-                    if rand_number > 0.5:
+                    if rand_number > 0.6:
                         d = normal(0, 0.3)
                         teacher = np.argmin([sum(np.absolute(subtract(pop[i][self.ID_POS], pop[j][self.ID_POS]))) for j in range (K) if j != i]) 
                         new_pop[i][self.ID_POS] = pop[i][self.ID_POS] +\
                             d * (pop[teacher][self.ID_POS] - pop[i][self.ID_POS])
                         for j in range(len(new_pop[i][self.ID_POS])):
                             new_pop[i][self.ID_POS][j] += self.get_step_levy_flight()
-                    elif rand_number < 0.4:
+                    elif rand_number > 0.4:
                         _pos  = randint(0, i - 1)
                         friend = new_pop[_pos][self.ID_POS]
                         new_pop[i][self.ID_POS] = wf * friend + (1 - wf) * new_pop[i][self.ID_POS] \
                              + self.get_step_levy_flight()
+                    elif rand_number > 0.2:  # Update using Eq. 1, update from n best position
+                        temp = array([random() * pop[j][self.ID_POS] for j in range(0, self.n_sqrt)])
+                        temp = mean(temp, axis=0)
                     else:  # Exploration, update group 3
                         pos_new = pop[i][self.ID_POS] + (self.ub - (pop[i][self.ID_POS] - self.lb) - pop[i][self.ID_POS]) * random()
                         new_pop[i][self.ID_POS] = pos_new
