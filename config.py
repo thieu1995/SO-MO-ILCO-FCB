@@ -41,6 +41,7 @@ class Config:
 
     ## finally: metrics = ["power", "latency", "cost", "weighting", "distancing", "min-max", "weighting-min", "pareto",...]
     METRICS = "pareto"
+    METRICS = "power"
     OBJ_WEIGHTING_METRICS = [0.2, 0.3, 0.5]
     OBJ_DISTANCING_METRICS = [800, 40000, 500]  ## DEMAND-LEVEL REQUIREMENT
     OBJ_MINMAX_METRICS = [800, 40000, 500]
@@ -127,6 +128,9 @@ class OptParas:     # Optimizer parameters config
     
     IBLA = {
     }
+    
+    VNS = {
+    }
 
     ### Multi-objectives
     MOPSORI = {
@@ -179,7 +183,7 @@ class OptExp:       # Optimizer paras in experiments
     POP_SIZE = [50]
     EPOCH = [1000]
     FE = [100000]
-    VERBOSE = False
+    VERBOSE = True
 
     # N_TRIALS = 1
     # N_TASKS = [500]

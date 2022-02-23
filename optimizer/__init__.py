@@ -20,6 +20,7 @@ from optimizer.single.WOA import HI_WOA
 from optimizer.single.AEO import I_AEO
 from optimizer.single.LCO import I_LCO
 from optimizer.single.ILCO_2 import ILCO_2
+from optimizer.single.VNS import VNS
 from optimizer.single.DE import SHADE
 from optimizer.single.IBLA import IBLA
 
