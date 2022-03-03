@@ -7,9 +7,30 @@
 #       Github:     https://github.com/thieu1995                                                        %
 # ------------------------------------------------------------------------------------------------------%
 
+import argparse
 from os.path import abspath, dirname
 basedir = abspath(dirname(__file__))
 
+    # N_TRIALS = 10
+    # N_TASKS = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
+    # TIME_BOUND_VALUES = [5]       # 5 seconds for each task
+    # POP_SIZE = [50]
+    # EPOCH = [1000]
+    # FE = [100000]
+    # VERBOSE = True
+    
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--n_trials', type=int, default=10)
+    parser.add_argument('--n_tasks', default=[50, 100, 150, 200, 250, 300, 350, 400, 450, 500])
+    parser.add_argument('--time_bound', default=[5])
+    parser.add_argument('--pop_size', default=[50])
+    parser.add_argument('--epoch', default=[1000])
+    parser.add_argument('--func_eval', default=[100000])
+    parser.add_argument('--verbose', type=bool, default=True)
+    parser.add_argument('--objective', type=str, default="cost")
+    args = parser.parse_args()
+    return args
 
 class Config:
     CORE_DATA_DIR = f'{basedir}/data'
@@ -40,8 +61,8 @@ class Config:
     # 1. Pareto-front
 
     ## finally: metrics = ["power", "latency", "cost", "weighting", "distancing", "min-max", "weighting-min", "pareto",...]
-    METRICS = "pareto"
-    METRICS = "power"
+    args = parse_args()
+    METRICS = args.objective
     OBJ_WEIGHTING_METRICS = [0.2, 0.3, 0.5]
     OBJ_DISTANCING_METRICS = [800, 40000, 500]  ## DEMAND-LEVEL REQUIREMENT
     OBJ_MINMAX_METRICS = [800, 40000, 500]
@@ -177,14 +198,14 @@ class OptParas:     # Optimizer parameters config
 
 
 class OptExp:       # Optimizer paras in experiments
-    N_TRIALS = 10
-    N_TASKS = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
-    TIME_BOUND_VALUES = [5]       # 5 seconds for each task
-    POP_SIZE = [50]
-    EPOCH = [1000]
-    FE = [100000]
-    VERBOSE = True
-
+    args = parse_args()
+    N_TRIALS = args.n_trials
+    N_TASKS = args.n_tasks
+    TIME_BOUND_VALUES = args.time_bound
+    POP_SIZE = args.pop_size
+    EPOCH = args.epoch
+    FE = args.func_eval
+    VERBOSE = args.verbose
     # N_TRIALS = 1
     # N_TASKS = [500]
     # TIME_BOUND_VALUES = [5]

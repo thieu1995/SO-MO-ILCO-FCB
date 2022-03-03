@@ -251,7 +251,7 @@ class Root:
         pop = [self.create_solution() for _ in range(self.pop_size)]
         g_best = self.get_g_best(pop)
         g_best_list = [g_best[self.ID_FIT]]
-        # current_best_list = []
+        current_best_list = []
 
         if Config.MODE == 'epoch':
             for epoch in range(self.epoch):
@@ -260,8 +260,8 @@ class Root:
                 pop = self.evolve(pop, None, epoch, g_best)
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
                 g_best_list.append(g_best[self.ID_FIT])
-                # current_best_list.append(current_best[self.ID_FIT])
-                # print("EPOCH:", epoch, " / ", round(current_best[self.ID_FIT], 3))
+                current_best_list.append(current_best[self.ID_FIT])
+                print("EPOCH:", epoch, " / ", round(current_best[self.ID_FIT], 3))
                 # plt.plot(current_best_list)
                 # ft = [pop[i][self.ID_FIT] for i in range(self.pop_size)]
                 # plt.plot(ft, 'o')
@@ -280,6 +280,8 @@ class Root:
                 pop, counter = self.evolve(pop, Config.MODE, None, g_best)
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
                 g_best_list.append(g_best[self.ID_FIT])
+                current_best_list.append(current_best[self.ID_FIT])
+                print("EPOCH:", epoch, " / ", round(current_best[self.ID_FIT], 3))
                 fe_counter += counter
                 time_fe_end = time() - time_fe_start
                 break_loop = self.check_break_loop(fe_counter, current_best, g_best, time_fe_end, time_bound_start)
