@@ -19,10 +19,12 @@ from optimizer.single.PSO import CPSO
 from optimizer.single.WOA import HI_WOA
 from optimizer.single.AEO import I_AEO
 from optimizer.single.LCO import I_LCO
-from optimizer.single.ILCO_2 import ILCO_2
+# from optimizer.single.ILCO import ILCO_2
 from optimizer.single.VNS import VNS
 from optimizer.single.DE import SHADE
-from optimizer.single.IBLA import IBLA
+from optimizer.single.ILCO_1 import ILCO_1
+from optimizer.single.ILCO_2 import ILCO_2
+from optimizer.single.ILCO_3 import ILCO_3
 
 from optimizer.multiple.NSGA_II import BaseNSGA_II
 from optimizer.multiple.MO_IBLA import MO_IBLA

@@ -28,10 +28,8 @@ class ILCO_2(Root):
         super().__init__(problem, pop_size, epoch, func_eval, lb, ub, verbose)
         self.n_sqrt = int(ceil(sqrt(self.pop_size)))
         self.n_half = int(pop_size/2)
-        if paras is None:
-            paras = {"r1": 2.35}
-        self.r1 = paras["r1"]
         self.n_sqrt = int(ceil(sqrt(self.pop_size)))
+        
         self.prob = [np.exp((self.pop_size - i + self.n_sqrt) / self.n_sqrt) for i in range(self.pop_size)]
         self.prob = array(self.prob / sum(self.prob))
         for i in range(1, self.pop_size):
@@ -73,26 +71,23 @@ class ILCO_2(Root):
                 else:
                     rand_number = random()
                     if rand_number > 0.6:
-                        temp = array([random() * pop[j][self.ID_POS] for j in range(0, self.n_sqrt)])
-                        temp = mean(temp, axis=0)
-                    elif rand_number > 0.4: # Update using Eq. 2-6
-                        f1 = 1 - epoch / self.epoch
-                        f2 = 1 - f1
-                        if i == 0:
-                            pop[i] = deepcopy(g_best)
-                            continue
-                        else:
-                            best_diff = f1 * self.r1 * (g_best[self.ID_POS] - pop[i][self.ID_POS])
-                            better_diff = f2 * self.r1 * (pop[i - 1][self.ID_POS] - pop[i][self.ID_POS])
-                        temp = pop[i][self.ID_POS] + random() * better_diff + random() * best_diff
-                    elif rand_number > 0.2:  # Update using Eq. 1, update from n best position
-                        temp = array([random() * pop[j][self.ID_POS] for j in range(0, self.n_sqrt)])
-                        temp = mean(temp, axis=0)
-                    else:  # Exploration, update group 3
+                        d = normal(0, 0.3)
+                        teacher = np.argmin([sum(np.absolute(subtract(pop[i][self.ID_POS], pop[j][self.ID_POS]))) for j in range (K) if j != i]) 
+                        new_pop[i][self.ID_POS] = pop[i][self.ID_POS] +\
+                            d * (pop[teacher][self.ID_POS] - pop[i][self.ID_POS])
+                        for j in range(len(new_pop[i][self.ID_POS])):
+                            new_pop[i][self.ID_POS][j] += self.get_step_levy_flight()
+                    elif rand_number > 0.4:
                         _pos  = randint(0, i - 1)
                         friend = new_pop[_pos][self.ID_POS]
                         new_pop[i][self.ID_POS] = wf * friend + (1 - wf) * new_pop[i][self.ID_POS] \
                              + self.get_step_levy_flight()
+                    elif rand_number > 0.2:  # Update using Eq. 1, update from n best position
+                        temp = array([random() * pop[j][self.ID_POS] for j in range(0, self.n_sqrt)])
+                        temp = mean(temp, axis=0)
+                    else:  # Exploration, update group 3
+                        pos_new = pop[i][self.ID_POS] + (self.ub - (pop[i][self.ID_POS] - self.lb) - pop[i][self.ID_POS]) * random()
+                        new_pop[i][self.ID_POS] = pos_new
                 child = self.amend_position_random(new_pop[i][self.ID_POS])
                 schedule = matrix_to_schedule(self.problem, child.astype(int))
                 if schedule.is_valid():

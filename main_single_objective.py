@@ -98,8 +98,10 @@ if __name__ == '__main__':
         #{"name": "LCO", "class": "BaseLCO", "param_grid": OptParas.LCO, "problem": problem},
         # {"name": "IBLA", "class": "IBLA", "param_grid": OptParas.IBLA, "problem": problem},
         # {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
-        # {"name": "ILCO-2", "class": "ILCO_2", "param_grid": OptParas.LCO, "problem": problem},
-        {"name": "VNS", "class": "VNS", "param_grid": OptParas.LCO, "problem": problem},
+        {"name": "ILCO-1", "class": "ILCO_1", "param_grid": OptParas.LCO, "problem": problem},
+        {"name": "ILCO-2", "class": "ILCO_2", "param_grid": OptParas.LCO, "problem": problem},
+        {"name": "ILCO-3", "class": "ILCO_3", "param_grid": OptParas.LCO, "problem": problem},
+        {"name": "VNS", "class": "VNS", "param_grid": OptParas.VNS, "problem": problem},
         #{"name": "SSA", "class": "BaseSSA", "param_grid": OptParas.SSA, "problem": problem},
         #{"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},
     ]
