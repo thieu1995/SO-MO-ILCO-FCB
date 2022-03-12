@@ -28,7 +28,7 @@ def parse_args():
     parser.add_argument('--epoch', default=[1000])
     parser.add_argument('--func_eval', default=[100000])
     parser.add_argument('--verbose', type=bool, default=True)
-    parser.add_argument('--objective', type=str, default="cost")
+    parser.add_argument('--objective', default=["power", "latency", "cost"])
     args = parser.parse_args()
     return args
 

@@ -33,6 +33,7 @@ def inside_loop(my_model, n_trials, n_timebound, epoch, fe, end_paras):
         df = read_csv(file_name, usecols=["Power", "Latency", "Cost"])
         return df.values
 
+
 def getting_results_for_task(models):
     matrix_fit = []
     names = [model["name"] for model in models]
@@ -57,6 +58,7 @@ def getting_results_for_task(models):
             table.append(values_metrics)
     return DataFrame(table)
 
+
 starttime = time()
 clouds, fogs, peers = load_nodes(f'{Config.INPUT_DATA}/nodes_4_10_7.json')
 problem = {
@@ -71,42 +73,48 @@ models = [
     # {"name": "SHADE", "class": "SHADE", "param_grid": OptParas.SHADE, "problem": problem},
     # {"name": "A-GA", "class": "BaseGA", "param_grid": OptParas.GA, "problem": problem},
     # {"name": "C-PSO", "class": "CPSO", "param_grid": OptParas.PSO, "problem": problem},
-    {"name": "HI-WOA", "class": "HI_WOA", "param_grid": OptParas.HI_WOA, "problem": problem},
+    # {"name": "HI-WOA", "class": "HI_WOA", "param_grid": OptParas.HI_WOA, "problem": problem},
     # {"name": "RW-EO", "class": "BaseEO", "param_grid": OptParas.EO, "problem": problem},
-    {"name": "I-AEO", "class": "I_AEO", "param_grid": OptParas.AEO, "problem": problem},
+    # {"name": "I-AEO", "class": "I_AEO", "param_grid": OptParas.AEO, "problem": problem},
     {"name": "LCO", "class": "BaseLCO", "param_grid": OptParas.LCO, "problem": problem},
-    {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
+    # {"name": "I-LCO", "class": "I_LCO", "param_grid": OptParas.LCO, "problem": problem},
+    {"name": "ILCO-1", "class": "ILCO_1", "param_grid": OptParas.LCO, "problem": problem},
     {"name": "ILCO-2", "class": "ILCO_2", "param_grid": OptParas.LCO, "problem": problem},
+    {"name": "ILCO-3", "class": "ILCO_3", "param_grid": OptParas.LCO, "problem": problem},
     # {"name": "IBLA", "class": "IBLA", "param_grid": OptParas.IBLA, "problem": problem},
-    {"name": "SSA", "class": "BaseSSA", "param_grid": OptParas.SSA, "problem": problem},
-    {"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},
+    # {"name": "SSA", "class": "BaseSSA", "param_grid": OptParas.SSA, "problem": problem},
+    # {"name": "WOA", "class": "BaseWOA", "param_grid": OptParas.WOA, "problem": problem},
+    # {"name": "VNS", "class": "VNS", "param_grid": OptParas.VNS, "problem": problem},
 ]
-
 
 ## Load all results of all trials
 matrix_results = getting_results_for_task(models)
 # print(matrix_results)
-pathsave = f'{Config.RESULTS_DATA}/5s/SingleResult/single_objective_results.csv'
+pathsave = f'{Config.RESULTS_DATA}/5s/SingleResult/component_results_2.csv'
 matrix_results.to_csv(pathsave, index=False)
 # df_full = DataFrame(matrix_results, columns=["Task", "Model", "Trial", "Fit1", "Fit2", "Fit3"])
 
 print(matrix_results[0].to_numpy())
 
-sample_df = pd.DataFrame({
-    'pages':((i for i in matrix_results[0].to_numpy())),
-    'action':(i for i in matrix_results[1].to_numpy()),
-    'page_view':(i for i in matrix_results[3].to_numpy()),
-    'action_view':(i for i in matrix_results[3].to_numpy())          
-})
+frame = {
+    'tasks': ((i for i in matrix_results[0].to_numpy())),
+    'algorithm': (i for i in matrix_results[1].to_numpy())
+}
+for i, metric in enumerate(Config.METRICS):
+    frame[metric] = (j for j in matrix_results[i+2].to_numpy())
 
-#Code for plot
-sns.barplot(x='pages',y='action_view',hue='action',data=sample_df)
-plt.xticks(rotation=90)
-plt.xlabel('pages')
-plt.ylabel('action_view')
-plt.legend(loc='upper left', bbox_to_anchor=(1,1))
+sample_df = pd.DataFrame(frame)
 
-plt.savefig('single3.pdf')
+# Code for plot
+for metric in Config.METRICS:
+    plt.clf()
+    sns.barplot(x='tasks', y=metric, hue='algorithm', data=sample_df)
+    plt.xticks(rotation=90)
+    plt.xlabel('tasks')
+    plt.ylabel(metric)
+    plt.legend(loc='upper right')
+
+    plt.savefig('single_' + metric + '.pdf')
 '''
 
 data = {'Task': matrix_results[:, 0],
@@ -153,8 +161,8 @@ for n_task in OptExp.N_TASKS:
 
         for trial in range(OptExp.N_TRIALS):
             df_result = df_task[ (df_task["Model"] == model["name"]) & (df_task["Trial"] == trial) ]
-            
-            
+
+
     filepath1 = f'{Config.RESULTS_DATA}/100s/task_{n_task}/{Config.METRICS}/metrics'
     Path(filepath1).mkdir(parents=True, exist_ok=True)
     df1 = DataFrame(performance_results, columns=["Task", "Model", "Trial", "ER", "GD", "IGD", "STE", "HV", "HAR"])

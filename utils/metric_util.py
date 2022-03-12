@@ -9,7 +9,7 @@
 
 from numpy import all, any, zeros, ndarray, min, sqrt, mean, sum, max, abs
 from numpy.linalg import norm
-from pygmo.core import hypervolume
+# from pygmo.core import hypervolume
 
 ## GD, IGD, STE: A Comparative Study of Recent Multi-objective Metaheuristics for Solving Constrained Truss Optimisation Problems
 ## ER: Multi-objective particle swarm optimization with random immigrants
@@ -98,22 +98,22 @@ def spacing_to_extent(pareto_fronts: ndarray):
     return ste
 
 
-def hyper_volume(pareto_fronts:ndarray, reference_fronts:ndarray, hv_worst_point=None, hv_point=10000):
-    if hv_worst_point is None:
-        print("Need HV worst point")
-        exit(0)
-    hv_pf = hypervolume(pareto_fronts)
-    return hv_pf.compute(hv_worst_point + hv_point)
-
-
-def hyper_area_ratio(pareto_fronts: ndarray, reference_fronts: ndarray, hv_worst_point=None, hv_point=10000):
-    if hv_worst_point is None:
-        print("Need HV worst point")
-        exit(0)
-    hv_pf = hypervolume(pareto_fronts)
-    hv_rf = hypervolume(reference_fronts)
-    hv_point = hv_worst_point + hv_point
-    return hv_pf.compute(hv_point) / hv_rf.compute(hv_point)
+# def hyper_volume(pareto_fronts:ndarray, reference_fronts:ndarray, hv_worst_point=None, hv_point=10000):
+#     if hv_worst_point is None:
+#         print("Need HV worst point")
+#         exit(0)
+#     hv_pf = hypervolume(pareto_fronts)
+#     return hv_pf.compute(hv_worst_point + hv_point)
+#
+#
+# def hyper_area_ratio(pareto_fronts: ndarray, reference_fronts: ndarray, hv_worst_point=None, hv_point=10000):
+#     if hv_worst_point is None:
+#         print("Need HV worst point")
+#         exit(0)
+#     hv_pf = hypervolume(pareto_fronts)
+#     hv_rf = hypervolume(reference_fronts)
+#     hv_point = hv_worst_point + hv_point
+#     return hv_pf.compute(hv_point) / hv_rf.compute(hv_point)
 
 
 
