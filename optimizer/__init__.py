@@ -22,9 +22,12 @@ from optimizer.single.LCO import I_LCO
 # from optimizer.single.ILCO import ILCO_2
 from optimizer.single.VNS import VNS
 from optimizer.single.DE import SHADE
-from optimizer.single.ILCO_1 import ILCO_1
-from optimizer.single.ILCO_2 import ILCO_2
-from optimizer.single.ILCO_3 import ILCO_3
+from optimizer.single.ILCO_r1 import ILCO_r1
+from optimizer.single.ILCO_r2 import ILCO_r2
+from optimizer.single.ILCO_r3 import ILCO_r3
+from optimizer.single.LCO_a1 import ILCO_a1
+from optimizer.single.LCO_a2 import ILCO_a2
+from optimizer.single.LCO_a3 import ILCO_a3
 
 from optimizer.multiple.NSGA_II import BaseNSGA_II
 from optimizer.multiple.MO_IBLA import MO_IBLA
