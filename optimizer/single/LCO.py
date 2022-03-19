@@ -69,7 +69,7 @@ class BaseLCO(Root):
             return pop, counter
 
 
-class I_LCO(Root):
+class ILCO(Root):
     """
     My version of: Improved Life Choice-based Optimization (ILCO)
     Link:
@@ -99,7 +99,7 @@ class I_LCO(Root):
                 # K = randint(1, self.n_sqrt)
                 master = sum(array([pop[j][self.ID_POS] for j in sample([_ for _ in range(K)], min(K, 3))]), axis=0) / min(K, 3)
                 if i < K:
-                    temp = pop[i][self.ID_POS] + normal(0, 0.3) * (master - pop[i][self.ID_POS])
+                    temp = pop[i][self.ID_POS] + normal(0, 1.0) * (master - pop[i][self.ID_POS])
                     for j in range(len(pop[i][self.ID_POS])):
                         temp[j] += self.get_step_levy_flight()
                     best = new_pop[i][self.ID_POS]

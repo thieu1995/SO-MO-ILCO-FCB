@@ -22,13 +22,13 @@ basedir = abspath(dirname(__file__))
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--n_trials', type=int, default=10)
-    parser.add_argument('--n_tasks', default=[50, 100, 150, 200, 250, 300, 350, 400, 450, 500])
+    parser.add_argument('--n_tasks', default=[150, 350, 400, 450, 500])
     parser.add_argument('--time_bound', default=[5])
     parser.add_argument('--pop_size', default=[50])
     parser.add_argument('--epoch', default=[1000])
     parser.add_argument('--func_eval', default=[100000])
     parser.add_argument('--verbose', type=bool, default=True)
-    parser.add_argument('--objective', default=["power", "latency", "cost"])
+    parser.add_argument('--objective', default='power')
     args = parser.parse_args()
     return args
 

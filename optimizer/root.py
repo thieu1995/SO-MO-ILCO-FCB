@@ -31,7 +31,7 @@ class Root:
 
     EPSILON = 10E-10
 
-    def __init__(self, problem=None, pop_size=10, epoch=2, func_eval=100000, lb=None, ub=None, verbose=True):
+    def __init__(self, problem=None, pop_size=10, epoch=2, func_eval=100000, lb=None, ub=None, verbose=True, using_timebound=True):
         self.problem = problem
         self.pop_size = pop_size
         self.epoch = epoch
@@ -41,6 +41,8 @@ class Root:
         self.verbose = verbose
         self.Fit = Fitness(problem)
         self.n_objs = 1
+        self.using_timebound = using_timebound
+        self.time_bound = Config.TIME_BOUND_VALUE_PER_TASK * self.problem["n_tasks"]
 
     def create_solution(self):
         while True:
@@ -232,12 +234,21 @@ class Root:
 
 
     def step_decay(self, epoch, init_er):
-       init_explore_rate = init_er
-       drop = (1 - 1 / (math.e + 3)) 
-       epochs_drop = math.floor(math.sqrt(self.epoch))
-       explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + epoch)/epochs_drop))
-       return max(explore_rate, 0.02)
-   
+        if not self.using_timebound:
+            init_explore_rate = init_er
+            drop = (1 - 1 / (math.e + 3)) 
+            epochs_drop = math.floor(math.sqrt(self.epoch))
+            explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + epoch)/epochs_drop))
+            return max(explore_rate, 0.02)
+        else:
+            init_explore_rate = init_er
+            drop = (1 - 1 / (math.e + 3)) 
+            curtime = time() - self.start_time
+            curtimes_drop = math.floor(math.sqrt(self.time_bound))
+            explore_rate = init_explore_rate * math.pow(drop, math.floor((1 + curtime)/curtimes_drop))
+            return max(explore_rate, 0.02)
+            
+            
     def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
         pass
 
@@ -257,6 +268,7 @@ class Root:
             for epoch in range(self.epoch):
                 # print(epoch)
                 time_epoch_start = time()
+                self.start_time = time_epoch_start
                 pop = self.evolve(pop, None, epoch, g_best)
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
                 g_best_list.append(g_best[self.ID_FIT])
@@ -276,6 +288,7 @@ class Root:
         elif Config.MODE == "fe":
             fe_counter = 0
             time_fe_start = time()
+            self.start_time = time_fe_start
             while fe_counter < self.func_eval:
                 pop, counter = self.evolve(pop, Config.MODE, None, g_best)
                 g_best, current_best = self.update_g_best_get_current_best(pop, g_best)
