@@ -30,24 +30,24 @@ class ILCO_r3(Root):
         self.n_half = int(pop_size/2)
         self.n_sqrt = int(ceil(sqrt(self.pop_size)))
         
+        self.prob = [np.exp((self.pop_size - i + self.n_sqrt) / self.n_sqrt) for i in range(self.pop_size)]
+        self.prob = array(self.prob / sum(self.prob))
+        for i in range(1, self.pop_size):
+            self.prob[i] += self.prob[i - 1]
    
     def evolve(self, pop=None, fe_mode=None, epoch=None, g_best=None):
         # epoch: current chance, self.epoch: number of chances
         pop = sorted(pop, key=lambda x: x[self.ID_FIT])
         new_pop = deepcopy(pop)
-        wf = self.step_decay(epoch, 1.0)
+        wf = self.step_decay(epoch, 0.5)
         
-        prob = [np.exp((self.pop_size - i + self.n_sqrt) / self.n_sqrt) for i in range(self.pop_size)]
-        prob = array(prob / sum(prob))
-        for i in range(1, self.pop_size):
-            prob[i] += prob[i - 1]
         for i in range(1, self.pop_size):
             while True:
-                K = min(3, bisect_left(prob, uniform()) + 1)
+                K = min(self.n_sqrt, bisect_left(self.prob, uniform()) + 1)
                 # K = randint(1, self.n_sqrt)
                 master = sum(array([pop[j][self.ID_POS] for j in sample([_ for _ in range(K)], min(K, 3))]), axis=0) / min(K, 3)
                 if i < K:
-                    temp = pop[i][self.ID_POS] + normal(0, 1) * (master - pop[i][self.ID_POS])
+                    temp = pop[i][self.ID_POS] + normal(0, 0.3) * (master - pop[i][self.ID_POS])
                     for j in range(len(pop[i][self.ID_POS])):
                         temp[j] += self.get_step_levy_flight()
                     best = new_pop[i][self.ID_POS]
@@ -56,10 +56,9 @@ class ILCO_r3(Root):
                     schedule = matrix_to_schedule(self.problem, child.astype(int))
                     if schedule.is_valid():
                         best_fit = self.Fit.fitness(schedule)
-                        
                     for j in range(self.n_sqrt):
-                        for k in range(len(new_pop[i][self.ID_POS])):
-                            new_pop[i][self.ID_POS][k] += wf * self.get_step_levy_flight()
+                        for k in range(self.problem["shape"]):
+                            temp[k] += wf * normal(0, 0.1)
                         child = self.amend_position_random(temp)
                         schedule = matrix_to_schedule(self.problem, child.astype(int))
                         if schedule.is_valid():
@@ -70,13 +69,20 @@ class ILCO_r3(Root):
                                 
                     new_pop[i][self.ID_POS] = best
                 else:
-                    d = normal(0, 0.3)
-                    teacher = np.argmin([sum(np.absolute(subtract(pop[i][self.ID_POS], pop[j][self.ID_POS]))) for j in range (K) if j != i]) 
-                    new_pop[i][self.ID_POS] = pop[i][self.ID_POS] +\
-                        d * (pop[teacher][self.ID_POS] - pop[i][self.ID_POS])
-                    for j in range(len(new_pop[i][self.ID_POS])):
-                        new_pop[i][self.ID_POS][j] += self.get_step_levy_flight()
-                    
+                    rand_number = random()
+                    if rand_number > 0.5:
+                        d = normal(0, 0.3)
+                        teacher = np.argmin([sum(np.absolute(subtract(pop[i][self.ID_POS], pop[j][self.ID_POS]))) for j in range (K) if j != i]) 
+                        new_pop[i][self.ID_POS] = pop[i][self.ID_POS] +\
+                            d * (pop[teacher][self.ID_POS] - pop[i][self.ID_POS])
+                        for j in range(len(new_pop[i][self.ID_POS])):
+                            new_pop[i][self.ID_POS][j] += self.get_step_levy_flight()
+                    elif rand_number < 0.4:
+                        _pos  = randint(0, i - 1)
+                        friend = new_pop[_pos][self.ID_POS]
+                        new_pop[i][self.ID_POS] = wf * friend + (1 - wf) * new_pop[i][self.ID_POS] \
+                             + self.get_step_levy_flight()
+                             
                 child = self.amend_position_random(new_pop[i][self.ID_POS])
                 schedule = matrix_to_schedule(self.problem, child.astype(int))
                 if schedule.is_valid():
