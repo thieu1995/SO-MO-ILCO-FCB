@@ -1,11 +1,5 @@
 # SO-IAEO and MO-IAEO
-The implementation for paper "Single and Multi Objective Artificial Ecosystem-based Optimization for Task Scheduling in
-Fog-Cloud-Blockchain System"
-
-+ Link plan: [here](https://docs.google.com/document/d/1OdaJOe5UxNpbjDuaQptArhtIEw-hbCfwGeTemr-UBYY/edit)
-+ Link code: [here](https://github.com/thieu1995/IAEO_IFCB)
-+ Link paper: [here](https://github.com/thieu1995/paper_IAEO_IFCB)
-
+Single and Multi Objective Improved Life Choice-based Optimization for Task Scheduling in Fog-Cloud-Blockchain System
 
 # How to run
 
